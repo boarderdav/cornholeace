@@ -9,7 +9,8 @@
 <title>Carousel Template for Bootstrap</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/website/css/bootstrap.min.css"  rel="stylesheet">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/cornholeace.css" rel="stylesheet">
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <link href="../../vendor/twitter/bootstrap/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
