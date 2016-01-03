@@ -1,5 +1,3 @@
-<?php ?>
-
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +9,7 @@
 <title>Carousel Template for Bootstrap</title>
 
 <!-- Bootstrap core CSS -->
-<link href="../../vendor/twitter/bootstrap/dist/css/bootstrap.min.css"  rel="stylesheet">
+<link href="../../website/css/bootstrap.min.css"  rel="stylesheet">
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <link href="../../vendor/twitter/bootstrap/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
