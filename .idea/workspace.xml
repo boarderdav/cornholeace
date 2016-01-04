@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c55c8aa4-6d03-41c2-840f-72ebf302ba3d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/php/social.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/shop1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/shop2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/shop3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/css/cornholeace.css" afterPath="$PROJECT_DIR$/website/css/cornholeace.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/index.php" afterPath="$PROJECT_DIR$/website/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/php/footernew.php" afterPath="$PROJECT_DIR$/website/php/footernew.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/php/head.php" afterPath="$PROJECT_DIR$/website/php/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/php/navigation.php" afterPath="$PROJECT_DIR$/website/php/navigation.php" />
-    </list>
+    <list default="true" id="c55c8aa4-6d03-41c2-840f-72ebf302ba3d" name="Default" comment="" />
     <ignored path="cornholeace.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -839,7 +826,7 @@
       <workItem from="1451800214890" duration="48000" />
       <workItem from="1451800273605" duration="19000" />
       <workItem from="1451800303446" duration="3606000" />
-      <workItem from="1451804261358" duration="24009000" />
+      <workItem from="1451804261358" duration="24109000" />
     </task>
     <task id="LOCAL-00001" summary="updating code, got php to include files, live changes taking effect.">
       <created>1451805962500</created>
@@ -857,7 +844,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30739000" />
+    <option name="totallyTimeSpent" value="30839000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
