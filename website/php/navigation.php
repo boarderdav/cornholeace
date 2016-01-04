@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">CornholeAce</a>
+            <a class="navbar-brand" href="https://cornholeace.com/"><img src="/website/img/logo.png" style="height=40px" alt="CornholeAce"/></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
