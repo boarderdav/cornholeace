@@ -17,10 +17,12 @@
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img class="first-slide" src="http://placehold.it/800x200/333333/333333" width="100%" alt="First slide">
+            <img class="first-slide" src="img/cornholeace%20specs_.jpg" width="100%" alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>CornholeAce.com</h1>
@@ -30,7 +32,7 @@
             </div>
         </div>
         <div class="item">
-            <img class="second-slide" src="http://placehold.it/800x200/333333/333333" width="100%" alt="Second slide">
+            <img class="second-slide" src="img/cornhole2.png" width="100%" height="300px" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Dual-Sided Bags</h1>
@@ -40,7 +42,27 @@
             </div>
         </div>
         <div class="item">
-            <img class="third-slide" src="http://placehold.it/800x200/333333/333333" width="100%" alt="Third slide">
+            <img class="third-slide" src="img/cornhole3.png" width="100%" height="300px" alt="Second slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Dual-Sided Bags</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img class="fourth-slide" src="img/IMGP5526_.jpg" width="100%" height="300" alt="Second slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Dual-Sided Bags</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img class="fifth-slide" src="/img/cornhole1.png" width="100%" alt="Third slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>High Quality Cornhole Products</h1>
@@ -64,28 +86,28 @@
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
-
+<br>
 <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-md-4 text-center">
             <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <h1 style="font-family:Vipnagorgialla" class="text-danger" >Cornhole Ace</h1><h4 style="color:white">_</h4>
+            <h3 style="font-family:Lato-light">CornholeAce provides the best quality cornhole bags and boards the industry has ever seen! </h3>
+            <p><a class="btn btn-danger" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-md-4 text-center">
             <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <h1 class="blueColor" style="font-family:Vipnagorgialla">Cornhole Bags</h1>
+            <h3 style="font-family:Lato-light">We provide a super high-quality dual-sided cornhole bags. Top quality fabric, with resin-filled weatherproof materials makes this the best cornhole bags on the market.  </h3>
+            <p><a class="btn btn-success" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-md-4 text-center">
             <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <h1 class="blueColor" style="font-family:Vipnagorgialla">Cornhole Boards</h1>
+            <h3 style="font-family:Lato-light">We supply the highest quality cornhole boards the industry has ever seen. </h3>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -94,25 +116,69 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <div class="row">
+        <div class="col-xs-6">
+            <a href="#" class="img-caption">
+                <figure>
+                    <img src="img/cornhole-bags.jpg" width="100%"/>
+                    <figcaption class="moveUp">
+                        <h3 class="noMargin" width="100%">Cornhole Bags</h3>
+                        <span>The best quality on the market!</span>
+                    </figcaption>
+                </figure>
+            </a>
         </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+
+        <div class="col-xs-6">
+            <a href="#" class="img-caption">
+                <figure>
+                    <img src="img/cornhole-bags.jpg" width="100%"/>
+                    <figcaption class="moveUp">
+                        <h3 class="noMargin" width="100%">Cornhole Boards</h3>
+                        <span>The best quality on the market!</span>
+                    </figcaption>
+                </figure>
+            </a>
         </div>
     </div>
 
     <hr class="featurette-divider">
 
     <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <div class="col-md-7">
+            <h2 class="featurette-heading blueColor">Dual-Sided Cornhole Bags <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">We provide a super high-quality dual-sided cornhole bags. Top quality fabric, with resin-filled weatherproof materials makes this the best cornhole bags on the market.  </p>
         </div>
-        <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        <div class="col-md-5">
+            <a href="#" class="img-caption">
+                <figure>
+                    <img src="img/CornholeAce-Package-top.jpg" width="100%"/>
+                    <figcaption class="moveUp">
+                        <h3 class="noMargin" width="100%">Cornhole Bags</h3>
+                        <span>The best quality on the market!</span>
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-5">
+            <a href="#" class="img-caption">
+                <figure>
+                    <img src="img/cornhole011.JPG" width="100%"/>
+                    <figcaption class="moveUp">
+                        <h3 class="noMargin" width="100%">Cornhole Bags</h3>
+                        <span>The best quality on the market!</span>
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading blueColor">Dual-Sided Cornhole Bags <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">We provide a super high-quality dual-sided cornhole bags. Top quality fabric, with resin-filled weatherproof materials makes this the best cornhole bags on the market.  </p>
         </div>
     </div>
 
@@ -120,11 +186,19 @@
 
     <div class="row featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading blueColor">Dual-Sided Cornhole Bags <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">We provide a super high-quality dual-sided cornhole bags. Top quality fabric, with resin-filled weatherproof materials makes this the best cornhole bags on the market.  </p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <a href="#" class="img-caption">
+                <figure>
+                    <img src="img/CornholeAce-Package-top.jpg" width="100%"/>
+                    <figcaption class="moveUp">
+                        <h3 class="noMargin" width="100%">Cornhole Bags</h3>
+                        <span>The best quality on the market!</span>
+                    </figcaption>
+                </figure>
+            </a>
         </div>
     </div>
 
@@ -136,12 +210,10 @@
     <!-- FOOTER -->
     <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2016 Tailgating Sports, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>
 
 </div><!-- /.container -->
 
 <?php include('php/footernew.php');?>
 
-</body>
-</html>
