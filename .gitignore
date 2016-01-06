@@ -1,5 +1,4 @@
 *.psd
-*.iml
 workspace.xml
 tasks.xml
 .idea/workspace.xml
