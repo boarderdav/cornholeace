@@ -1,3 +1,11 @@
 .idea/
 *.psd
+*.iml
+workspace.xml
+tasks.xml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/shelf
+
 
