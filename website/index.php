@@ -1,85 +1,9 @@
-<?php
+<?php include('dbconfig.php');?>
+<?php//
+//phpinfo();
+//?>
 
-//$host = "cornholedb.c6sgbeek7pg2.us-east-1.rds.amazonaws.com";
-//$user = "cornhole";
-//$pass = "playthrowtoss";
-//$db = "postgres";
-//$port = "5432";
-//
-//$con = pg_connect("host=$host dbname=$db user=$user password=$pass port=$port")
-//or die ("Could not connect to server\n");
-//
-//$query = "SELECT VERSION()";
-//$rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
-//$row = pg_fetch_row($rs);
-//
-//echo $row[0] . "\n";
-//
-//pg_close($con);
-//
-//
-
-   $host        = "host=cornholedb.c6sgbeek7pg2.us-east-1.rds.amazonaws.com";
-   $port        = "port=5432";
-   $dbname      = "dbname=postgres";
-   $credentials = "user=cornhole password=playthrowtossing";
-
-$dbs = ( "$host $port $dbname $credentials" );
-
-try{
-    $conn= new PDO($dbs);
-
-    if($conn){
-        echo "Connected to the <strong>$db</strong> database successfully! Connection worked correctly and David is awesome!!!";
-    }
-}catch (PDOException $e){
-    echo $e->getMessage();
-}
-?>
-
-<!--
-//   $db = pg_connect( "$host $port $dbname $credentials"  );
-//   if(!$db){
-//       echo "Error : Unable to open database\n";
-//   } else {
-//       echo "Opened database successfully\n";
-//   }
-
-
-
-//require_once 'dbconfig.php';
-//
-//$dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password";
-//
-//try{
-//    // create a PostgreSQL database connection
-//    $conn = new PDO($dsn);
-//
-//    // display a message if connected to the PostgreSQL successfully
-//    if($conn){
-//        echo "Connected to the <strong>$db</strong> database successfully!";
-//    }
-//}catch (PDOException $e) {
-//    // report error message
-//    echo $e->getMessage();
-//}
-
-//  include("../website/dbconfig.php");
-//  $pg_connect = new pg_connect();
-// -->
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <?php include('php/head.php');?>
-
-</head>
-
-<body>
+<?php include('php/head.php');?>
 
 <?php include('php/navigation.php');?>
 

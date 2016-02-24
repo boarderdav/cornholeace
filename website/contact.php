@@ -1,51 +1,50 @@
+<?php include('dbconfig.php');?>
 <?php include('php/head.php')?>
 <?php include('php/navigation.php')?>
 
-
 <?php
-
-$db_handle = pg_connect("dbname=cornhole");
-
-$query = "SELECT * FROM item";
-
-$result = pg_exec($db_handle, $query);
-
-echo "Number of rows: " . pg_numrows($result);
-
-pg_freeresult($result);
-
-pg_close($db_handle);
-
-?>
-
+//
+//$db_handle = pg_connect("dbname=cornhole");
+//
+//$query = "SELECT * FROM item";
+//
+//$result = pg_exec($db_handle, $query);
+//
+//echo "Number of rows: " . pg_numrows($result);
+//
+//pg_freeresult($result);
+//
+//pg_close($db_handle);
+//
+//?>
+<!---->
 <?php
-
-
-$host = "cornholedb.c6sgbeek7pg2.us-east-1.rds.amazonaws.com";
-$user = "cornhole";
-$pass = "playthrowtoss";
-$port = "5432";
-$dbname = "postgres";
-
-$con = pg_connect("host=$host dbname=$dbname user=$user password=$pass port=$port")
-or die ("Could not connect to server\n");
-
-$query = "SELECT VERSION()";
-$rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
-$row = pg_fetch_row($rs);
-
-echo $row[0] . "\n";
-
-pg_close($con);
-
-?>
-
+//
+//
+//$host = "cornholedb.c6sgbeek7pg2.us-east-1.rds.amazonaws.com";
+//$user = "cornhole";
+//$pass = "playthrowtoss";
+//$port = "5432";
+//$dbname = "postgres";
+//
+//$con = pg_connect("host=$host dbname=$dbname user=$user password=$pass port=$port")
+//or die ("Could not connect to server\n");
+//
+//$query = "SELECT VERSION()";
+//$rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
+//$row = pg_fetch_row($rs);
+//
+//echo $row[0] . "\n";
+//
+//pg_close($con);
+//
+//?>
+<!---->
 <?php
-
-phpinfo();
-
-?>
-
+//
+//phpinfo();
+//
+//?>
 
     <div class="container">
 
@@ -59,7 +58,7 @@ phpinfo();
 
         <hr>
 
-        <form class="form-horizontal">
+        <form class="form-horizontal" action="dbconfig.php"  method="post">
             <fieldset>
 
                 <!-- Form Name -->
@@ -67,18 +66,18 @@ phpinfo();
 
                 <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="firstName">First name</label>
+                    <label class="col-md-4 control-label" for="firstname">First name</label>
                     <div class="col-md-6">
-                        <input id="firstName" name="firstName" type="text" placeholder="first name..." class="form-control input-md">
+                        <input id="firstname" name="firstname" type="text" placeholder="first name..." class="form-control input-md">
                         <span class="help-block">Enter your first name</span>
                     </div>
                 </div>
 
                 <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="lastName">Last name</label>
+                    <label class="col-md-4 control-label" for="lastname">Last name</label>
                     <div class="col-md-6">
-                        <input id="lastName" name="lastName" type="text" placeholder="last name..." class="form-control input-md">
+                        <input id="lastname" name="lastname" type="text" placeholder="last name..." class="form-control input-md">
                         <span class="help-block">Enter your last name</span>
                     </div>
                 </div>
@@ -94,9 +93,9 @@ phpinfo();
 
                 <!-- Password input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="passwordinput">Password</label>
+                    <label class="col-md-4 control-label" for="password">Password</label>
                     <div class="col-md-6">
-                        <input id="passwordinput" name="passwordinput" type="password" placeholder="" class="form-control input-md" required="">
+                        <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="">
                         <span class="help-block">Enter your password</span>
                     </div>
                 </div>
@@ -110,7 +109,7 @@ phpinfo();
                 </div>
 
                 <div class="row text-center">
-                    <button type="submit" class="btn btn-primary ">Submit</button>
+                    <input class="btn btn-danger" type="submit"/><button type="submit" class="btn btn-primary ">Submit</button>
                 </div>
 
 
