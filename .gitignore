@@ -10,6 +10,7 @@ tasks.xml
 .idea/tasks.xml
 .idea/dictionaries
 .idea/shelf
+.idea/
 
 ## File-based project format:
 *.ipr
@@ -25,5 +26,8 @@ tasks.xml
 
 *dbconfig.php
 ./website/dbconfig.php
+
+./vendor/twitter/bootstrap/docs/components.html
+
 
 
