@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://cornholeace.com/"><img src="/img/logo.png" style="height:32px" /></a>
+            <a class="navbar-brand" href="http://localhost:8009/index.php"><img src="/img/logo.png" style="height:32px" /></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
