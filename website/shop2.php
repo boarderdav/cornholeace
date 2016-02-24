@@ -1,3 +1,9 @@
+<?php
+
+phpinfo();
+
+?>
+
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
 <br><br>

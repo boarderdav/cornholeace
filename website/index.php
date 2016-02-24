@@ -1,6 +1,5 @@
 <?php
 
-
 //$host = "cornholedb.c6sgbeek7pg2.us-east-1.rds.amazonaws.com";
 //$user = "cornhole";
 //$pass = "playthrowtoss";
@@ -23,7 +22,7 @@
    $host        = "host=cornholedb.c6sgbeek7pg2.us-east-1.rds.amazonaws.com";
    $port        = "port=5432";
    $dbname      = "dbname=postgres";
-   $credentials = "user=cornhole password=playthrowtoss";
+   $credentials = "user=cornhole password=playthrowtossing";
 
 $dbs = ( "$host $port $dbname $credentials" );
 
