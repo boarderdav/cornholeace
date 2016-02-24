@@ -1,7 +1,4 @@
 <?php include('dbconfig.php');?>
-<?php//
-//phpinfo();
-//?>
 
 <?php include('php/head.php');?>
 

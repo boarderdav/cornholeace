@@ -5,6 +5,7 @@
 *.psd
 workspace.xml
 tasks.xml
+*.ini
 
 
 ## File-based project format:
