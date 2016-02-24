@@ -12,15 +12,15 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="index.php">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/shop1.php">Blue Bags</a></li>
-                        <li><a href="/shop2.php">Red Bags</a></li>
-                        <li><a href="/shop3.php">Complete Set</a></li>
+                        <li><a href="/shop1.php">Blue Bags Shop1</a></li>
+                        <li><a href="/shop2.php">Red Bags Shop2</a></li>
+                        <li><a href="/shop3.php">Complete Set Shop3</a></li>
                         <li role="separator" class="divider"></li>
                         <li class="dropdown-header">More Options</li>
                         <li><a href="#">Shop by category</a></li>
