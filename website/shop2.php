@@ -1,8 +1,4 @@
-<?php
-
-phpinfo();
-
-?>
+<?php include('dbconfig.php');?>
 
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
@@ -18,6 +14,11 @@ phpinfo();
     </header>
 
     <hr>
+
+
+    <div data-celery="550091226849bd0700e61f40" data-celery-type="embed" data-celery-version="v2">Checkout</div>
+    <script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
+
 
     <!-- Title -->
     <div class="row">

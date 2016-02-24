@@ -2,50 +2,6 @@
 <?php include('php/head.php')?>
 <?php include('php/navigation.php')?>
 
-<?php
-//
-//$db_handle = pg_connect("dbname=cornhole");
-//
-//$query = "SELECT * FROM item";
-//
-//$result = pg_exec($db_handle, $query);
-//
-//echo "Number of rows: " . pg_numrows($result);
-//
-//pg_freeresult($result);
-//
-//pg_close($db_handle);
-//
-//?>
-<!---->
-<?php
-//
-//
-//$host = "cornholedb.c6sgbeek7pg2.us-east-1.rds.amazonaws.com";
-//$user = "cornhole";
-//$pass = "playthrowtoss";
-//$port = "5432";
-//$dbname = "postgres";
-//
-//$con = pg_connect("host=$host dbname=$dbname user=$user password=$pass port=$port")
-//or die ("Could not connect to server\n");
-//
-//$query = "SELECT VERSION()";
-//$rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
-//$row = pg_fetch_row($rs);
-//
-//echo $row[0] . "\n";
-//
-//pg_close($con);
-//
-//?>
-<!---->
-<?php
-//
-//phpinfo();
-//
-//?>
-
     <div class="container">
 
         <!-- Jumbotron Header -->
@@ -196,4 +152,5 @@
         </footer>
 
     </div>
+
 <?php include('php/footernew.php');?>
