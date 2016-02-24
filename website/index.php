@@ -1,42 +1,42 @@
 <?php
 
 
-$host = "cornholedb.c6sgbeek7pg2.us-east-1.rds.amazonaws.com";
-$user = "cornhole";
-$pass = "playthrowtoss";
-$db = "postgres";
-$port = "5432";
+//$host = "cornholedb.c6sgbeek7pg2.us-east-1.rds.amazonaws.com";
+//$user = "cornhole";
+//$pass = "playthrowtoss";
+//$db = "postgres";
+//$port = "5432";
+//
+//$con = pg_connect("host=$host dbname=$db user=$user password=$pass port=$port")
+//or die ("Could not connect to server\n");
+//
+//$query = "SELECT VERSION()";
+//$rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
+//$row = pg_fetch_row($rs);
+//
+//echo $row[0] . "\n";
+//
+//pg_close($con);
+//
+//
 
-$con = pg_connect("host=$host dbname=$db user=$user password=$pass port=$port")
-or die ("Could not connect to server\n");
+   $host        = "host=cornholedb.c6sgbeek7pg2.us-east-1.rds.amazonaws.com";
+   $port        = "port=5432";
+   $dbname      = "dbname=postgres";
+   $credentials = "user=cornhole password=playthrowtoss";
 
-$query = "SELECT VERSION()";
-$rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
-$row = pg_fetch_row($rs);
+$dbs = ( "$host $port $dbname $credentials" );
 
-echo $row[0] . "\n";
+try{
+    $conn= new PDO($dbs);
 
-pg_close($con);
-
+    if($conn){
+        echo "Connected to the <strong>$db</strong> database successfully! Connection worked correctly and David is awesome!!!";
+    }
+}catch (PDOException $e){
+    echo $e->getMessage();
+}
 ?>
-
-<!--   $host        = "host=cornholedb.c6sgbeek7pg2.us-east-1.rds.amazonaws.com";-->
-<!--   $port        = "port=5432";-->
-<!--   $dbname      = "dbname=postgres";-->
-<!--   $credentials = "user=cornhole password=playthrowtoss";-->
-<!---->
-<!--$dbs = ( "$host $port $dbname $credentials" );-->
-<!---->
-<!--try{-->
-<!--    $conn= new PDO($dbs);-->
-<!---->
-<!--    if($conn){-->
-<!--        echo "Connected to the <strong>$db</strong> database successfully! Connection worked correctly and David is awesome!!!";-->
-<!--    }-->
-<!--}catch (PDOException $e){-->
-<!--    echo $e->getMessage();-->
-<!--}-->
-<!--?>-->
 
 <!--
 //   $db = pg_connect( "$host $port $dbname $credentials"  );
