@@ -1,6 +1,6 @@
-<?php include('dbconfig.php');?>
 <?php include('php/head.php')?>
 <?php include('php/navigation.php')?>
+<?php include('dbconfig.php');?>
 
     <div class="container">
 

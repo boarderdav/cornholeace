@@ -1,13 +1,14 @@
-<?php include('dbconfig.php');?>
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
+<?php include('dbconfig.php');?>
+
 <br><br>
 <div class="container">
 
     <!-- Jumbotron Header -->
     <header class="jumbotron hero-spacer">
         <h1>A Warm Welcome to CornholeAce!</h1>
-        <p>CornholeAce is a high-quality tailgating sports vendor...sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+        <p>CornholeAce is a high-quality tailgating sports vendor. Check out our awesome products!</p>
         <p><a href="#" class="btn btn-primary btn-large">Call to action!</a>
         </p>
     </header>

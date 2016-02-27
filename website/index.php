@@ -1,8 +1,83 @@
-<?php include('dbconfig.php');?>
-
 <?php include('php/head.php');?>
-
+<?php include('dbconfig.php');?>
 <?php include('php/navigation.php');?>
+
+
+<?php
+
+//session_start();
+
+
+
+
+//include "common.php";
+//include_once "fbconnect.php";
+
+//if (isset($_SESSION['user']))
+//echo '<a href="logout.php" target="_blank" rel="nofollow">Logout</a>';
+//else
+//echo '<a href="$loginUrl" target="_blank" rel="nofollow">Login</a>';
+//if(!isset($_SESSION['user']))
+//{
+//echo '<a href="$loginUrl" target="_blank" rel="nofollow"><img src="images/f-connect.png" alt="Connect to your Facebook Account"></a>';
+//}
+//else
+//{
+//$email = "'" . $_SESSION['user'] . "'";
+//$query = sprintf("SELECT * FROM newmember WHERE email = %s",$email);
+//$res = mysql_query($query) or die('Query failed: ' . mysql_error() . "<br>\n$sql");
+//$row = mysql_fetch_array($res);
+//echo $row['name'];
+//echo "<b>   GENDER : </b>" . $row['gender'];
+//echo "<b>   EMAIL : </b>" . $row['email'];
+//}
+//
+//
+//?>
+
+<?php
+
+require './src/Facebook/facebook.php';
+
+// Create our Application instance (replace this with your appId and secret).
+$facebook = new Facebook(array(
+    'appId'  => '686534241383052',
+    'secret' => '49f3d3991c74d0e1101321c7d069a683',
+    'cookie' => true));
+
+
+// Get User ID
+$user = $facebook->getUser();
+
+
+if ($user) {
+try {
+// Proceed knowing you have a logged in user who's authenticated.
+$fbuid = $facebook->getUser();
+$user_profile = $facebook->api('/me');
+
+header('Location: user_page.php');
+
+} catch (FacebookApiException $e) {
+error_log($e);
+$user = null;
+}
+}
+
+
+// Login or logout url will be needed depending on current user state.
+if ($user) {
+$logoutUrl = $facebook->getLogoutUrl();
+
+} else {
+
+$loginUrl = $facebook->getLoginUrl(Array('scope'=>    'user_interests,user_activities,user_education_history,user_likes,user_about_me,   user_birthday, user_groups, user_hometown, user_work_history, email',
+'redirect_uri' => 'http://www.mywebpage.com/test/user_page.php')
+);
+}
+
+?>
+
 
 <!-- Carousel ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -104,6 +179,15 @@
             <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
+
+
+<!--    Facebook integration add like button for testing -->
+    <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+    </div>
 
 
     <!-- START THE FEATURETTES -->
