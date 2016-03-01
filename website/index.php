@@ -1,14 +1,14 @@
 <?php include('php/head.php');?>
-<?php include('dbconfig.php');?>
+<?php //include('dbconfig.php');?>
 <?php include('php/navigation.php');?>
-
+<?php //include('fbdbconfig.php');?>
+<?php //include('facebook_login.php');?>
 
 <?php
 
+
+
 //session_start();
-
-
-
 
 //include "common.php";
 //include_once "fbconnect.php";
@@ -37,46 +37,46 @@
 
 <?php
 
-require './src/Facebook/facebook.php';
+//require './src/Facebook/facebook.php';
 
 // Create our Application instance (replace this with your appId and secret).
-$facebook = new Facebook(array(
-    'appId'  => '686534241383052',
-    'secret' => '49f3d3991c74d0e1101321c7d069a683',
-    'cookie' => true));
+//$facebook = new Facebook(array(
+//    'appId'  => '686534241383052',
+//    'secret' => '49f3d3991c74d0e1101321c7d069a683',
+//    'cookie' => true));
 
 
 // Get User ID
-$user = $facebook->getUser();
-
-
-if ($user) {
-try {
-// Proceed knowing you have a logged in user who's authenticated.
-$fbuid = $facebook->getUser();
-$user_profile = $facebook->api('/me');
-
-header('Location: user_page.php');
-
-} catch (FacebookApiException $e) {
-error_log($e);
-$user = null;
-}
-}
-
-
-// Login or logout url will be needed depending on current user state.
-if ($user) {
-$logoutUrl = $facebook->getLogoutUrl();
-
-} else {
-
-$loginUrl = $facebook->getLoginUrl(Array('scope'=>    'user_interests,user_activities,user_education_history,user_likes,user_about_me,   user_birthday, user_groups, user_hometown, user_work_history, email',
-'redirect_uri' => 'http://www.mywebpage.com/test/user_page.php')
-);
-}
-
-?>
+//$user = $facebook->getUser();
+//
+//
+//if ($user) {
+//try {
+//// Proceed knowing you have a logged in user who's authenticated.
+//$fbuid = $facebook->getUser();
+//$user_profile = $facebook->api('/me');
+//
+//header('Location: user_page.php');
+//
+//} catch (FacebookApiException $e) {
+//error_log($e);
+//$user = null;
+//}
+//}
+//
+//
+//// Login or logout url will be needed depending on current user state.
+//if ($user) {
+//$logoutUrl = $facebook->getLogoutUrl();
+//
+//} else {
+//
+//$loginUrl = $facebook->getLoginUrl(Array('scope'=>    'user_interests,user_activities,user_education_history,user_likes,user_about_me,   user_birthday, user_groups, user_hometown, user_work_history, email',
+//'redirect_uri' => 'http://www.mywebpage.com/test/user_page.php')
+//);
+//}
+//
+//?>
 
 
 <!-- Carousel ================================================== -->
@@ -150,6 +150,12 @@ $loginUrl = $facebook->getLoginUrl(Array('scope'=>    'user_interests,user_activ
         <span class="sr-only">Next</span>
     </a>
 </div><!-- /.carousel -->
+
+<a class="btn btn-block btn-social btn-facebook" href="<?php echo $loginURL; ?>">Login with Facebook</a>
+<br>
+<hr>
+<a class="btn btn-block btn-social btn-facebook" href="<?php echo $logoutURL; ?>">Logout</a>
+
 
 
 <!-- Marketing messaging and featurettes

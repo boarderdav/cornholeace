@@ -31,7 +31,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="/shop2.php">Shop</a></li>
-                <li ><a href="./">Sign-Up <span class="sr-only">(current)</span></a></li>
+                <li><a href="./">Sign-Up <span class="sr-only">(current)</span></a></li>
                 <li><p class="navbar-text">Already have an account?</p></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
@@ -41,7 +41,7 @@
                                 <div class="col-md-12">
                                     Login via
                                     <div class="social-buttons">
-                                        <a href="#" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                        <a href="http://new.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
                                         <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                                     </div>
                                     or
