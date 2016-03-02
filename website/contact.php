@@ -1,6 +1,7 @@
 <?php include('php/head.php')?>
 <?php include('php/navigation.php')?>
 <?php include('dbconfig.php');?>
+<?php //include('php/newPost.php');?>
 
     <div class="container">
 
