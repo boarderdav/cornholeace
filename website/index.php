@@ -1,6 +1,7 @@
 <?php include('php/head.php');?>
-<?php //include('dbconfig.php');?>
 <?php include('php/navigation.php');?>
+<?php include('config.php');?>
+
 <?php //include('fbdbconfig.php');?>
 <?php //include('facebook_login.php');?>
 

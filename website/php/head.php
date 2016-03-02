@@ -48,67 +48,88 @@
 
 
     <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=686534241383052";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+
+        <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '686534241383052', // Set YOUR APP ID
+                channelUrl : 'http://new.cornholeace.com/login.php', // Channel File
+                status     : true, // check login status
+                cookie     : true, // enable cookies to allow the server to access the session
+                xfbml      : true  // parse XFBML
+            });
+
+        };
+
+
+
         </script>
 
 
 
 <script>
-//    //Syntax for FB.api()
-//    FB.api('/me', function(response) {
-//        console.log(JSON.stringify(response));
-//    });
-//
-//
-//
-//
-//    //Syntax of FB.api()
-//    function getUserInfo() {
-//        FB.api('/me', function(response) {
-//
-//            $.ajax({
-//                type: "POST",
-//                dataType: 'json',
-//                data: response,
-//                url: 'check_user.php',
-//                success: function(msg) {
-//                    if(msg.error== 1)
-//                    {
-//                        alert('Something Went Wrong!');
-//                    } else {
-//                        $('#fbstatus').show();
-//                        $('#fblogin').hide();
-//                        $('#fbname').text("Name : "+msg.name);
-//                        $('#fbemail').text("Email : "+msg.email);
-//                        $('#fbfname').text("First Name : "+msg.first_name);
-//                        $('#fblname').text("Last Name : "+msg.last_name);
-//                        $('#fbid').text("Facebook ID : "+msg.id);
-//                        $('#fbimg').html("<img src='http://graph.facebook.com/"+msg.id+"/picture'>");
-//                    }
-//                }
-//            });
-//
-//        });
-//    }
-//
-//
-//    //Logout from facebook
-//
-//    function FBLogout()
-//    {
-//        FB.logout(function(response) {
-//            $('#fblogin').show(); //showing login button again
-//            $('#fbstatus').hide(); //hiding the status
-//        });
-//    }
+//    Syntax for FB.api()
+function api() {
+    FB.api('/me', function(response) {
+        console.log(JSON.stringify(response));
+    });
+}
 
 
+
+
+    //Syntax of FB.api()
+
+    function getUserInfo() {
+        FB.api('/me', function(response) {
+
+            $.ajax({
+                type: "POST",
+                dataType: 'json',
+                data: response,
+                url: 'contact.php',
+                success: function(msg) {
+                    if(msg.error== 1)
+                    {
+                        alert('Something Went Wrong!');
+                    } else {
+                        console.log(JSON.stringify(response));
+                        $('#fbstatus').show();
+                        $('#fblogin').hide();
+                        $('#fbname').text("Name : "+msg.name);
+                        $('#fbemail').text("Email : "+msg.email);
+                        $('#fbfname').text("First Name : "+msg.first_name);
+                        $('#fblname').text("Last Name : "+msg.last_name);
+                        $('#fbid').text("Facebook ID : "+msg.id);
+                        $('#fbimg').html("<img src='http://graph.facebook.com/"+msg.id+"/picture'>");
+                    }
+                }
+            });
+
+        });
+    }
+
+
+    //Logout from facebook
+
+    function FBLogout()
+    {
+        FB.logout(function(response) {
+            $('#fblogin').show(); //showing login button again
+            $('#fbstatus').hide(); //hiding the status
+        });
+    }
+
+
+
+
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=686534241383052";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
 
 </script>

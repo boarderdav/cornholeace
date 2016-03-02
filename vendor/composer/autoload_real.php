@@ -43,3 +43,8 @@ class ComposerAutoloaderInitfa962851f31760094d66ac3597881b19
         return $loader;
     }
 }
+
+function composerRequirefa962851f31760094d66ac3597881b19($file)
+{
+    require $file;
+}

@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <!-- Bootstrap core CSS -->
+      <link href="../css/bootstrap.min.css" rel="stylesheet">
+      <link href="../css/cornholeace.css" rel="stylesheet">
+      <link href="../css/site.css" rel="stylesheet">
 
 
-<?php
+      <!--FontAwesome CSS link    -->
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+      <!-- Basic Page Needs
+    ================================================== -->
+      <meta charset="utf-8">
+      <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+
+      <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+  </head>
+  <body>
+
+  <?php
 session_start();
 require_once __DIR__ . '/src/Facebook/autoload.php';
 
@@ -86,7 +110,7 @@ if (isset($accessToken)) {
 
     // getting basic info about user
     try {
-        $profile_request = $fb->get('/me?fields=email,public_profile,user_friends');    // '/me?fields=id,name', '{accessToken}'
+        $profile_request = $fb->get('/me?fields=id,name');    // '/me?fields=id,name', '{accessToken}'
         $profile = $profile_request->getGraphNode()->asArray();  //used to be getGraphicNode
     } catch(\Facebook\Exceptions\FacebookResponseException $e) {
         // When Graph returns an error
@@ -104,13 +128,14 @@ if (isset($accessToken)) {
     //printing $profile array on the screen which holds the basic info about user
     //echo $profile['name'];
     print_r($profile);
+    echo $profile['name'];
     echo "hello there new user person"; //$profile['name'];
 
     $name = $profile['name'];
     $first_name = $profile['first_name'];
 
-    $sql = "INSERT INTO cornholeAWStest.users (name, email)
-    VALUES ('{$name}', '{$email}')";  // '{$name}', '{email}', '{$accessToken}'
+    $sql = "INSERT INTO users (id,fname)
+    VALUES (id,fname)";  // '{$name}', '{email}', '{$accessToken}'
 
     if ($db->query($sql) === TRUE) {
         echo "New Record created successfully";
@@ -126,42 +151,21 @@ $db->close();
     // Now you can redirect to another pate an use the access token from $_SESSION['localhost_app_token']
 } else {
     // replace yoru website URL same as added in teh developer.facebook.com/apps e.g. if you used http instead of https and you used non-www version or www version of your website then you must add the same here
-    $loginUrl = $helper->getLoginUrl('http://new.cornholeace.com/index.php', $permissions); // worked with index.php
+    $loginUrl = $helper->getLoginUrl('http://new.cornholeace.com/index9.php', $permissions); // worked with index.php
     echo '<br><a href="' . $loginUrl . '">Log in with Facebook!</a>';
 }
 
 
 
 
-
 ?>
-      <!-- Bootstrap core CSS -->
-      <link href="../css/bootstrap.min.css" rel="stylesheet">
-      <link href="../css/cornholeace.css" rel="stylesheet">
-      <link href="../css/site.css" rel="stylesheet">
+  <h1> I have <?php echo $profile_request?> in my name here testing! </h1>
+  <h1> Print <?php echo $first_name;?> please</h1>
 
-
-      <!--FontAwesome CSS link    -->
-      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-      <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
-
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  
   
     
-  </head> 
-  <body>
+
+
 <br><br><br><br><br>
 <hr>
 

@@ -9,5 +9,7 @@
             "email": "djenk008@odu.edu"
         }
     ],
-    "require": {}
+    "require": {
+        "facebook/php-sdk-v4" : "~5.0"
+    }
 }
