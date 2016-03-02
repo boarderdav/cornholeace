@@ -5,3 +5,5 @@
  * Date: 2/29/16
  * Time: 8:39 PM
  */
+?>
+<h1>Logout page</h1>

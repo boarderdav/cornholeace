@@ -17,20 +17,27 @@
 
     };
 
-    function Login()
-    {
 
-        FB.login(function(response) {
-            if (response.authResponse)
-            {
-                getUserInfo();
-            } else {document.location.reload();}
-            {
-                console.log('User cancelled login or did not fully authorize.');
+    function getloginstatus() {
+        FB.getLoginStatus(function(response) {
+            if (response.status === 'connected') {
+                // the user is logged in and has authenticated your
+                // app, and response.authResponse supplies
+                // the user's ID, a valid access token, a signed
+                // request, and the time the access token
+                // and signed request each expire
+                var uid = response.authResponse.userID;
+                var accessToken = response.authResponse.accessToken;
+            } else if (response.status === 'not_authorized') {
+                // the user is logged in to Facebook,
+                // but has not authenticated your app
+            } else {
+                // the user isn't logged in to Facebook.
             }
-        },{scope: 'email,user_photos,user_videos'});
-
+        });
     }
+
+
 
     function getUserInfo() {
         FB.api('/me', function(response) {
@@ -46,6 +53,26 @@
 
         });
     }
+
+
+
+    function Login()
+    {
+
+        FB.login(function(response) {
+            if (response.authResponse)
+            {
+                getUserInfo();
+            } else {document.location.reload();}
+            {
+                console.log('User cancelled login or did not fully authorize.');
+            }
+        },{scope: 'email,user_photos,user_videos'});
+
+    }
+
+
+
     function getPhoto()
     {
         FB.api('/me/picture?type=normal', function(response) {
@@ -56,6 +83,9 @@
         });
 
     }
+
+
+
     function Logout()
     {
         FB.logout(function(){document.location.reload();});
@@ -111,6 +141,14 @@
 <p><a href="#" onClick="logInWithFacebook()">Log In with the JavaScript SDK</a></p>
 
 <p><a href="#" onClick="getloginstatus()">Get Login Status</a></p>
+
+<p><a href="#" onClick="getUserInfo()">GetUserInfo Function</a></p>
+
+<p><a href="#" onClick="FB.getAccessToken()">FB.getAccessToken Function</a></p>
+
+<p><a href="#" onClick="getAccessToken()">getAccessToken Function</a></p>
+
+<div id="status"></div>
 
 <!--<div id="fb-roots"></div>-->
 

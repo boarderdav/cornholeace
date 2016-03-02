@@ -23,7 +23,7 @@ if ($userID) {
                     $_SESSION["new_user"] = "no";
                 } else {
                     // New user, Insert in database
-                    $sql = "INSERT INTO `users` (`name`, `email`) VALUES " . "( :name, :email)";
+                    $sql = "INSERT INTO users (`name`, `email`) VALUES " . "( :name, :email)";
                     $stmt = $DB->prepare($sql);
                     $stmt->bindValue(":name", $user_profile["name"]);
                     $stmt->bindValue(":email", $user_profile["email"]);

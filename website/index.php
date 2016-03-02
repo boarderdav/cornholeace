@@ -152,6 +152,13 @@
     </a>
 </div><!-- /.carousel -->
 
+
+
+<div id="status"></div>
+<div id="status1"></div>
+<div id="status2"></div>
+<div id="status3"></div>
+
 <a class="btn btn-block btn-social btn-facebook" href="<?php echo $loginURL; ?>">Login with Facebook</a>
 <br>
 <hr>
