@@ -1,21 +1,40 @@
+<h1>fb-callback page testing</h1>
 <?php
+session_start();
 
-require('src/Facebook/Facebook.php');
-$facebook = new Facebook(array(
-    'appId' => '686534241383052',
-    'secret' => '49f3d3991c74d0e1101321c7d069a683'
-));
-// get the current logged in userID
-$user = $facebook->getUser();
+$fb = new \Facebook\Facebook([
+    'app_id' => '686534241383052',
+    'app_secret' => '49f3d3991c74d0e1101321c7d069a683',
+    'default_graph_version' => 'v2.5',
+    'cookie' => true
+]);
 
-// SQL queries (check if user exists, insert, etc.)
+$helper = $fb->getRedirectLoginHelper();
+try {
+    $accessToken = $helper->getAccessToken();
+} catch(Facebook\Exceptions\FacebookResponseException $e) {
+    // When Graph returns an error
+    echo 'Graph returned an error: ' . $e->getMessage();
+    exit;
+} catch(Facebook\Exceptions\FacebookSDKException $e) {
+    // When validation fails or other local issues
+    echo 'Facebook SDK returned an error: ' . $e->getMessage();
+    exit;
+}
 
-?>
+if (isset($accessToken)) {
+    // Logged in!
+    $_SESSION['facebook_access_token'] = (string) $accessToken;
 
+    // Now you can redirect to another page and use the
+    // access token from $_SESSION['facebook_access_token']
+}
 
+$user = $response->getGraphUser();
 
-
-
+echo 'Name: ' . $user['name'];
+// OR
+// echo 'Name: ' . $user->getName();
 
 
 
