@@ -1,62 +1,157 @@
+<!--<h1>Index2.php using php to get access token</h1>-->
 <?php
 //require_once("config.php");  //include facebook sdk
-
+session_start();
 require_once("src/Facebook/autoload.php");
-require_once("src/Facebook/Facebook.php");  //include facebook sdk
-include_once("src/Facebook/base_facebook.php");
+require_once("src/Facebook/Facebook.php");
+//require 'src/Facebook/base_facebook.php';
+//require_once __DIR__ . './../vendor/facebook/php-sdk-v4/src/Facebook/autoload.php';
+//require_once("./../vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php");  //include facebook sdk
+//include_once("src/Facebook/base_facebook.php");
 ##############Facebook API Configuration##############
-$app_id = '686534241383052';
-$app_secret = '49f3d3991c74d0e1101321c7d069a683';
-$siteurl = 'http://new.cornholeace.com';
-$fbPermissions = 'email'; //required facebook permissions
+//$app_id = '686534241383052';
+//$app_secret = '49f3d3991c74d0e1101321c7d069a683';
+//$siteurl = 'http://new.cornholeace.com/index2.php';
+//$fbPermissions = 'email'; //required facebook permissions
 //$redirect_url='http://new.cornholeace.com/';
 
+
+$fb = new Facebook\Facebook([
+    'app_id' => '686534241383052',
+    'app_secret' => '49f3d3991c74d0e1101321c7d069a683',
+    'default_graph_version' => 'v2.5',
+]);
+
+$helper = $fb->getRedirectLoginHelper();
+$permissions = ['email', 'user_likes']; // optional
+$loginUrl = $helper->getLoginUrl('http://new.cornholeace.com/login-callback.php', $permissions);
+
+
+
+
+
+
 //Call Facebook API
-$facebook = new \Facebook\Facebook(array(
-    'app_id' => $app_id,
-    'app_secret' => $app_secret,
-    'cookie' => true
-));
+//$facebook = new \Facebook\Facebook(array(
+//    'app_id' => $app_id,
+//    'app_secret' => $app_secret,
+//    'default_graph_version' => 'v2.5',
+////    'cookie' => true
+//));
 
-$fbuser = $facebook->getUser();
+//$user = $facebook->getUser();
+//
+//if ($user) {
+//    try {
+//        $user_profile = $facebook-api('/me');
+//    } catch (FacebookApiException $e) {
+//        error_log($e);
+//        $user = null;
+//    }
+//}
+//
+//if ($user) {
+//    $logoutUrl = $facebook->getLogoutUrl();
+//} else {
+//    $loginUrl = $facebook->getLoginUrl();
+//}
 
-require_once("php/functions.php");
-//destroy facebook session if user clicks reset
-if(!$fbuser){
-    $fbuser = null;
-    $loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$siteurl, 'scope'=>$fbPermissions));
-    $output = '<a href="'.$loginUrl.'"><img src="img/logo.png"></a>';
-} else {
-    $user_profile = $facebook->api('/me?fields=id,first_name,last_name,email,gender,locale,picture');
-    $user = new Users();
-    $user_data = $user->checkUser('facebook',$user_profile['id'],$user_profile['first_name'],$user_profile['last_name'],$user_profile['email'],$user_profile['gender'],$user_profile['locale'],$user_profile['picture']);
-    if(!empty($user_data)){
-        $output = '<h1>Facebook Profile Details </h1>';
-        $output .= '<img src="'.$user_data['picture'].'">';
-        $output .= '<br/>Facebook ID : ' . $user_data['oauth_uid'];
-        $output .= '<br/>Name : ' . $user_data['fname'].' '.$user_data['lname'];
-        $output .= '<br/>Email : ' . $user_data['email'];
-        $output .= '<br/>Gender : ' . $user_data['gender'];
-        $output .= '<br/>Locale : ' . $user_data['locale'];
-        $output .= '<br/>You are logged in with : Facebook';
-        $output .= '<br/>Logout from <a href="logout.php?logout">Facebook</a>';
-    } else {
-        $output = '<h3 style="color:red">Some problem occurred, please try again. </h3>';
-    }
-}
+//$boarderdav = $facebook->api('/boarderdav');
+
 ?>
-<html>
+
+<!doctype html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Login with FAcebook using PHP by David Jenkins</title>
-    <style type="text/css">
-        h1{font-family:Arial, Helvetica, sans-serif;color:#999999;}
+    <title>php-sdk</title>
+    <style>
+        body {
+            font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+        }
+        h1 a {
+            text-decoration: none;
+            color: #3b5998;
+        }
+        h1 a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-<?php echo $output; ?>
+<h1>php-sdk</h1>
+<?php  echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>'; ?>
+
+<?php if ($user): ?>
+    <a href="<?php echo $logoutUrl; ?>">Logout</a>
+<?php else: ?>
+    <div>
+        Login using OAuth 2.0 handled by the PHP SDK:
+        <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
+    </div>
+<?php endif ?>
+
+<h3>PHP Session</h3>
+<pre><?php print_r($_SESSION); ?></pre>
+
+<?php if ($user): ?>
+    <h3>You</h3>
+    <img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
+
+    <h3>Your User Object (/me)</h3>
+    <pre><?php print_r($user_profile); ?></pre>
+<?php else: ?>
+    <strong><em>You are not Connected.</em></strong>
+<?php endif ?>
+
+<h3>Public profile of boarderdav</h3>
+<img src="https://graph.facebook.com/boarderdav/picture">
+<?php echo $boarderdav['name']; ?>
 </body>
 </html>
+
+
+
+
+<?php
+//require_once("php/functions.php");
+////destroy facebook session if user clicks reset
+//if(!$fbuser){
+//    $fbuser = null;
+//    $loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$siteurl, 'scope'=>$fbPermissions));
+//    $output = '<a href="'.$loginUrl.'"><img src="img/logo.png"></a>';
+//} else {
+//    $user_profile = $facebook->api('/me?fields=id,first_name,last_name,email,gender,locale,picture');
+//    $user = new Users();
+//    $user_data = $user->checkUser('facebook',$user_profile['id'],$user_profile['first_name'],$user_profile['last_name'],$user_profile['email'],$user_profile['gender'],$user_profile['locale'],$user_profile['picture']);
+//    if(!empty($user_data)){
+//        $output = '<h1>Facebook Profile Details </h1>';
+//        $output .= '<img src="'.$user_data['picture'].'">';
+//        $output .= '<br/>Facebook ID : ' . $user_data['oauth_uid'];
+//        $output .= '<br/>Name : ' . $user_data['fname'].' '.$user_data['lname'];
+//        $output .= '<br/>Email : ' . $user_data['email'];
+//        $output .= '<br/>Gender : ' . $user_data['gender'];
+//        $output .= '<br/>Locale : ' . $user_data['locale'];
+//        $output .= '<br/>You are logged in with : Facebook';
+//        $output .= '<br/>Logout from <a href="logout.php?logout">Facebook</a>';
+//    } else {
+//        $output = '<h3 style="color:red">Some problem occurred, please try again. </h3>';
+//    }
+//}
+?>
+
+
+<!--<html>-->
+<!--<head>-->
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+<!--    <title>Login with FAcebook using PHP by David Jenkins</title>-->
+<!--    <style type="text/css">-->
+<!--        h1{font-family:Arial, Helvetica, sans-serif;color:#999999;}-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<?php //echo $output; ?>
+<!--</body>-->
+<!--</html>-->
 
 
 <?php

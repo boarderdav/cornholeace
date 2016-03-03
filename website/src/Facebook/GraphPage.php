@@ -21,59 +21,44 @@
  * DEALINGS IN THE SOFTWARE.
  *
  */
-namespace Facebook\HttpClients;
+namespace Facebook;
 
 /**
- * Class FacebookStream
- * Abstraction for the procedural stream elements so that the functions can be
- * mocked and the implementation can be tested.
+ * Class GraphPage
  * @package Facebook
+ * @author Artur Luiz <artur@arturluiz.com.br>
  */
-class FacebookStream
+class GraphPage extends GraphObject
 {
 
   /**
-   * @var resource Context stream resource instance
-   */
-  protected $stream;
-
-  /**
-   * @var array Response headers from the stream wrapper
-   */
-  protected $responseHeaders;
-
-  /**
-   * Make a new context stream reference instance
+   * Returns the ID for the user's page as a string if present.
    *
-   * @param array $options
+   * @return string|null
    */
-  public function streamContextCreate(array $options)
+  public function getId()
   {
-    $this->stream = stream_context_create($options);
+    return $this->getProperty('id');
   }
 
   /**
-   * The response headers from the stream wrapper
+   * Returns the Category for the user's page as a string if present.
    *
-   * @return array|null
+   * @return string|null
    */
-  public function getResponseHeaders()
+  public function getCategory()
   {
-    return $this->responseHeaders;
+    return $this->getProperty('category');
   }
 
   /**
-   * Send a stream wrapped request
+   * Returns the Name of the user's page as a string if present.
    *
-   * @param string $url
-   *
-   * @return mixed
+   * @return string|null
    */
-  public function fileGetContents($url)
+  public function getName()
   {
-    $rawResponse = file_get_contents($url, false, $this->stream);
-    $this->responseHeaders = $http_response_header;
-    return $rawResponse;
+    return $this->getProperty('name');
   }
 
 }

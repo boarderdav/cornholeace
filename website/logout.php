@@ -1,9 +1,8 @@
-<?php
-/**
- * Created by IntelliJ IDEA.
- * User: davidjenkins
- * Date: 2/29/16
- * Time: 8:39 PM
- */
+<?php 
+session_start();
+session_unset();
+    $_SESSION['FBID'] = NULL;
+    $_SESSION['FULLNAME'] = NULL;
+    $_SESSION['EMAIL'] =  NULL;
+header("Location: index.php");        // you can enter home page here ( Eg : header("Location: " ."http://www.krizna.com"); 
 ?>
-<h1>Logout page</h1>
