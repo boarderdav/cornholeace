@@ -198,7 +198,7 @@ function sendToPHP() {
                 type: "POST",
                 dataType: 'json',
                 data: response,
-                url: 'contact.php',
+                url: 'fb-callback.php',
                 success: function(msg) {
                     if(msg.error== 1)
                     {

@@ -1,7 +1,8 @@
+<h1>fb-callback page testing</h1>
 <?php
 session_start();
 
-$fb = new Facebook\Facebook([
+$fb = new \Facebook\Facebook([
     'app_id' => '686534241383052',
     'app_secret' => '49f3d3991c74d0e1101321c7d069a683',
     'default_graph_version' => 'v2.5',
@@ -29,6 +30,11 @@ if (isset($accessToken)) {
     // access token from $_SESSION['facebook_access_token']
 }
 
+$user = $response->getGraphUser();
+
+echo 'Name: ' . $user['name'];
+// OR
+// echo 'Name: ' . $user->getName();
 
 
 
