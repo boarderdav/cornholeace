@@ -161,7 +161,7 @@
 
 
 
-//added fb-callback.php code here
+<!--added fb-callback.php code here-->
 <?php
 session_start();
 
