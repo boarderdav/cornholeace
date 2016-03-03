@@ -21,59 +21,64 @@
  * DEALINGS IN THE SOFTWARE.
  *
  */
-namespace Facebook\HttpClients;
+namespace Facebook;
 
 /**
- * Class FacebookStream
- * Abstraction for the procedural stream elements so that the functions can be
- * mocked and the implementation can be tested.
+ * Class GraphUserPage
  * @package Facebook
+ * @author Artur Luiz <artur@arturluiz.com.br>
  */
-class FacebookStream
+class GraphUserPage extends GraphObject
 {
 
   /**
-   * @var resource Context stream resource instance
-   */
-  protected $stream;
-
-  /**
-   * @var array Response headers from the stream wrapper
-   */
-  protected $responseHeaders;
-
-  /**
-   * Make a new context stream reference instance
+   * Returns the ID for the user's page as a string if present.
    *
-   * @param array $options
+   * @return string|null
    */
-  public function streamContextCreate(array $options)
+  public function getId()
   {
-    $this->stream = stream_context_create($options);
+    return $this->getProperty('id');
   }
 
   /**
-   * The response headers from the stream wrapper
+   * Returns the Category for the user's page as a string if present.
+   *
+   * @return string|null
+   */
+  public function getCategory()
+  {
+    return $this->getProperty('category');
+  }
+
+  /**
+   * Returns the Name of the user's page as a string if present.
+   *
+   * @return string|null
+   */
+  public function getName()
+  {
+    return $this->getProperty('name');
+  }
+
+  /**
+   * Returns the Access Token used to access the user's page as a string if present.
+   *
+   * @return string|null
+   */
+  public function getAccessToken()
+  {
+    return $this->getProperty('access_token');
+  }
+  
+  /**
+   * Returns the Permissions for the user's page as an array if present.
    *
    * @return array|null
    */
-  public function getResponseHeaders()
+  public function getPermissions()
   {
-    return $this->responseHeaders;
-  }
-
-  /**
-   * Send a stream wrapped request
-   *
-   * @param string $url
-   *
-   * @return mixed
-   */
-  public function fileGetContents($url)
-  {
-    $rawResponse = file_get_contents($url, false, $this->stream);
-    $this->responseHeaders = $http_response_header;
-    return $rawResponse;
+    return $this->getProperty('perms');
   }
 
 }
