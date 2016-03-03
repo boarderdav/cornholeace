@@ -17,12 +17,20 @@ echo "MySQL cornhole Database $servername Connected successfully";
 
 $firstname = mysqli_real_escape_string($conn, $_POST['response.name']);
 $id = mysqli_real_escape_string($conn, $_POST['response.id']);
-//$password = mysqli_real_escape_string($conn, $_POST['response.name']);
+$password = mysqli_real_escape_string($conn, $_POST['response.name']);
 
-$sql = "INSERT INTO userTable (firstname, id)
-VALUES ('$firstname','$id')";
+$sql = "INSERT INTO userTable (firstname, id, password)
+VALUES ('$firstname','$id', '$password')";
 
 if (!mysqli_query($conn,$sql)) {
     die('Error: ' . mysqli_error($conn));
 }
 
+//echo $firstname;
+//echo $id;
+//echo $password;
+//
+//$fbname = $_POST['fbname'];
+//$fbid = $_POST['fbid'];
+//echo "Facebook name is " + .$fbname;
+?>

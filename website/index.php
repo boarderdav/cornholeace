@@ -1,84 +1,9 @@
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
-<?php include('config.php');?>
+<?php //include('config.php');?>
 
 <?php //include('fbdbconfig.php');?>
 <?php //include('facebook_login.php');?>
-
-<?php
-
-
-
-//session_start();
-
-//include "common.php";
-//include_once "fbconnect.php";
-
-//if (isset($_SESSION['user']))
-//echo '<a href="logout.php" target="_blank" rel="nofollow">Logout</a>';
-//else
-//echo '<a href="$loginUrl" target="_blank" rel="nofollow">Login</a>';
-//if(!isset($_SESSION['user']))
-//{
-//echo '<a href="$loginUrl" target="_blank" rel="nofollow"><img src="images/f-connect.png" alt="Connect to your Facebook Account"></a>';
-//}
-//else
-//{
-//$email = "'" . $_SESSION['user'] . "'";
-//$query = sprintf("SELECT * FROM newmember WHERE email = %s",$email);
-//$res = mysql_query($query) or die('Query failed: ' . mysql_error() . "<br>\n$sql");
-//$row = mysql_fetch_array($res);
-//echo $row['name'];
-//echo "<b>   GENDER : </b>" . $row['gender'];
-//echo "<b>   EMAIL : </b>" . $row['email'];
-//}
-//
-//
-//?>
-
-<?php
-
-//require './src/Facebook/facebook.php';
-
-// Create our Application instance (replace this with your appId and secret).
-//$facebook = new Facebook(array(
-//    'appId'  => '686534241383052',
-//    'secret' => '49f3d3991c74d0e1101321c7d069a683',
-//    'cookie' => true));
-
-
-// Get User ID
-//$user = $facebook->getUser();
-//
-//
-//if ($user) {
-//try {
-//// Proceed knowing you have a logged in user who's authenticated.
-//$fbuid = $facebook->getUser();
-//$user_profile = $facebook->api('/me');
-//
-//header('Location: user_page.php');
-//
-//} catch (FacebookApiException $e) {
-//error_log($e);
-//$user = null;
-//}
-//}
-//
-//
-//// Login or logout url will be needed depending on current user state.
-//if ($user) {
-//$logoutUrl = $facebook->getLogoutUrl();
-//
-//} else {
-//
-//$loginUrl = $facebook->getLoginUrl(Array('scope'=>    'user_interests,user_activities,user_education_history,user_likes,user_about_me,   user_birthday, user_groups, user_hometown, user_work_history, email',
-//'redirect_uri' => 'http://www.mywebpage.com/test/user_page.php')
-//);
-//}
-//
-//?>
-
 
 <!-- Carousel ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -97,7 +22,7 @@
                 <div class="carousel-caption">
                     <h1>CornholeAce.com</h1>
                     <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    <p><a class="btn btn-lg btn-primary" onclick="sendToPHP()" href="#" role="button">Sign up today</a></p>
                 </div>
             </div>
         </div>
@@ -107,7 +32,7 @@
                 <div class="carousel-caption">
                     <h1>Dual-Sided Bags</h1>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    <p><a class="btn btn-lg btn-primary" onclick="sendToPHP()" href="#" role="button">Learn more</a></p>
                 </div>
             </div>
         </div>
@@ -117,7 +42,7 @@
                 <div class="carousel-caption">
                     <h1>Dual-Sided Bags</h1>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    <p><a class="btn btn-lg btn-primary" onclick="sendToPHP()" href="#" role="button">Learn more</a></p>
                 </div>
             </div>
         </div>
@@ -127,7 +52,7 @@
                 <div class="carousel-caption">
                     <h1>Dual-Sided Bags</h1>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    <p><a class="btn btn-lg btn-primary" onclick="sendToPHP()" href="#" role="button">Learn more</a></p>
                 </div>
             </div>
         </div>
@@ -154,15 +79,17 @@
 
 
 
+<?php $firstname = '<div id="output"></div>';
+echo $firstname;?>
 <div id="status"></div>
 <div id="status1"></div>
 <div id="status2"></div>
 <div id="status3"></div>
 
-<a class="btn btn-block btn-social btn-facebook" href="<?php echo $loginURL; ?>">Login with Facebook</a>
-<br>
-<hr>
-<a class="btn btn-block btn-social btn-facebook" href="<?php echo $logoutURL; ?>">Logout</a>
+<!--<a class="btn btn-block btn-social btn-facebook" href="--><?php //echo $loginURL; ?><!--">Login with Facebook</a>-->
+<!--<br>-->
+<!--<hr>-->
+<!--<a class="btn btn-block btn-social btn-facebook" href="--><?php //echo $logoutURL; ?><!--">Logout</a>-->
 
 
 

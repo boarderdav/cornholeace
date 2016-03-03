@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -175,14 +174,18 @@ function sendToPHP() {
 
         $.ajax({
             type: "POST",
-            url: './../home.php',
+            url: 'home.php',
             data: response,
-            success: function (msg) {
-            }
-        });
+            success: function (data, msg) {
+                $( '#output').html('fbname variable is ' + response.name);
+              },
+                error: function(data, e1, e2) {
+                $( '#output').html(e2);
+                }
+            });
         console.log('This is working Mr. ' + response.name + '!');
-    });
-    } else {
+        });
+        } else {
     console.log('User cancelled login...Stuff did not work');
     }
     });
