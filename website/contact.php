@@ -1,6 +1,6 @@
 <?php include('php/head.php')?>
 <?php include('php/navigation.php')?>
-<?php include('dbconfig.php');?>
+<?php include('dbconfig1.php');?>
 <?php //include('php/newPost.php');?>
 
     <div class="container">
@@ -15,7 +15,7 @@
 
         <hr>
 
-        <form class="form-horizontal" action="dbconfig.php"  method="post">
+        <form class="form-horizontal" action="dbconfig1.php" method="post">
             <fieldset>
 
                 <!-- Form Name -->

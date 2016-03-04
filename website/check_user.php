@@ -2,7 +2,7 @@
 
 if(isset($_POST['id']) && !empty($_POST['id']))
 {
-    include_once 'dbconfig.php';
+    include_once 'dbconfig1.php';
     extract($_POST); // extract post variables
 
     //check if facebook ID already exits
