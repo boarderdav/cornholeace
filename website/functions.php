@@ -1,5 +1,5 @@
 <?php
-require 'dbconfig.php';
+require 'dbconfig1.php';
 function checkuser($fuid,$ffname,$femail){
     	$check = mysql_query("select * from Users where Fuid='$fuid'");
 	$check = mysql_num_rows($check);
