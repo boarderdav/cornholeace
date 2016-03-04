@@ -7,7 +7,7 @@ require_once __DIR__ . '/src/Facebook/Facebook.php';
 $app_id = '686534241383052';
 $app_secret = '49f3d3991c74d0e1101321c7d069a683';
 $siteurl = 'http://new.cornholeace.com/';
-$redirecturl = 'http://new.cornholeace.com/index.php/';
+$redirecturl = 'http://new.cornholeace.com/indexjs.php/';
 $fbPermissions = 'email'; //required facebook permissions
 //$redirect_url='http://new.cornholeace.com/';
 

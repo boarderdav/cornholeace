@@ -45,7 +45,7 @@
            $user = null;
        }
    }else{
-       header('Location: index.php');
+       header('Location: indexjs.php');
 
    }
           $query = mysqli_query("SELECT * FROM fbConnect WHERE oauth_provider = 'facebook' AND     oauth_uid = ". $user_profile['id']);

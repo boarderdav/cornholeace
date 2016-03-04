@@ -151,7 +151,7 @@ $db->close();
     // Now you can redirect to another pate an use the access token from $_SESSION['localhost_app_token']
 } else {
     // replace yoru website URL same as added in teh developer.facebook.com/apps e.g. if you used http instead of https and you used non-www version or www version of your website then you must add the same here
-    $loginUrl = $helper->getLoginUrl('http://new.cornholeace.com/index9.php', $permissions); // worked with index.php
+    $loginUrl = $helper->getLoginUrl('http://new.cornholeace.com/index9.php', $permissions); // worked with indexjs.php
     echo '<br><a href="' . $loginUrl . '">Log in with Facebook!</a>';
 }
 

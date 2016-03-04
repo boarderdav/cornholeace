@@ -47,7 +47,7 @@ if ($userID) {
     }
 } else {
 // if facebook user not authentic
-    header("location:index.php");
+    header("location:indexjs.php");
 }
 
 ?>
