@@ -20,8 +20,8 @@ tasks.xml
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
-*dbconfig.php
-./website/dbconfig.php
+###*dbconfig.php
+###./website/dbconfig.php
 
 ./vendor/twitter/bootstrap/docs/components.html
 
