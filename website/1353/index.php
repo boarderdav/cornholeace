@@ -9,6 +9,7 @@ session_start();
 </head>
 <body>
     <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
+        <?php include_once('./../1353/functions.php'); ?>
     <div class="container">
         <div class="hero-unit">
             <h1>Hello <?php echo $_SESSION['USERNAME']; ?></h1>
@@ -24,6 +25,10 @@ session_start();
                 <li><?php echo $_SESSION['FULLNAME']; ?></li>
                 <li class="nav-header">Facebook Email</li>
                 <li><?php echo $_SESSION['EMAIL']; ?></li>
+                <li class="nav-header">Facebook Email</li>
+                <li><?php echo $_SESSION['EMAIL']; ?></li>
+                <li class="nav-header">Facebook Age</li>
+                <li><?php echo $_SESSION['FNAME']; ?></li>
                 <div>
                     <a href="logout.php">Logout</a>
                 </div>

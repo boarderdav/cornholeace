@@ -1,6 +1,6 @@
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
-<?php include('config.php');?>
+<?php //include('config.php');?>
 
 <?php //include('fbdbconfig.php');?>
 <?php //include('facebook_login.php');?>
@@ -34,7 +34,8 @@
 //}
 //
 //
-//?>
+//
+?>
 
 <?php
 
@@ -154,58 +155,10 @@
 
 
 
-<div id="status"></div>
+<!--<div id="status"></div>-->
 <div id="status1"></div>
 <div id="status2"></div>
 <div id="status3"></div>
-
-
-
-//added fb-callback.php code here
-<?php
-session_start();
-require_once __DIR__ . '/src/Facebook/autoload.php';
-$fb = new \Facebook\Facebook([
-    'app_id' => '686534241383052',
-    'app_secret' => '49f3d3991c74d0e1101321c7d069a683',
-    'default_graph_version' => 'v2.5',
-    'cookie' => true
-]);
-
-$helper = $fb->getRedirectLoginHelper();
-try {
-    $accessToken = $helper->getAccessToken();
-} catch(Facebook\Exceptions\FacebookResponseException $e) {
-// When Graph returns an error
-    echo 'Graph returned an error: ' . $e->getMessage();
-    exit;
-} catch(Facebook\Exceptions\FacebookSDKException $e) {
-// When validation fails or other local issues
-    echo 'Facebook SDK returned an error: ' . $e->getMessage();
-    exit;
-}
-
-if (isset($accessToken)) {
-// Logged in!
-    $_SESSION['facebook_access_token'] = (string) $accessToken;
-
-// Now you can redirect to another page and use the
-// access token from $_SESSION['facebook_access_token']
-}
-
-$user = $response->getGraphUser();
-
-echo 'Name: ' . $user['name'];
-// OR
-// echo 'Name: ' . $user->getName();
-
-?>
-
-<a class="btn btn-block btn-social btn-facebook" href="<?php echo $loginURL; ?>">Login with Facebook</a>
-<br>
-<hr>
-<a class="btn btn-block btn-social btn-facebook" href="<?php echo $logoutURL; ?>">Logout</a>
-
 
 
 <!-- Marketing messaging and featurettes

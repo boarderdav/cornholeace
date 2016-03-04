@@ -7,30 +7,38 @@ $dbname = "cornholeAWStest";
 
 //Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
+//$database = mysqli_select_db() or die( "unable to select database");
 
 //Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-echo "DBCONFIG MySQL cornhole Database $servername Connected successfully";
+echo "From DBCONFIG MySQL cornhole Database $servername Connected successfully";
 
 
-mysql_select_db("cornholeAWStest", $conn);
-
-$sql="INSERT INTO userTable (firstname, lastname, email, password)
-VALUES
-('$_POST[firstname]','$_POST[lastname]','$_POST[email]','$_POST[password]')";
 
 
-//tells us if record was created successfully.
-if ($conn->query($sql) === TRUE) {
-       echo "Table userTable created successfully";
-} else {
-       echo "Error creating table: " . $conn->error;
-}
 
 
+
+
+
+
+
+//mysql_select_db("cornholeAWStest", $conn);
+//
+//$sql="INSERT INTO userTable (firstname, lastname, email, password)
+//VALUES
+//('$_POST[firstname]','$_POST[lastname]','$_POST[email]','$_POST[password]')";
+//
+//
+////tells us if record was created successfully.
+//if ($conn->query($sql) === TRUE) {
+//       echo "Table userTable created successfully";
+//} else {
+//       echo "Error creating table: " . $conn->error;
+//}
 
 
 //mysql_select_db("cornholeAWStest", $conn) or die ("could not open database");
@@ -91,5 +99,5 @@ if ($conn->query($sql) === TRUE) {
 //}
 
 
-$conn->close();
+
 ?>
