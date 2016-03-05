@@ -1,4 +1,5 @@
 <?php include('php/head.php');?>
+<?php include('php/headjs.php');?>
 <?php include('php/navigation.php');?>
 <?php //include('config.php');?>
 

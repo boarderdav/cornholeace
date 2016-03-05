@@ -1,6 +1,43 @@
-<?php include('php/head.php')?>
-<?php include('php/navigation.php')?>
-<?php include('dbconfig1.php');?>
+<?php //include('php/head.php')?>
+<?php //include('php/navigation.php')?>
+<?php //include('dbconfig1.php');?>
+
+<?php
+session_start();
+
+?>
+<!doctype html>
+<!--<html xmlns:fb="http://www.facebook.com/2008/fbml">-->
+<html>
+<head>
+    <title>Shop 1 Test Page</title>
+    <link href="http://www.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+</head>
+<body>
+<?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
+    <div class="container">
+        <div class="hero-unit">
+            <h1>Hello <?php echo $_SESSION['FNAME'];?>, welcome to Shop 1</h1>
+        </div>
+    </div>
+    <div>
+        <a href="logout.php"><button class="btn btn-info">Logout</button></a>
+    </div>
+<?php else: ?>
+    <div class="container">
+        <div class="hero-unit">
+            <h1>Sorry...the session didn't load :(</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Login with Facebook</h1>
+        <div><a href="fbconfig.php"><button class="btn btn-success">Login with Facebook</button></a></div>
+    </div>
+<?php endif ?>
+
+
+
 <div class="container">
 
     <div class="row">
@@ -99,5 +136,6 @@
     </div>
 
 </div>
+
 
 <?php include('php/footernew.php');?>

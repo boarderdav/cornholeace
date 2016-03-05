@@ -1,6 +1,12 @@
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
-<?php include('dbconfig1.php');?>
+<?php
+session_start();
+?>
+
+<?php //include('php/head.php');?>
+<?php //include('php/navigation.php');?>
+<?php //include('dbconfig1.php');?>
 
 <br><br>
 <div class="container">

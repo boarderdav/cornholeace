@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!-- Static navbar -->
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
@@ -31,8 +35,29 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="/shop2.php">Shop</a></li>
-                <li><a href="./">Sign-Up <span class="sr-only">(current)</span></a></li>
-                <li><p class="navbar-text">Already have an account?</p></li>
+            <?php if ($_SESSION['FBID']): ?>
+            <?php else: ?>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Sign-Up</b> <span class="caret"></span></a>
+                    <ul id="login-dp" class="dropdown-menu">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    Login via
+                                    <div class="social-buttons">
+                                        <!--                                        <a href="http://new.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
+                                        <a href="./../fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                        <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            <?php endif ?>
+<!--                <li><p class="navbar-text">Already have an account?</p></li>-->
+            <?php if ($_SESSION['FBID']): ?>
+            <?php else: ?>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
                     <ul id="login-dp" class="dropdown-menu">
@@ -41,11 +66,12 @@
                                 <div class="col-md-12">
                                     Login via
                                     <div class="social-buttons">
-                                        <a href="http://new.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+<!--                                        <a href="http://new.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
+                                        <a href="./../fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
                                         <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                                     </div>
                                     or
-                                    <form class="form" href="#" action="dbconfig.php" method="post" role="form" accept-charset="UTF-8" id="login-nav"> <!--action="login"-->
+                                    <form class="form" href="#" action="./../dbconfig.php" method="post" role="form" accept-charset="UTF-8" id="login-nav"> <!--action="login"-->
                                         <div class="form-group">
                                             <label class="sr-only" for="exampleInputEmail2">Email address</label>
                                             <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
@@ -72,7 +98,25 @@
                         </li>
                     </ul>
                 </li>
-                <li style="padding-top:1em; padding-bottom:1em" class="fb-login-button" data-default-audience="friends" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></li>
+            <?php endif ?>
+            <?php if ($_SESSION['FBID']): ?>
+                <li class="dropdown">
+                    <a href="./../fbconfig.php" style="padding-top:0.5em;padding-bottom:0.5em;" class="dropdown-toggle" data-toggle="dropdown"><img style="width:36px; height:36px;" src="https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture"><span class="caret"></span></a>
+                    <ul id="login-dp" class="dropdown-menu">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a href="./../logout.php" class="btn btn-default">Logout</a>
+                                    <a href="./../profile.php" class="btn btn-primary">Profile</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+<!--                <li style="padding-top:0.5em; padding-bottom:0.5em;" ><img style="width:30px; height:30px;" src="https://graph.facebook.com/--><?php //echo $_SESSION['FBID']; ?><!--/picture"></li>-->
+            <?php else: ?>
+<!--                <li><a href="./../fbconfig.php">Login</a></li>-->
+            <?php endif ?>
+<!--                <li style="padding-top:1em; padding-bottom:1em" class="fb-login-button" data-default-audience="friends" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></li>-->
             </ul>
         </div><!--/.nav-collapse -->
     </div>

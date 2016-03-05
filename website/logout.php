@@ -4,5 +4,5 @@ session_unset();
     $_SESSION['FBID'] = NULL;
     $_SESSION['FULLNAME'] = NULL;
     $_SESSION['EMAIL'] =  NULL;
-header("Location: indexjs.php");        // you can enter home page here ( Eg : header("Location: " ."http://www.krizna.com");
+header("Location: http://new.cornholeace.com/index.php");        // link to page you want to load ( "Location: " ."http://new.cornholeace.com");
 ?>
