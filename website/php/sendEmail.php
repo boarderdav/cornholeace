@@ -50,7 +50,7 @@ if($_POST) {
 
 		if ($mail) { echo "Message Sent!";
 		"<br>";
-		"<a href=http://highgroundengineering.com/contact.php>Highground Engineering Site</a>";
+		"<a href=http://new.cornholeace.com/contact.php>CornholeAce</a>";
  }
       else { echo "Something went wrong. Please try again."; }
 		

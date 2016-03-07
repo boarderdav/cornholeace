@@ -10,6 +10,7 @@
         }
     ],
     "require": {
-        "facebook/php-sdk-v4" : "~5.0"
+        "facebook/php-sdk-v4" : "~5.0",
+        "abraham/twitteroauth": "^0.6.2"
     }
 }

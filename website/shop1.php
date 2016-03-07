@@ -1,19 +1,8 @@
-<?php //include('php/head.php')?>
-<?php //include('php/navigation.php')?>
-<?php //include('dbconfig1.php');?>
+<?php include('php/head.php')?>
+<?php include('php/navigation.php')?>
+<?php //session_start();?>
 
-<?php
-session_start();
 
-?>
-<!doctype html>
-<!--<html xmlns:fb="http://www.facebook.com/2008/fbml">-->
-<html>
-<head>
-    <title>Shop 1 Test Page</title>
-    <link href="http://www.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-</head>
-<body>
 <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
     <div class="container">
         <div class="hero-unit">

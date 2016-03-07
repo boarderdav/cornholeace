@@ -1,50 +1,5 @@
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '686534241383052',
-            xfbml      : true,
-            version    : 'v2.5'
-        });
-    };
+<?php session_start();?>
 
-
-
-
-
-
-
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-
-
-
-
-    FB.getLoginStatus(function(response) {
-        if (response.status === 'connected') {
-            // the user is logged in and has authenticated your
-            // app, and response.authResponse supplies
-            // the user's ID, a valid access token, a signed
-            // request, and the time the access token
-            // and signed request each expire
-            var uid = response.authResponse.userID;
-            var accessToken = response.authResponse.accessToken;
-        } else if (response.status === 'not_authorized') {
-            // the user is logged in to Facebook,
-            // but has not authenticated your app
-        } else {
-            // the user isn't logged in to Facebook.
-        }
-    });
-
-
-
-</script>
 
 <html>
 <head>
@@ -54,45 +9,20 @@
 
 <body>
 
+<?php if ($_SESSION['data']): ?>
+    <h1> Twitter session connected</h1>
+    <h1><?php echo $_SESSION['userName'];?></h1>
+    <img src='<?php echo $_SESSION['PROFILEIMAGE'];?>' width="200" height="200"/>
+    <h4>Followers Count: <?php echo $_SESSION['FOLLOWERSCOUNT'];?></h4>
+    <h1>Location: <?php echo $_SESSION['location'];?></h1>
+    <h1><a href='?logout=true'><button>Logout Button</button></a></h1>
 
-<script>
-    // Only works after `FB.init` is called
-    function myFacebookLogin() {
-        FB.login(function(){}, {scope: 'publish_actions'});
-    }
-</script>
-<button onclick="myFacebookLogin()">Login with Facebook</button>
+<?php else: ?>
+    <h1> Twitter session not connected</h1>
+    <h1><a href='<?php echo $_SESSION['LOGINURL'];?>'><button>Login with twitter </button></a></h1>
+<?php endif ?>
 
 
-<?php
-//
-//
-//$fb = new Facebook\Facebook([
-//    'app_id' => '686534241383052',
-//    'app_secret' => '49f3d3991c74d0e1101321c7d069a683',
-//    'default_graph_version' => 'v2.5',
-//]);
-//
-//try {
-//    // Returns a `Facebook\FacebookResponse` object
-//    $response = $fb->get('/me?fields=id,name', '{access-token}');
-//} catch(Facebook\Exceptions\FacebookResponseException $e) {
-//    echo 'Graph returned an error: ' . $e->getMessage();
-//    exit;
-//} catch(Facebook\Exceptions\FacebookSDKException $e) {
-//    echo 'Facebook SDK returned an error: ' . $e->getMessage();
-//    exit;
-//}
-//
-//$user = $response->getGraphUser();
-//
-//echo 'Name: ' . $user['name'];
-//// OR
-// echo 'Name: ' . $user->getName();
-//
-//
-//
-//?>
 
 </body>
 </html>

@@ -1,10 +1,8 @@
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
-<?php
-session_start();
-?>
+<?php //session_start();?>
 <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
-    <?php include_once('functions.php'); ?>
+<!--    --><?php //include_once('functions.php'); ?>
     <div class="container">
         <div class="jumbotron text-center">
             <h2>Hello <?php echo $_SESSION['FNAME']; ?></h2>
@@ -166,3 +164,6 @@ session_start();
     </div>
 
 <?php endif ?>
+
+
+<?php include('php/footernew.php');?>

@@ -34,7 +34,7 @@ require 'dbconfig.php';
 //$sql = "INSERT INTO Users(Fuid,Ffname,Femail,Fnamef,Fnamel,Fcover,Fpicture)
 //VALUES ('$fbid','$fbfullname','$femail','$fbfname','$fblname','$fbcover','$fbpicture')";
 
-
+//Connect to Facebook User Table
 //mysqli_select_db("cornholeAWStest", $conn) or die ("could not open database");
 mysqli_select_db($conn, $dbname) or die ("could not open database connection");
 $fbid = $_SESSION['FBID'];
@@ -84,21 +84,3 @@ else
 
 $conn->close();
 ?>
-
-<!--function checkuser($fuid,$ffname,$femail){-->
-<!--$fbid,$fbfullname,$femail-->
-
-<!--<html>-->
-<!--<head>-->
-<!--	<title>Functions.php</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--	<h1> function.php testing </h1>-->
-<!--	<h1>--><?php //echo $fbfullname ?><!--</h1>-->
-<!--	<h1>--><?php //echo $_SESSION['FBID']; ?><!--</h1>-->
-<!---->
-<!--	--><?php //$david = $_SESSION['EMAIL'];
-//		echo $david; ?>
-<!---->
-<!--</body>-->
-<!--</html>-->

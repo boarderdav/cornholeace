@@ -1,7 +1,9 @@
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
-<?php include('dbconfig1.php');?>
+<?php //include('dbconfig1.php');?>
+<?php //session_start();?>
 
+<h1>Welcome <?php echo $_SESSION['FNAME']; ?> to CornholeAce.com</h1>
 <div class="container">
     <div class="row">
         <div class="col-xs-3">

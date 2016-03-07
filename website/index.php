@@ -1,8 +1,6 @@
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
-<?php
-session_start(); 
-?>
+<?php //session_start();?>
     <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
     <?php include_once('functions.php'); ?>
 

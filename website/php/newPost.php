@@ -14,7 +14,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-mysql_select_db("cornholeAWStest", $conn);
+mysqli_select_db($conn, "cornholeAWStest");
 
 $sql="INSERT INTO userTable (firstname, lastname, email, password)
 VALUES
