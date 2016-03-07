@@ -34,7 +34,7 @@ session_start();
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="/shop2.php">Shop</a></li>
+                <li><a href="/shop2.php">Shop</a></li>
             <?php if ($_SESSION['FBID']): ?>
             <?php else: ?>
                 <li class="dropdown">
@@ -106,8 +106,10 @@ session_start();
                         <li>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <a href="./../logout.php" class="btn btn-default">Logout</a>
-                                    <a href="./../profile.php" class="btn btn-primary">Profile</a>
+                                    <div class="social-buttons">
+                                        <a href="./../logout.php" class="btn btn-default">Logout</a>
+                                        <a href="./../profile.php" class="btn btn-primary">Profile</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -121,3 +123,14 @@ session_start();
         </div><!--/.nav-collapse -->
     </div>
 </nav>
+
+We market heavily on Facebook, Amazon, Twitter, Instagram, and Pinterest.  The majority of our marketing is spent on Facebook and Amazon.
+
+For Facebook, we promote our product through both video and photo advertising campaigns.  Our marketing cost per acquisition ranges from $5-8.  Our marketing efforts have been specifically tailored to lower our  overall cost per acquisition using some of the following methods.
+1) Customized geographic regions in the US that consistently offer cheaper shipping rates.
+2) Targeting customers with high online spending habits, play similar outdoor games as BucketBall, have children between ages of 18-26, and women between ages 45-60.
+3) show one other item...
+
+For Amazon, we have two methods of fulfillment to our customers.  1.) Amazon purchases from us directly through purchase orders to their designated shipping centers.  Amazon pays a wholesale price of $22/unit, pays for all the shipping to their fulfillment centers, and is responsible for advertising, marketing, and selling the BucketBall product.  The product is listed as an Amazon Prime eligible and Amazon does all order fulfillment.  2) Tailgating Sports lists the product on Amazon and is responsible for order fulfillment.  In this case, we take care of advertising and marketing through both Facebook and Amazon to drive conversions to the Amazon store.  In this case, our margins are significantly higher because we sell at full retail cost ($39.99 + S&H) and pay only $7 to Amazon for listing the product.
+
+We've seen a linear correlation in advertising dollars compared to sales through our Facebook campaign strategy.  We've also become more efficient with marketing dollars spent and are trending to spend less and less per acquisition.  Since we primarily focus on social media advertising, the availability to increase advertising cost to active campaigns is a simple.  If we were to increase advertising costs to $2,000/day, we'd see a linear correlation and have the ability to sell product significantly faster.  Our only hurdle is selling out quicker than we can receive new product form our overseas manufacturer.

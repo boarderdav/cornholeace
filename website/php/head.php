@@ -11,7 +11,7 @@
 
 <title>CornholeAce Ecommerce Website</title>
 
-<!-- Bootstrap core CSS -->
+<!-- CornholeAce core CSS -->
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 <!--<link href="http://www.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet"> <!--added bootstrap secondary css.  might remove later-->
 <link href="../css/cornholeace.css" rel="stylesheet">
@@ -19,6 +19,7 @@
 
 
 <!--FontAwesome CSS link    -->
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

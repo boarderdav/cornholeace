@@ -117,12 +117,6 @@ session_start();
 
 
 
-    <!--<div id="status"></div>-->
-    <div id="status1"></div>
-    <div id="status2"></div>
-    <div id="status3"></div>
-
-
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -133,21 +127,21 @@ session_start();
         <div class="row">
             <div class="col-md-4 text-center">
                 <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h1 style="font-family:Vipnagorgialla" class="text-danger" >Cornhole Ace</h1><h4 style="color:white">_</h4>
-                <h3 style="font-family:Lato-light">CornholeAce provides the best quality cornhole bags and boards the industry has ever seen! </h3>
-                <p><a class="btn btn-danger" href="#" role="button">View details &raquo;</a></p>
+                <h1 class="text-danger code">Cornhole Ace</h1>
+                <p>CornholeAce provides the best quality cornhole bags and boards the industry has ever seen! </p>
+                <p><a class="btn btn-danger" href="shop2.php" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-md-4 text-center">
                 <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h1 class="blueColor" style="font-family:Vipnagorgialla">Cornhole Bags</h1>
-                <h3 style="font-family:Lato-light">We provide a super high-quality dual-sided cornhole bags. Top quality fabric, with resin-filled weatherproof materials makes this the best cornhole bags on the market.  </h3>
-                <p><a class="btn btn-success" href="#" role="button">View details &raquo;</a></p>
+                <h1 class="text-success code">Cornhole Bags</h1>
+                <p>We provide a super high-quality dual-sided cornhole bags. Top quality fabric, with resin-filled weatherproof materials makes this the best cornhole bags on the market.  </p>
+                <p><a class="btn btn-success" href="shop2.php" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-md-4 text-center">
                 <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h1 class="blueColor" style="font-family:Vipnagorgialla">Cornhole Boards</h1>
-                <h3 style="font-family:Lato-light">We supply the highest quality cornhole boards the industry has ever seen. </h3>
-                <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+                <h1 class="blueColor code">Cornhole Boards</h1>
+                <p>We supply the highest quality cornhole boards the industry has ever seen. </p>
+                <p><a class="btn btn-primary" href="shop2.php" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -199,11 +193,17 @@ session_start();
                 <p class="lead">We provide a super high-quality dual-sided cornhole bags. Top quality fabric, with resin-filled weatherproof materials makes this the best cornhole bags on the market.  </p>
             </div>
             <div class="col-md-5">
+                <script type="text/javascript">
+                    window.onload = function ()
+                    {
+                        document.getElementById('width1').style.width = document.getElementById('width2')style.width;
+                    }
+                </script>
                 <a href="#" class="img-caption">
                     <figure>
-                        <img src="img/CornholeAce-Package-top.jpg" width="100%"/>
-                        <figcaption class="moveUp">
-                            <h3 class="noMargin" width="100%">Cornhole Bags</h3>
+                        <img id="width1" src="img/CornholeAce-Package-top.jpg"/>
+                        <figcaption id="width2" class="moveUp">
+                            <h3 class="noMargin">Cornhole Bags</h3>
                             <span>The best quality on the market!</span>
                         </figcaption>
                     </figure>

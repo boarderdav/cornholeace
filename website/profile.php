@@ -1,44 +1,4 @@
-<html lang="en">
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title>CornholeAce Ecommerce Website</title>
-
-    <!-- Bootstrap core CSS -->
-<!--    <link href="../css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="http://www.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet"> <!--added bootstrap secondary css.  might remove later-->
-    <link href="../css/cornholeace.css" rel="stylesheet">
-    <link href="../css/site.css" rel="stylesheet">
-
-
-    <!--FontAwesome CSS link    -->
-    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--<!--[if lt IE 9]><script src="../../vendor/twitter/bootstrap/docs/assets/js/ie8-responsive-file-warning.js"></script>[endif]-->
-    <!--<script src="../../vendor/twitter/bootstrap/docs/assets/js/ie-emulation-modes-warning.js"></script>-->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
-    <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
-
-    <!-- Custom styles for this template -->
-
-
-</head>
-
-<body>
+<?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
 <?php
 session_start();
@@ -46,33 +6,157 @@ session_start();
 <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
     <?php include_once('functions.php'); ?>
     <div class="container">
-        <div class="hero-unit">
-            <h1>Hello <?php echo $_SESSION['FNAME']; ?></h1>
-            <p>Welcome to CornholeAce site using facebook login</p>
+        <div class="jumbotron text-center">
+            <h2>Hello <?php echo $_SESSION['FNAME']; ?></h2>
+            <p>Welcome to CornholeAce site!</p>
         </div>
-        <div class="span4">
-            <ul class="nav nav-list">
-                <li class="nav-header">Image</li>
-                <li><img src="https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture"></li>
-                <li class="nav-header">Facebook ID</li>
-                <li><?php echo $_SESSION['FBID']; ?></li>
-                <li class="nav-header">Facebook fullname</li>
-                <li><?php echo $_SESSION['FULLNAME']; ?></li>
-                <li class="nav-header">Facebook Email</li>
-                <li><?php echo $_SESSION['EMAIL']; ?></li>
-                <li class="nav-header">Facebook Gender</li>
-                <li><?php echo $_SESSION['GENDER']; ?></li>
-                <li class="nav-header">Facebook First Name</li>
-                <li><?php echo $_SESSION['FNAME']; ?></li>
-                <li class="nav-header">Facebook Last Name</li>
-                <li><?php echo $_SESSION['LNAME']; ?></li>
-                <div><br>
-                    <a href="logout.php"><button class="btn btn-info">Logout</button></a>
-                    <a href="index.php"><button class="btn btn-primary">Home Page</button></a>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+                    <A href="profile.php" >Edit Profile</A>
+
+                    <A href="logout.php" >Logout</A>
+                    <br>
+                    <p class=" text-info">March 05,2016,03:00 pm </p>
                 </div>
-            </ul>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+
+
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><?php echo $_SESSION['FULLNAME']; ?></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture" class="img-circle img-responsive"> </div>
+
+                                <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
+                                  <dl>
+                                    <dt>DEPARTMENT:</dt>
+                                    <dd>Administrator</dd>
+                                    <dt>HIRE DATE</dt>
+                                    <dd>11/12/2013</dd>
+                                    <dt>DATE OF BIRTH</dt>
+                                       <dd>11/12/2013</dd>
+                                    <dt>GENDER</dt>
+                                    <dd>Male</dd>
+                                  </dl>
+                                </div>-->
+                                <div class=" col-md-9 col-lg-9 ">
+                                    <table class="table table-user-information">
+                                        <tbody>
+                                        <tr>
+                                            <td>First Name</td>
+                                            <td><?php echo $_SESSION['FNAME']; ?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Last Name</td>
+                                            <td><?php echo $_SESSION['LNAME']; ?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Facebook ID</td>
+                                            <td><?php echo $_SESSION['FBID']; ?></td>
+                                        </tr>
+
+                                        <tr>
+                                        <tr>
+                                            <td>Gender</td>
+                                            <td><?php echo $_SESSION['GENDER']; ?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Devices</td>
+                                            <td>type of device.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td><a href="mailto:<?php echo $_SESSION['EMAIL']; ?>"><?php echo $_SESSION['EMAIL']; ?></a></td>
+                                        </tr>
+                                        <td>Phone Number</td>
+                                        <td>757-536-5000(Landline)<br><br>757-4567-890(Mobile)
+                                        </td>
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                    <a href="logout.php" class="btn btn-primary">Logout</a>
+                                    <a href="index.php" class="btn btn-primary">Homepage</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="mailto:<?php echo $_SESSION['EMAIL']; ?>" data-original-title="Email/Share Message" data-toggle="tooltip" type="button" class="btn btn-lg btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                        <span class="pull-right">
+                            <a href="edit.html" data-original-title="Edit profile" data-toggle="tooltip" type="button" class="btn btn-lg btn-warning"><i class="glyphicon glyphicon-cloud"></i></a>
+                            <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-lg btn-danger"><i class="glyphicon glyphicon-star"></i></a>
+                        </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="text-muted code panel-title"><?php echo $_SESSION['FULLNAME']; ?></h3>
+                    </div>
+                    <div class="panel-body">
+                        <h6><img src="https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture"></h6>
+                    </div>
+                    <div class="panel-heading">
+                        <h4 class="text-muted code panel-title">Facebook ID</h4>
+                    </div>
+                    <div class="panel-body">
+                        <h6><?php echo $_SESSION['FBID']; ?></h6>
+                    </div>
+                    <div class="panel-heading">
+                        <h3 class="text-muted code panel-title">Facebook Fullname</h3>
+                    </div>
+                    <div class="panel-body">
+                        <?php echo $_SESSION['FULLNAME']; ?>
+                    </div>
+                    <div class="panel-heading">
+                        <h3 class="text-muted code panel-title">Facebook Email</h3>
+                    </div>
+                    <div class="panel-body">
+                        <?php echo $_SESSION['EMAIL']; ?>
+                    </div>
+                    <div class="panel-heading">
+                        <h3 class="text-muted code panel-title">Facebook Gender</h3>
+                    </div>
+                    <div class="panel-body">
+                        <?php echo $_SESSION['GENDER']; ?>
+                    </div>
+                    <div class="panel-heading">
+                        <h3 class="text-muted code panel-title">First Name</h3>
+                    </div>
+                    <div class="panel-body">
+                        <?php echo $_SESSION['FNAME']; ?>
+                    </div>
+                    <div class="panel-heading">
+                        <h3 class="text-muted code panel-title">Last Name</h3>
+                    </div>
+                    <div class="panel-body">
+                        <?php echo $_SESSION['LNAME']; ?>
+                    </div>
+                        <div class="row text-center"><br>
+                            <a href="logout.php"><button class="btn btn-info">Logout</button></a>
+                            <a href="index.php"><button class="btn btn-primary">Home Page</button></a>
+                            <br>
+                        </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
 
 <?php else: ?>     <!-- Before login -->
 

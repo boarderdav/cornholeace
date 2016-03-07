@@ -25,7 +25,12 @@ figcaption {
     vertical-align: baseline;
 }
 
-h3.noMargin {margin-top:0; margin-bottom:10px; color:#FFFFFF;}
+h3.noMargin {
+    margin-top:0;
+    margin-bottom:10px;
+    color:#FFFFFF;
+    width:100%;
+}
 
 .img-caption {
     box-sizing: content-box;
@@ -42,7 +47,7 @@ h3.noMargin {margin-top:0; margin-bottom:10px; color:#FFFFFF;}
     padding: 12px 25px 14px 25px;
     bottom: 0;
     display: block;
-    width: 100%;
+    width: 100%;  /*might change this to javascript function*/
 }
 
 .img-caption figcaption span{
