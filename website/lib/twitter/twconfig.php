@@ -93,7 +93,6 @@ if(isset($_GET['oauth_token'])) {
 }
 
 
-
 // PART 3 - FRONT END CODE
 if(isset($_SESSION['LOGINURL']) && !isset($_SESSION['data'])) {
     echo "<a href='{$_SESSION['LOGINURL']}'><button>Login with twitter </button></a>";
@@ -102,7 +101,7 @@ if(isset($_SESSION['LOGINURL']) && !isset($_SESSION['data'])) {
     echo "you are logged in<br>";
     $data = $_SESSION['data'];
 
- //   $userName = $data->screen_name;
+//   $userName = $data->screen_name;
 //    $_SESSION['userName'] = $userName;
 //    $_SESSION['userName'] = $data->screen_name;
 
