@@ -8,6 +8,7 @@
 require_once('Oauth.php');
 require_once('TwitterOAuth.php');
 require_once('TwitterAPIExchange.php');
+require('./../../functionstw.php');
 
 //use Abraham\TwitterOAuth\TwitterOAuth;
 //require_once('./../twitter/abraham/twitteroauth/src/TwitterOAuth.php');
@@ -61,7 +62,7 @@ if(isset($_GET['oauth_token'])) {
             $_SESSION['data'] = $data;
             $tid = $data->id;
             $name = $data->name;
-            $userName = $data->screen_name;
+            $screenName = $data->screen_name;
             $location = $data->location;
             $profileImage = $data->profile_image_url;
             $description = $data->description;
@@ -69,10 +70,12 @@ if(isset($_GET['oauth_token'])) {
             $place = $data->place;
             $followersCount = $data->flolowers_count;
             $friendCount = $data->friend_count;
+//            $login_url = $connection->getAuthorizeURL($token);
+
 // ######### SESSION Variables Used for Twitter ######## //
             $_SESSION['TID'] = $tid;
             $_SESSION['NAME'] = $name;
-            $_SESSION['USERNAME'] = $userName;
+            $_SESSION['SCREENNAME'] = $screenName;
             $_SESSION['location'] = $location;
             $_SESSION['PROFILEIMAGE'] = $profileImage;
             $_SESSION['DESCRIPTION'] = $description;
@@ -80,10 +83,10 @@ if(isset($_GET['oauth_token'])) {
             $_SESSION['PLACE'] = $place;
             $_SESSION['FOLLOWERSCOUNT'] = $followersCount;
             $_SESSION['FRIENDCOUNT'] = $friendCount;
-            $_SESSION['LOGINURL'] = $login_url;
+//            $_SESSION['LOGINURL'] = $login_url;
             $redirect = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
             header("Location: http://new.cornholeace.com/index.php");
-            header("Location: http://new.cornholeace.com/index_.php");
+//            header("Location: http://new.cornholeace.com/index_.php");
             header('Location: ' . filter_var($redirect, FILTER_SANITIZE_URL));
         }
     }
@@ -92,8 +95,8 @@ if(isset($_GET['oauth_token'])) {
 
 
 // PART 3 - FRONT END CODE
-if(isset($login_url) && !isset($_SESSION['data'])) {
-    echo "<a href='$login_url'><button>Login with twitter </button></a>";
+if(isset($_SESSION['LOGINURL']) && !isset($_SESSION['data'])) {
+    echo "<a href='{$_SESSION['LOGINURL']}'><button>Login with twitter </button></a>";
 
 } else {
     echo "you are logged in<br>";
@@ -103,12 +106,12 @@ if(isset($login_url) && !isset($_SESSION['data'])) {
 //    $_SESSION['userName'] = $userName;
 //    $_SESSION['userName'] = $data->screen_name;
 
-    echo "screen name using username variable " . $userName . "<br>";
-    echo "_SESSION['userName'] : " . $_SESSION['userName'] . "<br>";
-    echo "Name: " . $data->name . "<br>";
+    echo "screen name using username screenName variable " . $screenName . "<br>";
+    echo "_SESSION['NAME'] : " . $_SESSION['NAME'] . "<br>";
+    echo "Name: " . $data->name . "<br>";  //working
     echo "FriendCount: " . $data->friend_count . "<br>";
     echo "Location: " . $data->location . "<br>";
-    echo "Username: " . $data->screen_name . "<br>";
+    echo "Username: " . $data->screen_name . "<br>";  //working
     echo "Photo: <img src='" . $data->profile_image_url . "'/><br><br>";
     echo "access token" . $data->access_token . "<br>";
     echo "<a href='?logout=true'><button>Logout</button></a>";

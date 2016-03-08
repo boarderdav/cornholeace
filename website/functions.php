@@ -80,7 +80,5 @@ else
 //	echo "User " . $_SESSION['FULLNAME'] . " already exists in database " . $sql . "<br>"; // . $conn->error;
 //}
 
-
-
 $conn->close();
-?>
+
