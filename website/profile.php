@@ -1,7 +1,7 @@
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
 <?php //session_start();?>
-<?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
+<?php if ($_SESSION['FBID'] || $_SESSION['TID']): ?>      <!--  After user login  -->
 <!--    --><?php //include_once('functions.php'); ?>
     <div class="container">
         <div class="jumbotron text-center">
@@ -23,11 +23,15 @@
 
                     <div class="panel panel-info">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><?php echo $_SESSION['FULLNAME']; ?></h3>
+                            <h3 class="panel-title"><?php echo $_SESSION['FULLNAME']; ?><?php echo $_SESSION['SCREENNAME']; ?></h3>
                         </div>
                         <div class="panel-body">
                             <div class="row">
-                                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture" class="img-circle img-responsive"> </div>
+                                <div class="col-md-3 col-lg-3 " align="center">
+                                    <?php if ($_SESSION['FBID']): ?>
+                                        <img alt="User Pic" src="https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture" class="img-circle img-responsive"> </div>
+                                    <?php else: echo "<img src=" .$_SESSION['PROFILEIMAGE']. "/></div>"; ?>
+                                    <?php endif ?>
 
                                 <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
                                   <dl>
@@ -54,7 +58,7 @@
                                         </tr>
                                         <tr>
                                             <td>Facebook ID</td>
-                                            <td><?php echo $_SESSION['FBID']; ?></td>
+                                            <td><?php echo $_SESSION['FBID']; ?><?php echo $_SESSION['TID']; ?></td>
                                         </tr>
 
                                         <tr>

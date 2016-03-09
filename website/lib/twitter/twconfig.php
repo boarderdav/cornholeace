@@ -86,19 +86,15 @@ if(isset($_GET['oauth_token'])) {
             $_SESSION['FRIENDCOUNT'] = $friendCount;
 //            $_SESSION['LOGINURL'] = $login_url;
             $redirect = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
-//           header("Location: http://new.cornholeace.com/index.php");
-            header("Location: http://new.cornholeace.com/index_.php");
+           header("Location: http://new.cornholeace.com/index.php");
+//            header("Location: http://new.cornholeace.com/index_.php");
 //            header('Location: ' . filter_var($redirect, FILTER_SANITIZE_URL));
         }
     }
 } else {
-//    $loginUrl = $_SESSION['LOGINURL'];
-//    header("Location: ".$loginUrl);
-//    header("Location: http://new.cornholeace.com/index_.php");
-
-    $login_url = $connection->getAuthorizeURL($_SESSION['request_token']);
-    $_SESSION['LOGINURL'] = $login_url;
+    $loginUrl = $_SESSION['LOGINURL'];
     header("Location: ".$loginUrl);
+//    header("Location: http://new.cornholeace.com/index_.php");
 }
 
 

@@ -19,9 +19,9 @@
     <?php endif ?>
     <?php if ($_SESSION['TID']): ?>
 <!--    --><?php //include_once('functionstw.php'); ?>
-    <h1 class="text-center"><?php echo $_SESSION['SCREENNAME'];?></h1>
+<!--    <h1 class="text-center">--><?php //echo $_SESSION['SCREENNAME'];?><!--</h1>-->
     <?php else: ?>
-    <h1> not retunring anything from $_SESSION(TID)</h1>
+<!--    <h1> not retunring anything from $_SESSION(TID)</h1>-->
     <?php endif ?>
     <!-- Carousel ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -38,7 +38,7 @@
                 <img class="first-slide" src="img/cornholeace%20specs_.jpg" width="100%" alt="First slide">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Welcome <?php echo $_SESSION['FNAME']; ?> to CornholeAce.com</h1>
+                        <h1>Welcome <?php echo $_SESSION['FNAME']; ?><?php echo $_SESSION['NAME']; ?> to CornholeAce.com</h1>
                         <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
                         <p><a class="btn btn-lg btn-primary" href="profile.php" role="button">Hello <?php echo $_SESSION['FNAME']; ?></a></p>
                     </div>

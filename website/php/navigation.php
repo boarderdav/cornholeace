@@ -1,5 +1,5 @@
 <?php //session_start();?>
-<?php include('./../lib/twitter/twconfig.php');?>
+<?php //include('./../lib/twitter/twconfig.php');?>
 
 <!-- Static navbar -->
 <nav class="navbar navbar-default navbar-static-top">
@@ -34,7 +34,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/shop2.php">Shop</a></li>
-            <?php if ($_SESSION['FBID']): // ($_SESSION['TID']): ?>
+            <?php if ($_SESSION['TID'] || $_SESSION['FBID']): ?>
             <?php else: ?>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Sign-Up</b> <span class="caret"></span></a>
@@ -46,7 +46,7 @@
                                     <div class="social-buttons">
                                         <!--                                        <a href="http://new.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
                                         <a href="./../fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                        <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                        <a href="./../lib/twitter/twconfig.php" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                 </li>
             <?php endif ?>
 <!--                <li><p class="navbar-text">Already have an account?</p></li>-->
-            <?php if ($_SESSION['FBID']): // or ($_SESSION['TID']): ?>
+            <?php if ($_SESSION['TID'] || $_SESSION['FBID']): ?>
             <?php else: ?>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
@@ -67,7 +67,8 @@
                                     <div class="social-buttons">
 <!--                                        <a href="http://new.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
                                         <a href="./../fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                        <a href="<?php echo $_SESSION['LOGINURL'];?>" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                        <a href="./../lib/twitter/twconfig.php" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+<!--                                        <a href="--><?php //echo $_SESSION['LOGINURL'];?><!--" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>-->
                                     </div>
                                     or
                                     <form class="form" href="#" action="./../dbconfig.php" method="post" role="form" accept-charset="UTF-8" id="login-nav"> <!--action="login"-->
@@ -98,17 +99,21 @@
                     </ul>
                 </li>
             <?php endif ?>
-            <?php if ($_SESSION['TID']): // or ($_SESSION['TID']): ?>
+            <?php if ($_SESSION['TID'] || $_SESSION['FBID']):  ?>
                 <li class="dropdown">
+                    <?php if ($_SESSION['FBID']): ?>
                     <a href="#" style="padding-top:0.5em;padding-bottom:0.5em;" class="dropdown-toggle" data-toggle="dropdown"><img style="width:36px; height:36px;" src="https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture"><span class="caret"></span></a>
+                    <?php else: ?>
+                        <a href="#" style="padding-top:0.5em;padding-bottom:0.5em;" class="dropdown-toggle" data-toggle="dropdown"><img style="width:36px; height:36px;" src="<?php echo $_SESSION['PROFILEIMAGE']; ?>"><span class="caret"></span></a>
+                    <?php endif ?>
                     <ul id="login-dp" class="dropdown-menu">
                         <li>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="social-buttons">
                                         <a href="./../logout.php" class="btn btn-default">Logout</a>
-                                        <a href="?logout=true" class="btn btn-default">LogoutTwitter</a>
                                         <a href="./../profile.php" class="btn btn-primary">Profile</a>
+<!--                                        <a href="?logout=true" class="btn btn-default">LogoutTwitter</a>-->
                                     </div>
                                 </div>
                             </div>
