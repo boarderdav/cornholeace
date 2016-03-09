@@ -5,6 +5,9 @@
 //require_once('Oauth.php');
 
 //include from packetcode/twitter-login
+
+session_start();
+
 require_once('Oauth.php');
 require_once('TwitterOAuth.php');
 require_once('TwitterAPIExchange.php');
@@ -16,8 +19,6 @@ require('./../../functionstw.php');
 define('CONSUMER_KEY','8eoZljmUz5yaQjOLdH463iOCP');
 define('CONSUMER_SECRET','2iljSQZ3X1EV1HsAacdrFxnmXJBEicDssDdvZ48n6jSe24tw2Q');
 define('OAUTH_CALLBACK','http://new.cornholeace.com/lib/twitter/twconfig.php');
-
-session_start();
 
 // part 2 process
 // 1. check for logout
@@ -85,63 +86,72 @@ if(isset($_GET['oauth_token'])) {
             $_SESSION['FRIENDCOUNT'] = $friendCount;
 //            $_SESSION['LOGINURL'] = $login_url;
             $redirect = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
-            header("Location: http://new.cornholeace.com/index.php");
-//            header("Location: http://new.cornholeace.com/index_.php");
-            header('Location: ' . filter_var($redirect, FILTER_SANITIZE_URL));
+//           header("Location: http://new.cornholeace.com/index.php");
+            header("Location: http://new.cornholeace.com/index_.php");
+//            header('Location: ' . filter_var($redirect, FILTER_SANITIZE_URL));
         }
     }
+} else {
+//    $loginUrl = $_SESSION['LOGINURL'];
+//    header("Location: ".$loginUrl);
+//    header("Location: http://new.cornholeace.com/index_.php");
+
+    $login_url = $connection->getAuthorizeURL($_SESSION['request_token']);
+    $_SESSION['LOGINURL'] = $login_url;
+    header("Location: ".$loginUrl);
 }
 
 
 // PART 3 - FRONT END CODE
-if(isset($_SESSION['LOGINURL']) && !isset($_SESSION['data'])) {
-    echo "<a href='{$_SESSION['LOGINURL']}'><button>Login with twitter </button></a>";
 
-} else {
-    echo "you are logged in<br>";
-    $data = $_SESSION['data'];
+//if(isset($_SESSION['LOGINURL']) && !isset($_SESSION['data'])) {
+//    echo "<a href='{$_SESSION['LOGINURL']}'><button>Login with twitter </button></a>";
+//
+//} else {
+//    echo "you are logged in<br>";
+//    $data = $_SESSION['data'];
 
 //   $userName = $data->screen_name;
 //    $_SESSION['userName'] = $userName;
 //    $_SESSION['userName'] = $data->screen_name;
 
-    echo "screen name using username screenName variable " . $screenName . "<br>";
-    echo "_SESSION['NAME'] : " . $_SESSION['NAME'] . "<br>";
-    echo "Name: " . $data->name . "<br>";  //working
-    echo "FriendCount: " . $data->friend_count . "<br>";
-    echo "Location: " . $data->location . "<br>";
-    echo "Username: " . $data->screen_name . "<br>";  //working
-    echo "Photo: <img src='" . $data->profile_image_url . "'/><br><br>";
-    echo "access token" . $data->access_token . "<br>";
-    echo "<a href='?logout=true'><button>Logout</button></a>";
-    echo "<h2> UserID " . $_SESSION['name'];
-    echo "<h2> ScreenName " . $_SESSION['screen_name'];
-    echo "<a href='https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BucketBallGame'><button>twitter button</button></a>";
-    echo "my name is " . $data . "<br>";
-
-}
+//    echo "screen name using username screenName variable " . $screenName . "<br>";
+//    echo "_SESSION['NAME'] : " . $_SESSION['NAME'] . "<br>";
+//    echo "Name: " . $data->name . "<br>";  //working
+//    echo "FriendCount: " . $data->friend_count . "<br>";
+//    echo "Location: " . $data->location . "<br>";
+//    echo "Username: " . $data->screen_name . "<br>";  //working
+//    echo "Photo: <img src='" . $data->profile_image_url . "'/><br><br>";
+//    echo "access token" . $data->access_token . "<br>";
+//    echo "<a href='?logout=true'><button>Logout</button></a>";
+//    echo "<h2> UserID " . $_SESSION['name'];
+//    echo "<h2> ScreenName " . $_SESSION['screen_name'];
+//    echo "<a href='https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BucketBallGame'><button>twitter button</button></a>";
+//    echo "my name is " . $data . "<br>";
+//
+//}
 
 //    echo "<h2> profileImage <img src='".$_SESSION['profile_image_url']"'/>";
 
-$tweet = $connection->get('friends/list', array('screen_name' => 'BucketBallGame'));
-$json = json_encode($tweet);
-$array = json_decode($json, true);
-shuffle($array);
-if (is_array($array)) {
-    foreach ($array as $value) {
-        if (is_array($value)) {
-            foreach ($value as $key => $second) {
-                if (is_array($second)) {
-                    foreach ($second as $key_second => $third) if ($key_second != 'profile_image_url') {
-                        unset($key_second);
-                    } else {
-                        echo "<img src='" . $third . "' width='100' height='100'/>";
-                    }
-                }
-            }
-        }
-    }
-}
+//$tweet = $connection->get('friends/list', array('screen_name' => 'BucketBallGame'));
+//$json = json_encode($tweet);
+//$array = json_decode($json, true);
+//shuffle($array);
+//if (is_array($array)) {
+//    foreach ($array as $value) {
+//        if (is_array($value)) {
+//            foreach ($value as $key => $second) {
+//                if (is_array($second)) {
+//                    foreach ($second as $key_second => $third) if ($key_second != 'profile_image_url') {
+//                        unset($key_second);
+//                    } else {
+//                        echo "<img src='" . $third . "' width='100' height='100'/>";
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
 
 
 
@@ -266,3 +276,6 @@ if (is_array($array)) {
 //    $name = $friends['name'];
 //
 //    print "<a title='" . $name . "' href='http://www.twitter.com/" . $url . "'>" . "<img src='" . $thumb . "' /></a>";
+
+
+?>
