@@ -6,6 +6,9 @@
 workspace.xml
 tasks.xml
 *.ini
+composer.phar
+/vendor/
+/vendor/**/.git
 
 
 ## File-based project format:
