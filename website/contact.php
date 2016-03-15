@@ -9,7 +9,6 @@ session_start();
 
     <div class="container">
 
-
         <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer">
             <h1>A Warm Welcome to CornholeAce!</h1>
