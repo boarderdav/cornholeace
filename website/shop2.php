@@ -1,5 +1,7 @@
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
+<?php include('api/getProduct1.php');?>
+<!--<script>--><?php //include('api/getProduct1.js');?><!--</script>-->
 <?php session_start();?>
 
 <br><br>
@@ -30,6 +32,24 @@
         <div class="col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1">
             <div data-celery="56ce078782f6fa110024d26e" data-celery-type="embed" data-celery-version="v2">Checkout</div>
             <script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div id="#getProductJS"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 text-center">Testing Postman Script Product #1
+
+            <h5 class="text-center"><?php echo $GLOBALS['description'];?>description1</h5>
+            <h5 class="text-center"><?php echo $GLOBALS['name'];?>name</h5>
+            <h5 class="text-center">user_id: <?php echo $GLOBALS['user_id'];?></h5>
+            <img src="<?php echo $GLOBALS['productPicture'];?>"/>
+            <a href="<?php echo $GLOBALS['productPicture'];?>">Product Picture Link</a>
+
         </div>
     </div>
 
