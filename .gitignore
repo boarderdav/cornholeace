@@ -7,6 +7,8 @@ workspace.xml
 tasks.xml
 *.ini
 composer.phar
+vendor/
+node_modules/
 /vendor/
 /vendor/**/.git
 
