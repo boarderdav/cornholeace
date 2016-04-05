@@ -8,7 +8,9 @@ tasks.xml
 *.ini
 composer.phar
 /vendor/
-/vendor/**/.git
+/vendor/**/.git\
+dbconfig.php
+dbconfig1.php
 
 
 ## File-based project format:
