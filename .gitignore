@@ -11,6 +11,8 @@ vendor/
 node_modules/
 /vendor/
 /vendor/**/.git
+dbconfig.php
+dbconfig1.php
 
 
 ## File-based project format:
