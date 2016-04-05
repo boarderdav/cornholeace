@@ -8,6 +8,8 @@ tasks.xml
 *.ini
 vendor/
 node_modules/
+dbconfig.php
+dbconfig1.php
 
 
 ## File-based project format:

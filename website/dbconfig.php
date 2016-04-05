@@ -7,6 +7,7 @@ $dbname = "cornholeAWStest";
 
 //Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
+
 //$database = mysqli_select_db() or die( "unable to select database");
 //mysqli_select_db($conn, $dbname);
 
