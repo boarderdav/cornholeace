@@ -1,0 +1,61 @@
+curl -X GET -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: 6585767a26497d7f1e543fc1edfc7e639232eaf52a44206e7b03ec384abf6ba98f4de0a5e2a5a407895ab910ee0bb4459f78e3f181419287b7f5278112bf4225" -H "Cache-Control: no-cache" -H "Postman-Token: 401f2a25-cc79-c2f6-fea8-40107b96bcff" "https://api.trycelery.com/v2/products/56ce3a7be4ad561100af4c92" | json data.images[0].url
+
+
+php Curl
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "https://api.trycelery.com/v2/products/56ce3a7be4ad561100af4c92",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "GET",
+  CURLOPT_POSTFIELDS => "{\n    \"user_id\": \"514a114080feb60200000001\",\n    \"cancel_url\": \"https://www.yourshop.com\",\n    \"return_url\": \"https://www.yourshop.com/confirmation\",\n    \"buyer\": {\n        \"email\": \"first@last.com\",\n        \"first_name\": \"First\",\n        \"last_name\": \"Last\",\n        \"phone\": \"555-555-5555\"\n    },\n    \"shipping_address\": {\n        \"first_name\": \"First\",\n        \"last_name\": \"Last\",\n        \"company\": \"Celery\",\n        \"line1\": \"123 Street\",\n        \"line2\": null,\n        \"city\": \"New York\",\n        \"state\": \"ny\",\n        \"zip\": \"10012\",\n        \"country\": \"us\",\n        \"phone\": \"555-555-5555\"\n    },\n    \"line_items\": [\n        {\n            \"product_id\": \"531e0b012cf9766885f781b7\",\n            \"quantity\": 1\n        }\n    ]\n}",
+  CURLOPT_HTTPHEADER => array(
+    "accept: application/json",
+    "authorization: 6585767a26497d7f1e543fc1edfc7e639232eaf52a44206e7b03ec384abf6ba98f4de0a5e2a5a407895ab910ee0bb4459f78e3f181419287b7f5278112bf4225",
+    "cache-control: no-cache",
+    "content-type: application/json",
+    "postman-token: d9d316a5-6703-9705-519c-f35d9ed4965c"
+  ),
+));
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+
+
+javascript jquery AJAX
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.trycelery.com/v2/products/56ce3a7be4ad561100af4c92",
+  "method": "GET",
+  "headers": {
+    "accept": "application/json",
+    "content-type": "application/json",
+    "authorization": "6585767a26497d7f1e543fc1edfc7e639232eaf52a44206e7b03ec384abf6ba98f4de0a5e2a5a407895ab910ee0bb4459f78e3f181419287b7f5278112bf4225",
+    "cache-control": "no-cache",
+    "postman-token": "a5ee5453-4b9d-837b-01cc-f062e483a28f"
+  },
+  "processData": false,
+  "data": "{\n    \"user_id\": \"514a114080feb60200000001\",\n    \"cancel_url\": \"https://www.yourshop.com\",\n    \"return_url\": \"https://www.yourshop.com/confirmation\",\n    \"buyer\": {\n        \"email\": \"first@last.com\",\n        \"first_name\": \"First\",\n        \"last_name\": \"Last\",\n        \"phone\": \"555-555-5555\"\n    },\n    \"shipping_address\": {\n        \"first_name\": \"First\",\n        \"last_name\": \"Last\",\n        \"company\": \"Celery\",\n        \"line1\": \"123 Street\",\n        \"line2\": null,\n        \"city\": \"New York\",\n        \"state\": \"ny\",\n        \"zip\": \"10012\",\n        \"country\": \"us\",\n        \"phone\": \"555-555-5555\"\n    },\n    \"line_items\": [\n        {\n            \"product_id\": \"531e0b012cf9766885f781b7\",\n            \"quantity\": 1\n        }\n    ]\n}"
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+json api builder code
+https://stackoverflow.com/questions/29308898/how-do-i-extract-data-from-json-with-php/29308899#29308899
