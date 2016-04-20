@@ -13,7 +13,7 @@ node_modules/
 /vendor/**/.git
 dbconfig.php
 dbconfig1.php
-
+.DS_Store
 
 ## File-based project format:
 *.ipr
