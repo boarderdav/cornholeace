@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "abraham/twitteroauth",
-            "version": "0.6.2",
+            "version": "0.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/abraham/twitteroauth.git",
-                "reference": "d4fc4a3c36f5ecdfc8865ab1e7cefc432e49491c"
+                "reference": "6bcc5e866423e499a962a00a06df07da880c0c1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abraham/twitteroauth/zipball/d4fc4a3c36f5ecdfc8865ab1e7cefc432e49491c",
-                "reference": "d4fc4a3c36f5ecdfc8865ab1e7cefc432e49491c",
+                "url": "https://api.github.com/repos/abraham/twitteroauth/zipball/6bcc5e866423e499a962a00a06df07da880c0c1c",
+                "reference": "6bcc5e866423e499a962a00a06df07da880c0c1c",
                 "shasum": ""
             },
             "require": {
@@ -26,8 +26,8 @@
                 "php": ">=5.5.0"
             },
             "require-dev": {
-                "phpmd/phpmd": "2.2.*",
-                "phpunit/phpunit": "4.7.*",
+                "phpmd/phpmd": "2.3.*",
+                "phpunit/phpunit": "4.8.*",
                 "squizlabs/php_codesniffer": "2.3.*"
             },
             "type": "library",
@@ -59,7 +59,7 @@
                 "social",
                 "twitter"
             ],
-            "time": "2015-11-05 04:04:20"
+            "time": "2016-03-30 11:14:45"
         },
         {
             "name": "facebook/php-sdk-v4",
