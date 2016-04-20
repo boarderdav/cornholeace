@@ -27,11 +27,19 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1">
             <div data-celery="56ce0181a5060a11002be466" data-celery-type="embed" data-celery-version="v2">Checkout</div>
-            <script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
+
         </div>
         <div class="col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1">
             <div data-celery="56ce078782f6fa110024d26e" data-celery-type="embed" data-celery-version="v2">Checkout</div>
-            <script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
+
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-xs-10-offset-1">
+            <button class="btn btn-success" data-celery="56ce07ebe4ad561100af4ae8">
+                Buy
+            </button>
         </div>
     </div>
 
