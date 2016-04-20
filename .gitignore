@@ -27,10 +27,10 @@ dbconfig1.php
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
-###*dbconfig.php
+dbconfig*.php
 ###./website/dbconfig.php
 
 ./vendor/twitter/bootstrap/docs/components.html
 
-
+.DS_Store*
 

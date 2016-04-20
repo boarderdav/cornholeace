@@ -57,8 +57,5 @@ $.ajax(settings).done(function (response) {
   console.log(response);
 });
 
-
-good link
+json api builder code
 https://stackoverflow.com/questions/29308898/how-do-i-extract-data-from-json-with-php/29308899#29308899
-
-
