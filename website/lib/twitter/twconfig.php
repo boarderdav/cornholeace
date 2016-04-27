@@ -93,7 +93,7 @@ if(isset($_GET['oauth_token'])) {
     }
 } else {
     $loginUrl = $_SESSION['LOGINURL'];
-    header("Location: ".$loginUrl);
+    header("Location: ".$_SESSION['LOGINURL']);
 //    header("Location: http://new.cornholeace.com/index_.php");
 }
 
@@ -274,4 +274,3 @@ if(isset($_GET['oauth_token'])) {
 //    print "<a title='" . $name . "' href='http://www.twitter.com/" . $url . "'>" . "<img src='" . $thumb . "' /></a>";
 
 
-?>
