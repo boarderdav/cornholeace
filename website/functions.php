@@ -21,7 +21,7 @@ $query = "SELECT * FROM fbUsers WHERE Fuid = '{$fbid}'";  //just changed to only
 //echo $_SESSION['EMAIL'];
 //echo $femail;
 $res = mysqli_query($conn, $query) or die('Query failing at $res: ' . mysqli_error($conn) . "<br>\n$sql");
-//echo "Show nubmer of rows returned " . mysqli_num_rows($res) . " !!!";
+//echo "Show number of rows returned " . mysqli_num_rows($res) . " !!!";
 if(mysqli_num_rows($res) == 0)
 {
        $iquery = "INSERT INTO fbUsers (Fuid,Ffname,Femail,Fgender,Fnamef,Fnamel,Fcover,Fpicture)

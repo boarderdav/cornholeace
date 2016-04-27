@@ -15,7 +15,6 @@ use Facebook\Entities\AccessToken;
 use Facebook\HttpClients\FacebookCurlHttpClient;
 use Facebook\HttpClients\FacebookHttpable;
 // init app with app id and secret
-FacebookSession::setDefaultApplication( '686534241383052','49f3d3991c74d0e1101321c7d069a683' );
 // login helper with redirect_uri
     $helper = new FacebookRedirectLoginHelper('http://new.cornholeace.com/fbconfig.php' );
 try {
