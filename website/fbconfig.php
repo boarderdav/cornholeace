@@ -1,7 +1,7 @@
 <?php
 session_start();
 // added in v4.0.0
-require_once './php/autoloadfb.php';
+require_once '/php/autoloadfb.php';
 require 'functions.php';  //working keep in schema
 use Facebook\FacebookSession;
 use Facebook\FacebookRedirectLoginHelper;
