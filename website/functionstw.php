@@ -32,7 +32,6 @@ followers_count)
 else
 {
     $row = mysqli_fetch_array($res);
-//       $_SESSION['EMAIL'] = $row['email'];
 }
 
 $conn->close();
