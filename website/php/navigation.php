@@ -45,7 +45,7 @@
                                     Login via
                                     <div class="social-buttons">
                                         <!--                                        <a href="http://new.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
-                                        <a href="./../fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                        <a href="fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
                                         <a href="./../lib/twitter/twconfig.php" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                                     </div>
                                 </div>

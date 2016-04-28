@@ -11,7 +11,7 @@
 
     <?php else: ?>     <!-- Before login -->
 
-<!--    <div class="container">-->n
+<!--    <div class="container">-->
 <!--        <h1>Login with Facebook</h1>-->
 <!--        <div><a href="fbconfig.php"><button class="btn btn-success">Login with Facebook</button></a></div>-->
 <!--    </div>-->
