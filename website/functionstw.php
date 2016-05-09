@@ -5,7 +5,7 @@ require 'dbconfig.php';
 
 // TWITTER SQL DATABASE CONNECTION
 mysqli_select_db($conn, $dbname) or die ("could not open database connection");
-$tid = $_SESSION['TID'];
+//$tid = $_SESSION['TID'];
 //$name = $_SESSION['NAME'];
 //$femail = $_SESSION['EMAIL'];
 //$fbgender = $_SESSION['GENDER'];
@@ -16,7 +16,7 @@ $tid = $_SESSION['TID'];
 //$fbcover = 'https://graph.facebook.com/' . $_SESSION['FBID'] . '?fields=cover';
 //$fbpicture = 'https://graph.facebook.com/' . $_SESSION['FBID'] . '/picture';
 //$bio = GetSQLValueString($user_profile['bio'], "text");
-$query = "SELECT * FROM cornhol2_newcornholeace.usersTwitter WHERE user_id = '{$tid}'";  //just changed to only $femail instead of dgjenkin@vt.edu
+$query = "SELECT * FROM cornhol2_newcornholeace.usersTwitter WHERE user_id = '{$_SESSION['TID']}'";  //just changed to only $femail instead of dgjenkin@vt.edu
 //echo $_SESSION['TID'];
 //echo $tid;
 $res = mysqli_query($conn, $query) or die('Query failing at $res: ' . mysqli_error($conn) . "<br>\n$sql");
