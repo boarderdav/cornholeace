@@ -15,7 +15,7 @@ require('./../../functionstw.php');
 
 define('CONSUMER_KEY','8eoZljmUz5yaQjOLdH463iOCP');
 define('CONSUMER_SECRET','2iljSQZ3X1EV1HsAacdrFxnmXJBEicDssDdvZ48n6jSe24tw2Q');
-define('OAUTH_CALLBACK','http://new.cornholeace.com/index.php');
+define('OAUTH_CALLBACK','http://new.cornholeace.com/lib/twitter/twconfig.php');
 
 // part 2 process
 // 1. check for logout

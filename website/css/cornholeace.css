@@ -46,8 +46,8 @@ h3.noMargin {
     margin: 0;
     padding: 12px 25px 14px 25px;
     bottom: 0;
-    display: block;
-    width: 100%;  /*might change this to javascript function*/
+    display: inline-table;
+    width: 95%;  /*might change this to javascript function*/
 }
 
 .img-caption figcaption span{
