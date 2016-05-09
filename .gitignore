@@ -6,11 +6,10 @@
 workspace.xml
 tasks.xml
 *.ini
-vendor/
-node_modules/
-dbconfig.php
-dbconfig1.php
-.DS_Store
+composer.phar
+/vendor/
+/vendor/**/.git
+
 
 ## File-based project format:
 *.ipr
@@ -24,10 +23,10 @@ dbconfig1.php
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
-###*dbconfig.php
+dbconfig*.php
 ###./website/dbconfig.php
 
 ./vendor/twitter/bootstrap/docs/components.html
 
-
+.DS_Store*
 

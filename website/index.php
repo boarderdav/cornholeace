@@ -11,10 +11,12 @@
 
     <?php else: ?>     <!-- Before login -->
 
-<!--    <div class="container">-->n
+<!--    <div class="container">-->
 <!--        <h1>Login with Facebook</h1>-->
 <!--        <div><a href="fbconfig.php"><button class="btn btn-success">Login with Facebook</button></a></div>-->
 <!--    </div>-->
+
+
 
     <?php endif ?>
     <?php if ($_SESSION['TID']): ?>
@@ -35,7 +37,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img class="first-slide" src="img/cornholeace%20specs_.jpg" width="100%" alt="First slide">
+                <img class="first-slide" src="img/IMG_0801@1800x600.jpg" width="100%" alt="First slide">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Welcome <?php echo $_SESSION['FNAME']; ?><?php echo $_SESSION['NAME']; ?> to CornholeAce.com</h1>
@@ -65,7 +67,7 @@
                 </div>
             </div>
             <div class="item">
-                <img class="fourth-slide" src="img/IMGP5526_.jpg" width="100%" height="300" alt="Second slide">
+                <img class="fourth-slide" src="img/cornholeace%20specs_.jpg" width="100%" height="300" alt="Second slide">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Dual-Sided Bags</h1>
