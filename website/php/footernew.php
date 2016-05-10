@@ -37,8 +37,11 @@
             </div>
         </div>
         <!--/row-->
-        <p class="text-right lightenblue">©2016</p>
-    </div>
+        <p class="text-right lightenblue">Copyright ©2016 Tailgating Sports, LLC</p>
+
+        <hr>
+        <p class="text-center">Copyright ©2016 Tailgating Sports, LLC</p>
+    </div> <!-- close container -->
 </footer>
 
 <!-- Bootstrap core JavaScript================================================== -->
