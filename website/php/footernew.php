@@ -5,43 +5,35 @@
 <footer id="footer">
     <div class="container" id="footerstuff">
         <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-3 column">
-                <h4>Information</h4>
-                <ul class="prefooter-links-column-sublinks"><a href="#">Products</a></li></ul>
-                <ul class="prefooter-links-column-sublinks"><a href="#">Services</a></li></ul>
-                <ul class="prefooter-links-column-sublinks"><a href="#">Benefits</a></li></ul>
-                <ul class="prefooter-links-column-sublinks"><a href="#">Developers</a></li></ul>
-<!--                    <li class="prefooter-links-column-sublinks-item"><a href="#">Products</a></li>-->
-<!--                    <li class="prefooter-links-column-sublinks-item"><a href="#">Services</a></li>-->
-<!--                    <li class="prefooter-links-column-sublinks-item"><a href="#">Benefits</a></li>-->
-<!--                    <li class="prefooter-links-column-sublinks-item"><a href="#">Developers</a></li>-->
-            </div>
-            <div class="col-xs-6 col-md-3 column">
-                <h4>Follow Us</h4>
-                <ul class="nav">
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Google+</a></li>
-                    <li><a href="#">Pinterest</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-md-3 column">
-                <h4>Contact Us</h4>
-                <ul class="nav">
-                    <li><a href="#">Email</a></li>
-                    <li><a href="#">Headquarters</a></li>
-                    <li><a href="#">Management</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-md-3 column">
-                <h4>Customer Service</h4>
-                <ul class="nav">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Delivery Information</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
-                </ul>
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="col-xs-6 col-sm-6 col-md-3 column">
+                    <h4>Information</h4>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Products</a></li></ul>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Services</a></li></ul>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Benefits</a></li></ul>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Developers</a></li></ul>
+                </div>
+                <div class="col-xs-6 col-md-3 column">
+                    <h4>Follow Us</h4>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Twitter</a></ul>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Facebook</a></ul>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Google+</a></ul>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Pinterest</a></ul>
+                </div>
+                <div class="col-xs-6 col-md-3 column">
+                    <h4>Contact Us</h4>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Email</a></ul>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Headquarters</a></ul>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Management</a></ul>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Support</a></ul>
+                </div>
+                <div class="col-xs-6 col-md-3 column">
+                    <h4>Customer Service</h4>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">About Us</a></ul>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Delivery Information</a></ul>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Privacy Policy</a></ul>
+                    <ul class="prefooter-links-column-sublinks"><a href="#">Terms &amp; Conditions</a></ul>
+                </div>
             </div>
         </div>
         <!--/row-->
