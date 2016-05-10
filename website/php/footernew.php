@@ -37,7 +37,7 @@
             </div>
         </div>
         <!--/row-->
-        <p class="text-right">©2016</p>
+        <p class="text-right lightenblue">©2016</p>
     </div>
 </footer>
 
