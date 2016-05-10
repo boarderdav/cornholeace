@@ -40,7 +40,7 @@
         <p class="text-right lightenblue">Copyright ©2016 Tailgating Sports, LLC</p>
 
         <hr>
-        <p class="text-center">Copyright ©2016 Tailgating Sports, LLC</p>
+        <p style="color: #ffaa54" class="text-center">Copyright ©2016 Tailgating Sports, LLC</p>
     </div> <!-- close container -->
 </footer>
 
