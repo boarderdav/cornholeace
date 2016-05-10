@@ -3,16 +3,18 @@
 <?php include('social.php');?>
 <!--Footer info for all pages-->
 <footer id="footer">
-    <div class="container" id="footerstuff"><style>#footerstuff .nav>li>a {padding:4px 15px;}</style>
+    <div class="container" id="footerstuff">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-3 column">
                 <h4>Information</h4>
-                <ul class="nav">
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Benefits</a></li>
-                    <li><a href="#">Developers</a></li>
-                </ul>
+                <ul class="prefooter-links-column-sublinks"><a href="#">Products</a></li></ul>
+                <ul class="prefooter-links-column-sublinks"><a href="#">Services</a></li></ul>
+                <ul class="prefooter-links-column-sublinks"><a href="#">Benefits</a></li></ul>
+                <ul class="prefooter-links-column-sublinks"><a href="#">Developers</a></li></ul>
+<!--                    <li class="prefooter-links-column-sublinks-item"><a href="#">Products</a></li>-->
+<!--                    <li class="prefooter-links-column-sublinks-item"><a href="#">Services</a></li>-->
+<!--                    <li class="prefooter-links-column-sublinks-item"><a href="#">Benefits</a></li>-->
+<!--                    <li class="prefooter-links-column-sublinks-item"><a href="#">Developers</a></li>-->
             </div>
             <div class="col-xs-6 col-md-3 column">
                 <h4>Follow Us</h4>

@@ -190,3 +190,30 @@ p.lato-light,
 li.lato-light {
   font-family: Lato-light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.prefooter .prefooter-links .prefooter-links-column-sublinks-item .prefooter-links-column-sublinks a ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  line-height: 22px;
+  text-align: left;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+.prefooter a {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+a {
+  background: transparent;
+}
+a:-webkit-any-link {
+  cursor: auto;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
