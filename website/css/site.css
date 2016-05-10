@@ -190,7 +190,7 @@ p.lato-light,
 li.lato-light {
   font-family: Lato-light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.prefooter .prefooter-links .prefooter-links-column-sublinks-item .prefooter-links-column-sublinks a ul {
+.prefooter .prefooter-links .prefooter-links-column-sublinks-item ul.prefooter-links-column-sublinks a ul {
   list-style: none;
   margin: 0;
   padding: 0;
