@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require 'dbconfig.php';
+require '../dbconfig.php';
 
 //Connect to Facebook User Table
 //mysqli_select_db("cornholeAWStest", $conn) or die ("could not open database");
