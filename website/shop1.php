@@ -21,7 +21,7 @@
 
     <div class="container">
         <h1>Login with Facebook</h1>
-        <div><a href="fbconfig.php"><button class="btn btn-success">Login with Facebook</button></a></div>
+        <div><a href="php/fbconfig.php"><button class="btn btn-success">Login with Facebook</button></a></div>
     </div>
 <?php endif ?>
 
