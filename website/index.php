@@ -2,7 +2,7 @@
 <?php include('php/navigation.php');?>
 
     <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
-    <?php include_once('./php/functions.php'); ?>
+    <?php include_once('php/functions.php'); ?>
 
 
     <?php else: ?>     <!-- Before login -->
