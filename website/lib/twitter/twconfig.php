@@ -11,7 +11,7 @@ session_start();
 require_once('Oauth.php');
 require_once('TwitterOAuth.php');
 require_once('TwitterAPIExchange.php');
-require('./../../functionstw.php');
+require('./../../php/functionstw.php');
 
 define('CONSUMER_KEY','8eoZljmUz5yaQjOLdH463iOCP');
 define('CONSUMER_SECRET','2iljSQZ3X1EV1HsAacdrFxnmXJBEicDssDdvZ48n6jSe24tw2Q');
