@@ -104,7 +104,7 @@
 
             <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal4">
-                    <img class="img-responsive" src="/img/CornholeAce-Package-top.jpg"/>
+                    <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
                 </div>
             </div>
 
@@ -119,7 +119,7 @@
                                 <h4 class="modal-title" id="myModalLabel">BucketBall Official Game Set</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img class="img-responsive" src="/img/CornholeAce-Package-top.jpg"/>
+                                <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
                                 <p>Great for Beach, Outdoor, and Poolside games!</p>
                             </div>
                             <div class="modal-footer">
