@@ -360,4 +360,5 @@
     </footer>
 
 </div>
+    </div>
 <?php include('php/footernew.php');?>
