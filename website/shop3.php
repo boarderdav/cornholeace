@@ -23,9 +23,11 @@
 
             <div class="row">
 
+            <div class="col-lg-3 col-md-6 col-xs-6"
                 <div class="thumbnail col-lg-3 col-md-6 col-xs-6" data-toggle="modal" data-target="#myModal1">
                     <img width="112px" height="112px" src="/img/CornholeBags-BlueFinal.jpg"/>
                 </div>
+            </div>
 
                 <!-- Modal -->
                 <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -49,10 +51,11 @@
                 </div>
 
 
-
+            <div class="col-lg-3 col-md-6 col-xs-6"
                 <div class="thumbnail col-lg-3 col-md-6 col-xs-6" data-toggle="modal" data-target="#myModal2">
                     <img width="112px" height="112px" src="/img/CornholeAce-Package---Top.jpg"/>
                 </div>
+            </div>
 
                 <!-- Modal -->
                 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -75,9 +78,11 @@
                     </div>
                 </div>
 
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="thumbnail col-lg-3 col-md-6 col-xs-6" data-toggle="modal" data-target="#myModal3">
                     <img width="112px" height="112px" src="/img/CornholeBags-RedFinal.jpg"/>
                 </div>
+            </div>
 
                 <!-- Modal -->
                 <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
