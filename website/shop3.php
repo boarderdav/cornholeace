@@ -1,6 +1,6 @@
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
-<?php include('api/getProduct1.php');?>
+<?php //include('api/getProduct1.php');?>
 <!--<script>--><?php //include('api/getProduct1.js');?><!--</script>-->
 <?php session_start();?>
 
