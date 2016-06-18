@@ -8,10 +8,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <button class="btn btn-primary btn-block btn-lg"
-                href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466">
-                Order Now - $36.99
-            </button>
+
             <button class="btn btn-danger btn-block btn-lg hidden-lg hidden-md"
                     href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466">
                 Order Now - $36.99
@@ -39,7 +36,7 @@
                                 <h4 class="modal-title" id="myModalLabel">BucketBall Offical Game Set</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img src="/img/CornholeBags-BlueFinal.jpg"/>
+                                <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg"/>
                                 <p>Includes 12 Buckets (6 Orange & 6 Blue), 2 Game Balls, 1 Tote Bag, & Instructions!</p>
                             </div>
                             <div class="modal-footer">
@@ -67,7 +64,7 @@
                                 <h4 class="modal-title" id="myModalLabel">Reinforced Bucket Structure</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img src="/img/CornholeAce-Package---Top.jpg"/>
+                                <img class="img-responsive" src="/img/CornholeAce-Package---Top.jpg"/>
                                 <p>Reliable, Lightweight, Portable design!</p>
                             </div>
                             <div class="modal-footer">
@@ -94,7 +91,7 @@
                                 <h4 class="modal-title" id="myModalLabel">BucketBall Offical Game Set</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img src="/img/CornholeBags-RedFinal.jpg"/>
+                                <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
                                 <p>Bucketball is the best game out there!</p>
                             </div>
                             <div class="modal-footer">
@@ -122,7 +119,7 @@
                                 <h4 class="modal-title" id="myModalLabel">BucketBall Official Game Set</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img src="/img/CornholeAce-Package-top.jpg"/>
+                                <img class="img-responsive" src="/img/CornholeAce-Package-top.jpg"/>
                                 <p>Great for Beach, Outdoor, and Poolside games!</p>
                             </div>
                             <div class="modal-footer">
@@ -181,13 +178,14 @@
     <div class="row">
         <div class="col-xs-12 col-md-12">
             <hr>
-            <h3 class="muted"><b>More Info</b></h3>
+            <h2 class="muted"><b>More Info</b></h2>
             <hr>
-            <h3>OFFICIAL BUCKETBALL SET - Includes the following:</h3>
-            <li>12 BucketBall Buckets (6 Blue Buckets and 6 Orange Buckets)</li>
-            <li>2 BucketBall Game Balls</li>
-            <li>1 BucketBall Tote Bag</li>
-            <li>BucketBall Instructions</li>
+            <h2>Professional Cornhole Bags - Four (4) Red Bags</h2>
+            <li>Dual Sided (Duck Canvas & Microsuede)</li>
+            <li>Resin Filled (Indoor & Outdoor)</li>
+            <li>Durable Cornhole Bags, made to last!</li>
+            <li>Reinforced stitching</li>
+            <li>Free CornholeAce Tote Bag included!!!</li>
 
             <hr>
             <h3>BucketBall Video</h3>
@@ -206,19 +204,20 @@
             <hr>
             <h3>Overview</h3>
             <hr>
-            <p>BucketBall is convenient, lightweight and portable. The Official BucketBall Set:</p>
-            <ul><li>Weighs less than 5 pounds</li>
-                <li>Takes up less than one cubic foot of space [9 in (w) x 9 in (l) x 16 in (h) when set is assembled inside tote bag]</li>
-                <li>Tote bag carrying case makes it portable and convenient</li>
-                <li>Buckets have 1/3rd and 2/3rd fill lines</li>
-                <li>Reinforced bucket rim for durability</li>
-                <li>Wide bucket base for stability</li>
+            <p>Professional Cornhole Bags - Four (4) Red Bags:</p>
+            <ul><li>Professional quality and size (6" x 6" @ 16oz)</li>
+                <li>Dual Sided (Duck Canvas & Microsuede)</li>
+                <li>Resin Filled (Indoor & Outdoor)</li>
+                <li>Durable Cornhole Bags, made to last!</li>
+                <li>Reinforced stitching</li>
+                <li>Free CornholeAce Tote Bag included!!!</li>
+
             </ul>
 
             <hr>
             <h3>How to Play - Quick Start&nbsp;Instructions</h3>
             <hr>
-            <p>BucketBall can be played by people of all ages. The buckets are filled with water or sand. The buckets are arranged in triangle formation with 6 buckets on one side and 6 buckets on the other side. The buckets are spaced 18-30 feet apart (depending on skill level). Each player on a team tries to throw the ball into the opposing team's buckets. If a ball goes into a bucket, that bucket is removed from the game. The first team that makes all of the buckets first WINS!!!</p>
+            <p>Professional Cornhole Bags are dual-sided: one side is duck canvas and the other is microsuede. Having dual-sided bags enhances strategic play in the game of cornhole.  The duck canvas side allows for fast plays across the board. The microsuede side slows the bag and is useful when you want to hit the board and stop in place!</p>
 
             <hr>
             <h3>How to Play - Official Rules</h3>
