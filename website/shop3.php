@@ -23,7 +23,7 @@
 
         <div class="row">
 
-            <div class="col-lg-3 col-md-6 col-xs-6"
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal1">
                     <img width="112px" height="112px" src="/img/CornholeBags-BlueFinal.jpg"/>
                 </div>
@@ -51,7 +51,7 @@
                 </div>
 
 
-            <div class="col-lg-3 col-md-6 col-xs-6"
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal2">
                     <img width="112px" height="112px" src="/img/CornholeAce-Package---Top.jpg"/>
                 </div>
