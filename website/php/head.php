@@ -25,6 +25,9 @@
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
+<!--TryCelery script    -->
+<script src="https://www.celeryshop.com/sdk/sdk.js"></script>
+
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--<!--[if lt IE 9]><script src="../../vendor/twitter/bootstrap/docs/assets/js/ie8-responsive-file-warning.js"></script>[endif]-->
