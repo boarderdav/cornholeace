@@ -18,7 +18,7 @@
             </div>
 
         <div class="row">
-        <div class="row">
+
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal1">
                     <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg"/>
@@ -131,7 +131,7 @@
 
 
             </div> <!-- close modal and thumbnail section -->
-        </div>
+
 
         </div>
 
