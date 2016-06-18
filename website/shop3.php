@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-            <button class="btn btn-danger btn-block btn-lg hidden-lg hidden-md"
+            <button class="btn btn-success btn-block btn-lg hidden-lg hidden-md"
                     href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466">
                 Order Now - $36.99
             </button>
