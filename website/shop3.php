@@ -16,7 +16,10 @@
                     href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466">
                 Order Now - $36.99
             </button>
-            <img class="thumbnail" src="/img/CornholeBags-BlueFinal.jpg">
+            <div class="col-xs-12">
+                <img src="/img/CornholeBags-BlueFinal.jpg" alt="" class="img-responsive">
+            </div>
+<!--            <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg">-->
 
             <div class="row">
 
