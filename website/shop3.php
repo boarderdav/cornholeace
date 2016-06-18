@@ -19,7 +19,6 @@
             <div class="col-xs-12">
                 <img src="/img/CornholeBags-BlueFinal.jpg" alt="" class="img-responsive">
             </div>
-<!--            <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg">-->
 
         <div class="row">
 
@@ -132,6 +131,11 @@
                         </div>
                     </div>
                 </div>
+
+
+            </div> <!-- close modal and thumbnail section -->
+
+
         </div>
 
     <div class="row">
