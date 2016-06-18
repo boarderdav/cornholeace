@@ -151,10 +151,14 @@
                 <!--// <script async src="https://www.trycelery.com/js/celery.js"></script>-->
             </div>
 
-            <div class="btn btn-block btn-primary">
-                <a href="https://www.facebook.com/playbucketball" class="button">Facebook</a>
-                <a href="https://twitter.com/bucketballgame" class="button">Twitter</a>
-                <a href="https://www.kickstarter.com/projects/bucketball/bucketball-play-throw-splash?token=97297518" class="button">KickStarter</a>
+            <div class="row">
+                <button class="btn btn-primary"<a href="https://www.facebook.com/playbucketball"
+                                               class="button">Facebook</a></button>
+               <button class="btn btn-primary" <a href="https://twitter.com/bucketballgame"
+                                                  class="button">Twitter</a></button>
+                <button class="btn btn-primary"<a href="https://www.kickstarter
+                .com/projects/bucketball/bucketball-play-throw-splash?token=97297518"
+                                                  class="button">KickStarter</a></button>
             </div>
         </div>
     </div>
