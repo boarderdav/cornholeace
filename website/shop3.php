@@ -175,7 +175,6 @@
 
 
 
-    <div class="row">
         <div class="col-xs-12 col-md-12">
             <hr>
             <h2 class="muted"><b>More Info</b></h2>
@@ -233,7 +232,6 @@
                 <li>Place a 2.5 lb. Gold's Gym weight inside each bucket.</li>
             </ul><p>If you are playing in a location that has a hard flat surface (i.e. concrete, asphalt, hardwood floor, etc.) and do not have water or a weighted object to place in each bucket, you can play the game by requiring each player to bounce the game ball onto the floor one time and try to make it into the bucket. This will help prevent the balls from knocking the buckets over.</p>
         </div>
-    </div>
 
 
     <hr>
