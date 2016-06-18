@@ -132,11 +132,9 @@
                         </div>
                     </div>
                 </div>
-
-
-
         </div>
 
+    <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <h2><b>Official CornholeAce Bags</b></h2>
             <h3>$36.99</h3>
