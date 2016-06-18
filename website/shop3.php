@@ -102,7 +102,7 @@
 
 
             <div class="col-lg-3 col-md-6 col-xs-6">
-                <div class="thumbnail col-lg-3 col-md-6 col-xs-6" data-toggle="modal" data-target="#myModal4">
+                <div class="thumbnail" data-toggle="modal" data-target="#myModal4">
                     <img width="112px" height="112px" src="/img/CornholeAce-Package-top.jpg"/>
                 </div>
             </div>
