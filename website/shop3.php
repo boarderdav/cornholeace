@@ -8,12 +8,12 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6">
-            <button class="btn btn-lg btn-default"
-                href="https://tgs.celeryshop.com/checkout?product_id=559c711099d87e030025424e">
+            <button class="btn btn-primary btn-block"
+                href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466">
                 Order Now - $36.99
             </button>
-            <button class="btn btn-lg btn-default hidden-lg hidden-md"
-                    href="https://tgs.celeryshop.com/checkout?product_id=559c711099d87e030025424e">
+            <button class="btn btn-danger btn-block hidden-lg hidden-md"
+                    href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466">
                 Order Now - $36.99
             </button>
             <img class="thumbnail" src="/img/CornholeBags-BlueFinal.jpg">
@@ -152,11 +152,11 @@
             </div>
 
             <div class="row">
-                <button class="btn btn-primary"<a href="https://www.facebook.com/playbucketball"
+                <button class="col-xs-4 btn btn-primary btn-block"<a href="https://www.facebook.com/playbucketball"
                                                class="button">Facebook</a></button>
-               <button class="btn btn-primary" <a href="https://twitter.com/bucketballgame"
+               <button class="col-xs-4 btn btn-primary btn-block" <a href="https://twitter.com/bucketballgame"
                                                   class="button">Twitter</a></button>
-                <button class="btn btn-primary"<a href="https://www.kickstarter
+                <button class="col-xs-4 btn btn-primary btn-block"<a href="https://www.kickstarter
                 .com/projects/bucketball/bucketball-play-throw-splash?token=97297518"
                                                   class="button">KickStarter</a></button>
             </div>
