@@ -8,11 +8,11 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6">
-            <button class="btn btn-primary btn-block"
+            <button class="btn btn-primary btn-block btn-lg"
                 href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466">
                 Order Now - $36.99
             </button>
-            <button class="btn btn-danger btn-block hidden-lg hidden-md"
+            <button class="btn btn-danger btn-block btn-lg hidden-lg hidden-md"
                     href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466">
                 Order Now - $36.99
             </button>
@@ -150,6 +150,7 @@
                 .com/checkout?product_id=559c711099d87e030025424e">
                     Order Now
                 </button>
+                <br>
 
                 <!-- You only need to include this once per page -->
                 <!--// <script async src="https://www.trycelery.com/js/celery.js"></script>-->
