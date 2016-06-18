@@ -146,7 +146,7 @@
 
 
             <div>
-                <button class="btn btn-block btn-success" href="https://tgs.celeryshop
+                <button class="btn btn-block btn-success btn-lg" href="https://tgs.celeryshop
                 .com/checkout?product_id=559c711099d87e030025424e">
                     Order Now
                 </button>
