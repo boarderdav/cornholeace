@@ -7,7 +7,7 @@
 <br><br>
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <button class="btn btn-primary btn-block btn-lg"
                 href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466">
                 Order Now - $36.99
@@ -17,13 +17,13 @@
                 Order Now - $36.99
             </button>
             <div class="col-xs-12">
-                <img style="max-width:300px" src="/img/CornholeBags-BlueFinal.jpg" alt="" class="img-responsive">
+                <img src="/img/CornholeBags-BlueFinal.jpg" alt="" class="img-responsive">
             </div>
 <!--            <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg">-->
 
             <div class="row">
 
-                <div class="thumbnail col-lg-3 col-md-6 col-xs-12" data-toggle="modal" data-target="#myModal1">
+                <div class="thumbnail col-lg-3 col-md-6 col-xs-6" data-toggle="modal" data-target="#myModal1">
                     <img width="112px" height="112px" src="/img/CornholeBags-BlueFinal.jpg"/>
                 </div>
 
@@ -50,7 +50,7 @@
 
 
 
-                <div class="thumbnail col-lg-3 col-md-6 col-xs-12" data-toggle="modal" data-target="#myModal2">
+                <div class="thumbnail col-lg-3 col-md-6 col-xs-6" data-toggle="modal" data-target="#myModal2">
                     <img width="112px" height="112px" src="/img/CornholeAce-Package---Top.jpg"/>
                 </div>
 
@@ -75,7 +75,7 @@
                     </div>
                 </div>
 
-                <div class="thumbnail col-lg-3 col-md-6 col-xs-12" data-toggle="modal" data-target="#myModal3">
+                <div class="thumbnail col-lg-3 col-md-6 col-xs-6" data-toggle="modal" data-target="#myModal3">
                     <img width="112px" height="112px" src="/img/CornholeBags-RedFinal.jpg"/>
                 </div>
 
@@ -102,7 +102,7 @@
 
 
 
-                <div class="thumbnail col-lg-3 col-md-6 col-xs-12" data-toggle="modal" data-target="#myModal4">
+                <div class="thumbnail col-lg-3 col-md-6 col-xs-6" data-toggle="modal" data-target="#myModal4">
                     <img width="112px" height="112px" src="/img/CornholeAce-Package-top.jpg"/>
                 </div>
 
@@ -131,7 +131,7 @@
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <h2><b>Official CornholeAce Bags</b></h2>
             <h3>$36.99</h3>
             <p><b>Condition: </b>New Product</p>
