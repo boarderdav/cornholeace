@@ -1,7 +1,7 @@
 <?php
 session_start();
 // added in v4.0.0
-require_once './php/autoloadfb.php';
+require_once 'autoloadfb.php';
 require 'functions.php';  //working keep in schema
 use Facebook\FacebookSession;
 use Facebook\FacebookRedirectLoginHelper;
@@ -17,7 +17,7 @@ use Facebook\HttpClients\FacebookHttpable;
 // init app with app id and secret
 FacebookSession::setDefaultApplication( '686534241383052','49f3d3991c74d0e1101321c7d069a683' );
 // login helper with redirect_uri
-    $helper = new FacebookRedirectLoginHelper('http://new.cornholeace.com/fbconfig.php' );
+    $helper = new FacebookRedirectLoginHelper('http://new.cornholeace.com/php/fbconfig.php' );
 try {
   $session = $helper->getSessionFromRedirect();
 } catch( FacebookRequestException $ex ) {

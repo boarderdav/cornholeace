@@ -1,254 +1,376 @@
 <?php include('php/head.php');?>
 <?php include('php/navigation.php');?>
-<?php //include('dbconfig1.php');?>
-<?php //session_start();?>
+<?php //include('api/getProduct1.php');?>
+<!--<script>--><?php //include('api/getProduct1.js');?><!--</script>-->
+<?php session_start();?>
 
-<h1>Welcome <?php echo $_SESSION['FNAME']; ?> to CornholeAce.com</h1>
+<br><br>
 <div class="container">
-    <div class="row">
-        <div class="col-xs-3">
-            <div class="well">
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-                <div class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="icon-shopping-cart"></i>
-                        3 item - $999.99
-                        <b class="caret"></b></a>
+            <button class="btn btn-success btn-block btn-lg hidden-lg hidden-md"
+                    href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466">
+                Order Now - $36.99
+            </button>
+            <div class="col-xs-12">
+                <img src="/img/CornholeBags-BlueFinal.jpg" alt="" class="img-responsive">
+            </div>
 
-                    <div class="dropdown-menu well" role="menu" aria-labelledby="dLabel">
-                        <p>Item x 1 <span class="pull-right">$333.33</span></p>
-                        <p>Item x 1 <span class="pull-right">$333.33</span></p>
-                        <p>Item x 1 <span class="pull-right">$333.33</span></p>
-                        <a href="#" class="btn btn-primary">Checkout</a>
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="thumbnail" data-toggle="modal" data-target="#myModal1">
+                    <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg"/>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">BucketBall Offical Game Set</h4>
+                            </div>
+                            <div class="modal-body text-center">
+                                <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg"/>
+                                <p>Includes 12 Buckets (6 Orange & 6 Blue), 2 Game Balls, 1 Tote Bag, & Instructions!</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+
+            <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="thumbnail" data-toggle="modal" data-target="#myModal2">
+                    <img class="img-responsive" src="/img/CornholeAce-Package---Top.jpg"/>
+                </div>
             </div>
 
-            <div class="well">
-                <ul class="nav nav-list">
-                    <li class="nav-header">Sidebar</li>
-                    <li class="active">
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-
-                    <li class="nav-header">Sidebar</li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-
-                    <li class="nav-header">Sidebar</li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="well">
-                <h4>Filters</h4>
-                <form>
-                    <label class="checkbox">
-                        <input type="checkbox" value="">
-                        Filter 1
-                    </label>
-
-                    <label class="checkbox">
-                        <input type="checkbox" value="">
-                        Filter 1
-                    </label>
-
-                    <label class="checkbox">
-                        <input type="checkbox" value="">
-                        Filter 1
-                    </label>
-
-                    <label class="checkbox">
-                        <input type="checkbox" value="">
-                        Filter 1
-                    </label>
-                    <button class="btn btn-primary pull-right" type="submit">Filter</button>
-                </form>
-            </div>
-
-            <div class="well">
-                <h4>Sort</h4>
-                <form>
-                    <label class="radio">
-                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                        Sort 1
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                        Sort 2
-                    </label>
-                    <button class="btn btn-primary pull-right" type="submit">Sort</button>
-                </form>
-            </div>
-
-            <div class="well">
-                <form class="form login-form">
-                    <h2>Sign in</h2>
-                    <div>
-                        <label>Username</label>
-                        <input id="Username" name="Username" type="text">
-
-                        <label>Password</label>
-                        <input id="Password" name="Password" type="password">
-
-                        <label class="checkbox inline">
-                            <input type="checkbox" id="RememberMe" value="option1"> Remember me
-                        </label>
-
-                        <br><br>
-
-                        <button type="submit" class="btn btn-success">Login</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Reinforced Bucket Structure</h4>
+                            </div>
+                            <div class="modal-body text-center">
+                                <img class="img-responsive" src="/img/CornholeAce-Package---Top.jpg"/>
+                                <p>Reliable, Lightweight, Portable design!</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                    <a href="#">register</a>&nbsp;|&nbsp;<a href="#">forgot password?</a>
-                </form>
+                </div>
+
+            <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="thumbnail" data-toggle="modal" data-target="#myModal3">
+                    <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">BucketBall Offical Game Set</h4>
+                            </div>
+                            <div class="modal-body text-center">
+                                <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+                                <p>Bucketball is the best game out there!</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="thumbnail" data-toggle="modal" data-target="#myModal4">
+                    <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">BucketBall Official Game Set</h4>
+                            </div>
+                            <div class="modal-body text-center">
+                                <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+                                <p>Great for Beach, Outdoor, and Poolside games!</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div> <!-- close modal and thumbnail section -->
+
+
+        </div>
+
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h2><b>Professional Cornhole Bags - Four (4) Blue Bags</b></h2>
+            <h3>$36.99</h3>
+            <p><b>Condition: </b>New Product</p>
+
+            <h3>Professional Cornhole Bags - Four (4) Blue Bags</h3>
+            <li>Dual Sided (Duck Canvas & Microsuede)</li>
+            <li>Resin Filled (Indoor & Outdoor)</li>
+            <li>Durable Cornhole Bags, made to last!</li>
+            <li>Reinforced stitching</li>
+            <li>Free CornholeAce Tote Bag included!!!</li>
+
+            <p>These professional cornhole bags are great indoor/outdoor play. The dual-sided bags are great for
+                stick and slide plays too. You'll enjoy their durability for of the bags for years and years of
+                playing!</p>
+
+
+            <div>
+                <button class="btn btn-block btn-success btn-lg" href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466">
+                    Order Now
+                </button>
+                <br>
+
+                <!-- You only need to include this once per page -->
+                <!--// <script async src="https://www.trycelery.com/js/celery.js"></script>-->
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="col-xs-4 btn btn-primary btn-lg"<a href="https://www.facebook.com/playbucketball"
+                                                   class="button">Facebook</a></button>
+                   <button class="col-xs-4 btn btn-primary btn-lg" <a href="https://twitter.com/bucketballgame"
+                                                      class="button">Twitter</a></button>
+                    <button class="col-xs-4 btn btn-primary btn-lg"<a href="https://www.kickstarter
+                    .com/projects/bucketball/bucketball-play-throw-splash?token=97297518"
+                                                      class="button">KickStarter</a></button>
+                </div>
             </div>
         </div>
 
-        <div class="col-xs-9">
-            <div class="hero-unit">
-                <h1 class="">Special Offer</h1>
-                <p class="">here is the best offer of the month! Do not loose it!</p>
-                <p><a href="#" class="btn btn-primary btn-large">Learn more »</a></p>
+
+        <hr>
+        <br>
+        <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <hr>
+                <h3>Similar Products</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="blue cornhole bags">
+                    <div class="caption">
+                        <h3>Professional Blue Cornhole Bags</h3>
+                        <p>Four (4) professional blue cornhole bags.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <ul class="thumbnails" style="list-style-type:none">
-                <li class="col-xs-4">
-                    <div class="thumbnail">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAANV0lEQVR4Xu3cB48eNRsF0Am9Bwi9hhZE6L3z31HoIFoSSECA6D30XvLpjuTV7MsmZPlsKc/mWEJsdud91nNsrmzPhG2HDh06PGkECBAoILBNYBUYJV0kQGAWEFgmAgECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqP69o5999tn03nvvTb/99tt0+PDh6dRTT50uvfTS6aabblr34fzszTffnL7++uvpzz//nH925plnTjfeeON00UUXrbv2119/na/9/vvvp7///nvatm3bdN555027d++ezjjjjH/v1AZX/Pzzz9PBgwfX1Tz//PPnmqeddtq6T7z//vvTRx99NP3+++/z93NPV1111bRz587/fE//qdM+dFwICKzjYhj+/068++67U/7ZqJ199tnTQw89NIdN2osvvjh99913G1572223TZdddtn8s7/++mvas2fPWqgtP3DSSSdNjz/++Bwgm2k//fTT9Pzzz8/ht9rSv7vuumvasWPH/KO33npr+uCDDzYsf8UVV8wB19qx3tNm+ura409AYB1/Y7LpHiVYnnzyybUQOOuss+ZwSji0ltVTViUff/zxvGJqbfv27dMvv/yytoI5/fTTp0cffXRKIO3du3f6/PPP165NkBw6dGhevaXlz3ffffem+vvss8+u61fCNCuuVrP9/qz8nnrqqbV7ynVp7Z5yfw8//PCUe93MPW2qsy4+7gQE1nE3JJvvULZMBw4cmD+Y7doDDzwwf/3KK6/M2760Cy+8cLrnnnvWfS8rqayost1ahsN99903JciyumpbsVtuuWW68sorp2w79+3bN9c85ZRTpscee2zehiY00xIg11xzzfz1F198MX311Vdz+CVgbrjhhvn3tG1owi6hl+1mVkgttO699975e2+//fZcp60Q8/Vzzz23FloJ4ATx8j6Pdk/Zdmq1BQRW7fGbe58VRrZPCYXrrrtuuvbaa+fvv/POO3OYpF1yySXT7bffPgdGzrjSHnzwwencc8+dv3711VfncEnL53NO9Mwzz8whkmB64okn5uDJn5c1Em7Zimbl1VrqJmSy6mtBds4558zhmMBpYXe0mul3C9vrr79+yj9pH3744Xz+lZZQze8/1ntaPcvbAkN/wt2CwNqCQ/7NN99MP/zwwxxYLTCyQrr88svnVdMff/wx33VWMhdccME/AivhkMP3tuppK6n8e6PAyqpuGU4JkgRhVn5p7bwrn8+qKy0H9rkuLVvSFo6tXwmsFoJZse3atWvDwMo9HOs9tdDbgkN+wtySwNpiQ50znqxi2vYqt5fVTs57lj9LiGSFkxBZXWFlNZbtU1Zty8/n69XAysF3DsCXW8VV0oRN2yau/izh+cILL8yh1VZe2WbmrKutBO+44455hbi6wkro5ZA+h/jp17/dU+potQUEVu3x+0fvNwqs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" alt="300x200" data-src="holder.js/300x200" style="width: 300px; height: 200px;">
-                        <div class="caption">
-                            <h4>Thumbnail label</h4>
-                            <p><strike>Euro 150,00</strike>&nbsp;Euro 100,00</p>
-                            <a class="btn btn-primary" href="#">View</a>
-                            <a class="btn btn-success" href="#">Add to Cart</a>
-                        </div>
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="/img/CornholeBags-RedFinal.jpg" alt="">
+                    <div class="caption">
+                        <h3>Professional Red Cornhole Bags</h3>
+                        <p>Four (4) professional red cornhole bags.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
                     </div>
-                </li>
-                <li class="col-xs-4">
-                    <div class="thumbnail">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAANV0lEQVR4Xu3cB48eNRsF0Am9Bwi9hhZE6L3z31HoIFoSSECA6D30XvLpjuTV7MsmZPlsKc/mWEJsdud91nNsrmzPhG2HDh06PGkECBAoILBNYBUYJV0kQGAWEFgmAgECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqP69o5999tn03nvvTb/99tt0+PDh6dRTT50uvfTS6aabblr34fzszTffnL7++uvpzz//nH925plnTjfeeON00UUXrbv2119/na/9/vvvp7///nvatm3bdN555027d++ezjjjjH/v1AZX/Pzzz9PBgwfX1Tz//PPnmqeddtq6T7z//vvTRx99NP3+++/z93NPV1111bRz587/fE//qdM+dFwICKzjYhj+/068++67U/7ZqJ199tnTQw89NIdN2osvvjh99913G1572223TZdddtn8s7/++mvas2fPWqgtP3DSSSdNjz/++Bwgm2k//fTT9Pzzz8/ht9rSv7vuumvasWPH/KO33npr+uCDDzYsf8UVV8wB19qx3tNm+ura409AYB1/Y7LpHiVYnnzyybUQOOuss+ZwSji0ltVTViUff/zxvGJqbfv27dMvv/yytoI5/fTTp0cffXRKIO3du3f6/PPP165NkBw6dGhevaXlz3ffffem+vvss8+u61fCNCuuVrP9/qz8nnrqqbV7ynVp7Z5yfw8//PCUe93MPW2qsy4+7gQE1nE3JJvvULZMBw4cmD+Y7doDDzwwf/3KK6/M2760Cy+8cLrnnnvWfS8rqayost1ahsN99903JciyumpbsVtuuWW68sorp2w79+3bN9c85ZRTpscee2zehiY00xIg11xzzfz1F198MX311Vdz+CVgbrjhhvn3tG1owi6hl+1mVkgttO699975e2+//fZcp60Q8/Vzzz23FloJ4ATx8j6Pdk/Zdmq1BQRW7fGbe58VRrZPCYXrrrtuuvbaa+fvv/POO3OYpF1yySXT7bffPgdGzrjSHnzwwencc8+dv3711VfncEnL53NO9Mwzz8whkmB64okn5uDJn5c1Em7Zimbl1VrqJmSy6mtBds4558zhmMBpYXe0mul3C9vrr79+yj9pH3744Xz+lZZQze8/1ntaPcvbAkN/wt2CwNqCQ/7NN99MP/zwwxxYLTCyQrr88svnVdMff/wx33VWMhdccME/AivhkMP3tuppK6n8e6PAyqpuGU4JkgRhVn5p7bwrn8+qKy0H9rkuLVvSFo6tXwmsFoJZse3atWvDwMo9HOs9tdDbgkN+wtySwNpiQ50znqxi2vYqt5fVTs57lj9LiGSFkxBZXWFlNZbtU1Zty8/n69XAysF3DsCXW8VV0oRN2yau/izh+cILL8yh1VZe2WbmrKutBO+44455hbi6wkro5ZA+h/jp17/dU+potQUEVu3x+0fvNwqs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" alt="300x200" data-src="holder.js/300x200" style="width: 300px; height: 200px;">
-                        <div class="caption">
-                            <h4>Thumbnail label</h4>
-                            <p>Euro 100,00</p>
-                            <a class="btn btn-primary" href="#">View</a>
-                            <a class="btn btn-success" href="#">Add to Cart</a>
-                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="/img/CornholeAce-Package-top.jpg" alt="">
+                    <div class="caption">
+                        <h3>Eight (8) Professional Bags - Red & Blue</h3>
+                        <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
                     </div>
-                </li>
-                <li class="col-xs-4">
-                    <div class="thumbnail">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAANV0lEQVR4Xu3cB48eNRsF0Am9Bwi9hhZE6L3z31HoIFoSSECA6D30XvLpjuTV7MsmZPlsKc/mWEJsdud91nNsrmzPhG2HDh06PGkECBAoILBNYBUYJV0kQGAWEFgmAgECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqP69o5999tn03nvvTb/99tt0+PDh6dRTT50uvfTS6aabblr34fzszTffnL7++uvpzz//nH925plnTjfeeON00UUXrbv2119/na/9/vvvp7///nvatm3bdN555027d++ezjjjjH/v1AZX/Pzzz9PBgwfX1Tz//PPnmqeddtq6T7z//vvTRx99NP3+++/z93NPV1111bRz587/fE//qdM+dFwICKzjYhj+/068++67U/7ZqJ199tnTQw89NIdN2osvvjh99913G1572223TZdddtn8s7/++mvas2fPWqgtP3DSSSdNjz/++Bwgm2k//fTT9Pzzz8/ht9rSv7vuumvasWPH/KO33npr+uCDDzYsf8UVV8wB19qx3tNm+ura409AYB1/Y7LpHiVYnnzyybUQOOuss+ZwSji0ltVTViUff/zxvGJqbfv27dMvv/yytoI5/fTTp0cffXRKIO3du3f6/PPP165NkBw6dGhevaXlz3ffffem+vvss8+u61fCNCuuVrP9/qz8nnrqqbV7ynVp7Z5yfw8//PCUe93MPW2qsy4+7gQE1nE3JJvvULZMBw4cmD+Y7doDDzwwf/3KK6/M2760Cy+8cLrnnnvWfS8rqayost1ahsN99903JciyumpbsVtuuWW68sorp2w79+3bN9c85ZRTpscee2zehiY00xIg11xzzfz1F198MX311Vdz+CVgbrjhhvn3tG1owi6hl+1mVkgttO699975e2+//fZcp60Q8/Vzzz23FloJ4ATx8j6Pdk/Zdmq1BQRW7fGbe58VRrZPCYXrrrtuuvbaa+fvv/POO3OYpF1yySXT7bffPgdGzrjSHnzwwencc8+dv3711VfncEnL53NO9Mwzz8whkmB64okn5uDJn5c1Em7Zimbl1VrqJmSy6mtBds4558zhmMBpYXe0mul3C9vrr79+yj9pH3744Xz+lZZQze8/1ntaPcvbAkN/wt2CwNqCQ/7NN99MP/zwwxxYLTCyQrr88svnVdMff/wx33VWMhdccME/AivhkMP3tuppK6n8e6PAyqpuGU4JkgRhVn5p7bwrn8+qKy0H9rkuLVvSFo6tXwmsFoJZse3atWvDwMo9HOs9tdDbgkN+wtySwNpiQ50znqxi2vYqt5fVTs57lj9LiGSFkxBZXWFlNZbtU1Zty8/n69XAysF3DsCXW8VV0oRN2yau/izh+cILL8yh1VZe2WbmrKutBO+44455hbi6wkro5ZA+h/jp17/dU+potQUEVu3x+0fvNwqs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" alt="300x200" data-src="holder.js/300x200" style="width: 300px; height: 200px;">
-                        <div class="caption">
-                            <h4>Thumbnail label</h4>
-                            <p>Euro 100,00</p>
-                            <a class="btn btn-primary" href="#">View</a>
-                            <a class="btn btn-success" href="#">Add to Cart</a>
-                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
                     </div>
-                </li>
-                <li class="col-xs-4">
-                    <div class="thumbnail">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAANV0lEQVR4Xu3cB48eNRsF0Am9Bwi9hhZE6L3z31HoIFoSSECA6D30XvLpjuTV7MsmZPlsKc/mWEJsdud91nNsrmzPhG2HDh06PGkECBAoILBNYBUYJV0kQGAWEFgmAgECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqP69o5999tn03nvvTb/99tt0+PDh6dRTT50uvfTS6aabblr34fzszTffnL7++uvpzz//nH925plnTjfeeON00UUXrbv2119/na/9/vvvp7///nvatm3bdN555027d++ezjjjjH/v1AZX/Pzzz9PBgwfX1Tz//PPnmqeddtq6T7z//vvTRx99NP3+++/z93NPV1111bRz587/fE//qdM+dFwICKzjYhj+/068++67U/7ZqJ199tnTQw89NIdN2osvvjh99913G1572223TZdddtn8s7/++mvas2fPWqgtP3DSSSdNjz/++Bwgm2k//fTT9Pzzz8/ht9rSv7vuumvasWPH/KO33npr+uCDDzYsf8UVV8wB19qx3tNm+ura409AYB1/Y7LpHiVYnnzyybUQOOuss+ZwSji0ltVTViUff/zxvGJqbfv27dMvv/yytoI5/fTTp0cffXRKIO3du3f6/PPP165NkBw6dGhevaXlz3ffffem+vvss8+u61fCNCuuVrP9/qz8nnrqqbV7ynVp7Z5yfw8//PCUe93MPW2qsy4+7gQE1nE3JJvvULZMBw4cmD+Y7doDDzwwf/3KK6/M2760Cy+8cLrnnnvWfS8rqayost1ahsN99903JciyumpbsVtuuWW68sorp2w79+3bN9c85ZRTpscee2zehiY00xIg11xzzfz1F198MX311Vdz+CVgbrjhhvn3tG1owi6hl+1mVkgttO699975e2+//fZcp60Q8/Vzzz23FloJ4ATx8j6Pdk/Zdmq1BQRW7fGbe58VRrZPCYXrrrtuuvbaa+fvv/POO3OYpF1yySXT7bffPgdGzrjSHnzwwencc8+dv3711VfncEnL53NO9Mwzz8whkmB64okn5uDJn5c1Em7Zimbl1VrqJmSy6mtBds4558zhmMBpYXe0mul3C9vrr79+yj9pH3744Xz+lZZQze8/1ntaPcvbAkN/wt2CwNqCQ/7NN99MP/zwwxxYLTCyQrr88svnVdMff/wx33VWMhdccME/AivhkMP3tuppK6n8e6PAyqpuGU4JkgRhVn5p7bwrn8+qKy0H9rkuLVvSFo6tXwmsFoJZse3atWvDwMo9HOs9tdDbgkN+wtySwNpiQ50znqxi2vYqt5fVTs57lj9LiGSFkxBZXWFlNZbtU1Zty8/n69XAysF3DsCXW8VV0oRN2yau/izh+cILL8yh1VZe2WbmrKutBO+44455hbi6wkro5ZA+h/jp17/dU+potQUEVu3x+0fvNwqs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" alt="300x200" data-src="holder.js/300x200" style="width: 300px; height: 200px;">
-                        <div class="caption">
-                            <h4>Thumbnail label</h4>
-                            <p>Euro 100,00</p>
-                            <a class="btn btn-primary" href="#">View</a>
-                            <a class="btn btn-success" href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-xs-4">
-                    <div class="thumbnail">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAANV0lEQVR4Xu3cB48eNRsF0Am9Bwi9hhZE6L3z31HoIFoSSECA6D30XvLpjuTV7MsmZPlsKc/mWEJsdud91nNsrmzPhG2HDh06PGkECBAoILBNYBUYJV0kQGAWEFgmAgECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqP69o5999tn03nvvTb/99tt0+PDh6dRTT50uvfTS6aabblr34fzszTffnL7++uvpzz//nH925plnTjfeeON00UUXrbv2119/na/9/vvvp7///nvatm3bdN555027d++ezjjjjH/v1AZX/Pzzz9PBgwfX1Tz//PPnmqeddtq6T7z//vvTRx99NP3+++/z93NPV1111bRz587/fE//qdM+dFwICKzjYhj+/068++67U/7ZqJ199tnTQw89NIdN2osvvjh99913G1572223TZdddtn8s7/++mvas2fPWqgtP3DSSSdNjz/++Bwgm2k//fTT9Pzzz8/ht9rSv7vuumvasWPH/KO33npr+uCDDzYsf8UVV8wB19qx3tNm+ura409AYB1/Y7LpHiVYnnzyybUQOOuss+ZwSji0ltVTViUff/zxvGJqbfv27dMvv/yytoI5/fTTp0cffXRKIO3du3f6/PPP165NkBw6dGhevaXlz3ffffem+vvss8+u61fCNCuuVrP9/qz8nnrqqbV7ynVp7Z5yfw8//PCUe93MPW2qsy4+7gQE1nE3JJvvULZMBw4cmD+Y7doDDzwwf/3KK6/M2760Cy+8cLrnnnvWfS8rqayost1ahsN99903JciyumpbsVtuuWW68sorp2w79+3bN9c85ZRTpscee2zehiY00xIg11xzzfz1F198MX311Vdz+CVgbrjhhvn3tG1owi6hl+1mVkgttO699975e2+//fZcp60Q8/Vzzz23FloJ4ATx8j6Pdk/Zdmq1BQRW7fGbe58VRrZPCYXrrrtuuvbaa+fvv/POO3OYpF1yySXT7bffPgdGzrjSHnzwwencc8+dv3711VfncEnL53NO9Mwzz8whkmB64okn5uDJn5c1Em7Zimbl1VrqJmSy6mtBds4558zhmMBpYXe0mul3C9vrr79+yj9pH3744Xz+lZZQze8/1ntaPcvbAkN/wt2CwNqCQ/7NN99MP/zwwxxYLTCyQrr88svnVdMff/wx33VWMhdccME/AivhkMP3tuppK6n8e6PAyqpuGU4JkgRhVn5p7bwrn8+qKy0H9rkuLVvSFo6tXwmsFoJZse3atWvDwMo9HOs9tdDbgkN+wtySwNpiQ50znqxi2vYqt5fVTs57lj9LiGSFkxBZXWFlNZbtU1Zty8/n69XAysF3DsCXW8VV0oRN2yau/izh+cILL8yh1VZe2WbmrKutBO+44455hbi6wkro5ZA+h/jp17/dU+potQUEVu3x+0fvNwqsXJTQyHlRC7MEVZ7ynXzyyf8IrKx88jpEC6z8+f7775+vWw2sbB/bVmt5ltQ6lhVcVkEbtWz5Xn/99bVVYK7JSjABuNzm5Uwuq7jVwMo95FxuuRI82j21e9hiQ35C3Y7A2oLDnXenfvzxx/msZ7lyyasN2Xq1Vwpy/tMOolfPsHLmtH///rVVTwuCjbaErcbq08qcqeVzq+9WpWgO7rMqW7abb755uvrqq+dQXB6uH+0MKyusbAmP5Z6cYdWf7AKr/hjOB9F5ryr/oeecqr38uTwbymokryskCNpWaxlYr7322vTll1/OGhsduh8psJbnYMsD8caaAEoQLdvyd+X7eZUhTwwTkq0tA7Q9DczPVp+IZtW0+hCgBejqPQms+pNdYNUfw+nll19eO6BeBsS33347vfTSS2urpJwNZfvU3mVqL4murmhuvfXWOfTaymX5kujyFYjlCmr11YjGmmvy1LCFUd5cb68r5JrVF0Db5/KuWJ5+prVXFfJ1Vn2ffvrpuu8v3+062j0lzLXaAgKr9vjNvc/b4O28KQGR86r8VZu8m5XtYVoOqLPCynVZCaXl/CpnQAmGTz75ZP7eMpxymJ2njWk5uM+1WbXkHam0vHP1yCOPzF8v3zTPiimtreTaddm2LZ8m5pqcj7UnmflzwjOvX+SzORNrLau0rBLfeOONtQcK7TA+W99jvactMNwn9C0IrC0w/HnS9vTTT2/4V2ja7bX/uHPt8sxn9faXq5m8gpBD8SO19oRwddWUwEnwJdxay1PCrP6Wry8cqW62mdnWLc+xVq9NCObJZwJ6M/e0BYb7hL4FgbVFhj8roaxI2pvp7bayisqKK2+pt5YtYVZE7Y3z9v2LL754uvPOO9eJZOWSVdnyNYlckPOgnHWthsXyTfvlqivBkrfSl9vBI9G3s7X8zqzy8gBh2RJWeXLYXsnIzzZzT1tkyE/I2xBYW2zYs11r/2eFPJ3L6wntLz2v3mq2ggm4BEP+6s6R/upKgi2H3amTbV3Cb6Mnf6Mos9JroZWtae7pSO1Y72lUX9UdKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbEC/wNOHy46iN58HAAAAABJRU5ErkJggg==" alt="300x200" data-src="holder.js/300x200" style="width: 300px; height: 200px;">
-                        <div class="caption">
-                            <h4>Thumbnail label</h4>
-                            <p>Euro 100,00</p>
-                            <a class="btn btn-primary" href="#">View</a>
-                            <a class="btn btn-success" href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-xs-4">
-                    <div class="thumbnail">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAANV0lEQVR4Xu3cB48eNRsF0Am9Bwi9hhZE6L3z31HoIFoSSECA6D30XvLpjuTV7MsmZPlsKc/mWEJsdud91nNsrmzPhG2HDh06PGkECBAoILBNYBUYJV0kQGAWEFgmAgECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqP69o5999tn03nvvTb/99tt0+PDh6dRTT50uvfTS6aabblr34fzszTffnL7++uvpzz//nH925plnTjfeeON00UUXrbv2119/na/9/vvvp7///nvatm3bdN555027d++ezjjjjH/v1AZX/Pzzz9PBgwfX1Tz//PPnmqeddtq6T7z//vvTRx99NP3+++/z93NPV1111bRz587/fE//qdM+dFwICKzjYhj+/068++67U/7ZqJ199tnTQw89NIdN2osvvjh99913G1572223TZdddtn8s7/++mvas2fPWqgtP3DSSSdNjz/++Bwgm2k//fTT9Pzzz8/ht9rSv7vuumvasWPH/KO33npr+uCDDzYsf8UVV8wB19qx3tNm+ura409AYB1/Y7LpHiVYnnzyybUQOOuss+ZwSji0ltVTViUff/zxvGJqbfv27dMvv/yytoI5/fTTp0cffXRKIO3du3f6/PPP165NkBw6dGhevaXlz3ffffem+vvss8+u61fCNCuuVrP9/qz8nnrqqbV7ynVp7Z5yfw8//PCUe93MPW2qsy4+7gQE1nE3JJvvULZMBw4cmD+Y7doDDzwwf/3KK6/M2760Cy+8cLrnnnvWfS8rqayost1ahsN99903JciyumpbsVtuuWW68sorp2w79+3bN9c85ZRTpscee2zehiY00xIg11xzzfz1F198MX311Vdz+CVgbrjhhvn3tG1owi6hl+1mVkgttO699975e2+//fZcp60Q8/Vzzz23FloJ4ATx8j6Pdk/Zdmq1BQRW7fGbe58VRrZPCYXrrrtuuvbaa+fvv/POO3OYpF1yySXT7bffPgdGzrjSHnzwwencc8+dv3711VfncEnL53NO9Mwzz8whkmB64okn5uDJn5c1Em7Zimbl1VrqJmSy6mtBds4558zhmMBpYXe0mul3C9vrr79+yj9pH3744Xz+lZZQze8/1ntaPcvbAkN/wt2CwNqCQ/7NN99MP/zwwxxYLTCyQrr88svnVdMff/wx33VWMhdccME/AivhkMP3tuppK6n8e6PAyqpuGU4JkgRhVn5p7bwrn8+qKy0H9rkuLVvSFo6tXwmsFoJZse3atWvDwMo9HOs9tdDbgkN+wtySwNpiQ50znqxi2vYqt5fVTs57lj9LiGSFkxBZXWFlNZbtU1Zty8/n69XAysF3DsCXW8VV0oRN2yau/izh+cILL8yh1VZe2WbmrKutBO+44455hbi6wkro5ZA+h/jp17/dU+potQUEVu3x+0fvNwqs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" alt="300x200" data-src="holder.js/300x200" style="width: 300px; height: 200px;">
-                        <div class="caption">
-                            <h4>Thumbnail label</h4>
-                            <p>Euro 100,00</p>
-                            <a class="btn btn-primary" href="#">View</a>
-                            <a class="btn btn-success" href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-xs-4">
-                    <div class="thumbnail">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAANV0lEQVR4Xu3cB48eNRsF0Am9Bwi9hhZE6L3z31HoIFoSSECA6D30XvLpjuTV7MsmZPlsKc/mWEJsdud91nNsrmzPhG2HDh06PGkECBAoILBNYBUYJV0kQGAWEFgmAgECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqP69o5999tn03nvvTb/99tt0+PDh6dRTT50uvfTS6aabblr34fzszTffnL7++uvpzz//nH925plnTjfeeON00UUXrbv2119/na/9/vvvp7///nvatm3bdN555027d++ezjjjjH/v1AZX/Pzzz9PBgwfX1Tz//PPnmqeddtq6T7z//vvTRx99NP3+++/z93NPV1111bRz587/fE//qdM+dFwICKzjYhj+/068++67U/7ZqJ199tnTQw89NIdN2osvvjh99913G1572223TZdddtn8s7/++mvas2fPWqgtP3DSSSdNjz/++Bwgm2k//fTT9Pzzz8/ht9rSv7vuumvasWPH/KO33npr+uCDDzYsf8UVV8wB19qx3tNm+ura409AYB1/Y7LpHiVYnnzyybUQOOuss+ZwSji0ltVTViUff/zxvGJqbfv27dMvv/yytoI5/fTTp0cffXRKIO3du3f6/PPP165NkBw6dGhevaXlz3ffffem+vvss8+u61fCNCuuVrP9/qz8nnrqqbV7ynVp7Z5yfw8//PCUe93MPW2qsy4+7gQE1nE3JJvvULZMBw4cmD+Y7doDDzwwf/3KK6/M2760Cy+8cLrnnnvWfS8rqayost1ahsN99903JciyumpbsVtuuWW68sorp2w79+3bN9c85ZRTpscee2zehiY00xIg11xzzfz1F198MX311Vdz+CVgbrjhhvn3tG1owi6hl+1mVkgttO699975e2+//fZcp60Q8/Vzzz23FloJ4ATx8j6Pdk/Zdmq1BQRW7fGbe58VRrZPCYXrrrtuuvbaa+fvv/POO3OYpF1yySXT7bffPgdGzrjSHnzwwencc8+dv3711VfncEnL53NO9Mwzz8whkmB64okn5uDJn5c1Em7Zimbl1VrqJmSy6mtBds4558zhmMBpYXe0mul3C9vrr79+yj9pH3744Xz+lZZQze8/1ntaPcvbAkN/wt2CwNqCQ/7NN99MP/zwwxxYLTCyQrr88svnVdMff/wx33VWMhdccME/AivhkMP3tuppK6n8e6PAyqpuGU4JkgRhVn5p7bwrn8+qKy0H9rkuLVvSFo6tXwmsFoJZse3atWvDwMo9HOs9tdDbgkN+wtySwNpiQ50znqxi2vYqt5fVTs57lj9LiGSFkxBZXWFlNZbtU1Zty8/n69XAysF3DsCXW8VV0oRN2yau/izh+cILL8yh1VZe2WbmrKutBO+44455hbi6wkro5ZA+h/jp17/dU+potQUEVu3x+0fvNwqs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" alt="300x200" data-src="holder.js/300x200" style="width: 300px; height: 200px;">
-                        <div class="caption">
-                            <h4>Thumbnail label</h4>
-                            <p>Euro 100,00</p>
-                            <a class="btn btn-primary" href="#">View</a>
-                            <a class="btn btn-success" href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-xs-4">
-                    <div class="thumbnail">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAANV0lEQVR4Xu3cB48eNRsF0Am9Bwi9hhZE6L3z31HoIFoSSECA6D30XvLpjuTV7MsmZPlsKc/mWEJsdud91nNsrmzPhG2HDh06PGkECBAoILBNYBUYJV0kQGAWEFgmAgECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqP69o5999tn03nvvTb/99tt0+PDh6dRTT50uvfTS6aabblr34fzszTffnL7++uvpzz//nH925plnTjfeeON00UUXrbv2119/na/9/vvvp7///nvatm3bdN555027d++ezjjjjH/v1AZX/Pzzz9PBgwfX1Tz//PPnmqeddtq6T7z//vvTRx99NP3+++/z93NPV1111bRz587/fE//qdM+dFwICKzjYhj+/068++67U/7ZqJ199tnTQw89NIdN2osvvjh99913G1572223TZdddtn8s7/++mvas2fPWqgtP3DSSSdNjz/++Bwgm2k//fTT9Pzzz8/ht9rSv7vuumvasWPH/KO33npr+uCDDzYsf8UVV8wB19qx3tNm+ura409AYB1/Y7LpHiVYnnzyybUQOOuss+ZwSji0ltVTViUff/zxvGJqbfv27dMvv/yytoI5/fTTp0cffXRKIO3du3f6/PPP165NkBw6dGhevaXlz3ffffem+vvss8+u61fCNCuuVrP9/qz8nnrqqbV7ynVp7Z5yfw8//PCUe93MPW2qsy4+7gQE1nE3JJvvULZMBw4cmD+Y7doDDzwwf/3KK6/M2760Cy+8cLrnnnvWfS8rqayost1ahsN99903JciyumpbsVtuuWW68sorp2w79+3bN9c85ZRTpscee2zehiY00xIg11xzzfz1F198MX311Vdz+CVgbrjhhvn3tG1owi6hl+1mVkgttO699975e2+//fZcp60Q8/Vzzz23FloJ4ATx8j6Pdk/Zdmq1BQRW7fGbe58VRrZPCYXrrrtuuvbaa+fvv/POO3OYpF1yySXT7bffPgdGzrjSHnzwwencc8+dv3711VfncEnL53NO9Mwzz8whkmB64okn5uDJn5c1Em7Zimbl1VrqJmSy6mtBds4558zhmMBpYXe0mul3C9vrr79+yj9pH3744Xz+lZZQze8/1ntaPcvbAkN/wt2CwNqCQ/7NN99MP/zwwxxYLTCyQrr88svnVdMff/wx33VWMhdccME/AivhkMP3tuppK6n8e6PAyqpuGU4JkgRhVn5p7bwrn8+qKy0H9rkuLVvSFo6tXwmsFoJZse3atWvDwMo9HOs9tdDbgkN+wtySwNpiQ50znqxi2vYqt5fVTs57lj9LiGSFkxBZXWFlNZbtU1Zty8/n69XAysF3DsCXW8VV0oRN2yau/izh+cILL8yh1VZe2WbmrKutBO+44455hbi6wkro5ZA+h/jp17/dU+potQUEVu3x+0fvNwqsXJTQyHlRC7MEVZ7ynXzyyf8IrKx88jpEC6z8+f7775+vWw2sbB/bVmt5ltQ6lhVcVkEbtWz5Xn/99bVVYK7JSjABuNzm5Uwuq7jVwMo95FxuuRI82j21e9hiQ35C3Y7A2oLDnXenfvzxx/msZ7lyyasN2Xq1Vwpy/tMOolfPsHLmtH///rVVTwuCjbaErcbq08qcqeVzq+9WpWgO7rMqW7abb755uvrqq+dQXB6uH+0MKyusbAmP5Z6cYdWf7AKr/hjOB9F5ryr/oeecqr38uTwbymokryskCNpWaxlYr7322vTll1/OGhsduh8psJbnYMsD8caaAEoQLdvyd+X7eZUhTwwTkq0tA7Q9DczPVp+IZtW0+hCgBejqPQms+pNdYNUfw+nll19eO6BeBsS33347vfTSS2urpJwNZfvU3mVqL4murmhuvfXWOfTaymX5kujyFYjlCmr11YjGmmvy1LCFUd5cb68r5JrVF0Db5/KuWJ5+prVXFfJ1Vn2ffvrpuu8v3+062j0lzLXaAgKr9vjNvc/b4O28KQGR86r8VZu8m5XtYVoOqLPCynVZCaXl/CpnQAmGTz75ZP7eMpxymJ2njWk5uM+1WbXkHam0vHP1yCOPzF8v3zTPiimtreTaddm2LZ8m5pqcj7UnmflzwjOvX+SzORNrLau0rBLfeOONtQcK7TA+W99jvactMNwn9C0IrC0w/HnS9vTTT2/4V2ja7bX/uHPt8sxn9faXq5m8gpBD8SO19oRwddWUwEnwJdxay1PCrP6Wry8cqW62mdnWLc+xVq9NCObJZwJ6M/e0BYb7hL4FgbVFhj8roaxI2pvp7bayisqKK2+pt5YtYVZE7Y3z9v2LL754uvPOO9eJZOWSVdnyNYlckPOgnHWthsXyTfvlqivBkrfSl9vBI9G3s7X8zqzy8gBh2RJWeXLYXsnIzzZzT1tkyE/I2xBYW2zYs11r/2eFPJ3L6wntLz2v3mq2ggm4BEP+6s6R/upKgi2H3amTbV3Cb6Mnf6Mos9JroZWtae7pSO1Y72lUX9UdKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbECAmusr+oECHQUEFgdMZUiQGCsgMAa66s6AQIdBQRWR0ylCBAYKyCwxvqqToBARwGB1RFTKQIExgoIrLG+qhMg0FFAYHXEVIoAgbEC/wNOHy46iN58HAAAAABJRU5ErkJggg==" alt="300x200" data-src="holder.js/300x200" style="width: 300px; height: 200px;">
-                        <div class="caption">
-                            <h4>Thumbnail label</h4>
-                            <p>Euro 100,00</p>
-                            <a class="btn btn-primary" href="#">View</a>
-                            <a class="btn btn-success" href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-xs-4">
-                    <div class="thumbnail">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAANV0lEQVR4Xu3cB48eNRsF0Am9Bwi9hhZE6L3z31HoIFoSSECA6D30XvLpjuTV7MsmZPlsKc/mWEJsdud91nNsrmzPhG2HDh06PGkECBAoILBNYBUYJV0kQGAWEFgmAgECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqHSUAAGBZQ4QIFBGQGCVGSodJUBAYJkDBAiUERBYZYZKRwkQEFjmAAECZQQEVpmh0lECBASWOUCAQBkBgVVmqP69o5999tn03nvvTb/99tt0+PDh6dRTT50uvfTS6aabblr34fzszTffnL7++uvpzz//nH925plnTjfeeON00UUXrbv2119/na/9/vvvp7///nvatm3bdN555027d++ezjjjjH/v1AZX/Pzzz9PBgwfX1Tz//PPnmqeddtq6T7z//vvTRx99NP3+++/z93NPV1111bRz587/fE//qdM+dFwICKzjYhj+/068++67U/7ZqJ199tnTQw89NIdN2osvvjh99913G1572223TZdddtn8s7/++mvas2fPWqgtP3DSSSdNjz/++Bwgm2k//fTT9Pzzz8/ht9rSv7vuumvasWPH/KO33npr+uCDDzYsf8UVV8wB19qx3tNm+ura409AYB1/Y7LpHiVYnnzyybUQOOuss+ZwSji0ltVTViUff/zxvGJqbfv27dMvv/yytoI5/fTTp0cffXRKIO3du3f6/PPP165NkBw6dGhevaXlz3ffffem+vvss8+u61fCNCuuVrP9/qz8nnrqqbV7ynVp7Z5yfw8//PCUe93MPW2qsy4+7gQE1nE3JJvvULZMBw4cmD+Y7doDDzwwf/3KK6/M2760Cy+8cLrnnnvWfS8rqayost1ahsN99903JciyumpbsVtuuWW68sorp2w79+3bN9c85ZRTpscee2zehiY00xIg11xzzfz1F198MX311Vdz+CVgbrjhhvn3tG1owi6hl+1mVkgttO699975e2+//fZcp60Q8/Vzzz23FloJ4ATx8j6Pdk/Zdmq1BQRW7fGbe58VRrZPCYXrrrtuuvbaa+fvv/POO3OYpF1yySXT7bffPgdGzrjSHnzwwencc8+dv3711VfncEnL53NO9Mwzz8whkmB64okn5uDJn5c1Em7Zimbl1VrqJmSy6mtBds4558zhmMBpYXe0mul3C9vrr79+yj9pH3744Xz+lZZQze8/1ntaPcvbAkN/wt2CwNqCQ/7NN99MP/zwwxxYLTCyQrr88svnVdMff/wx33VWMhdccME/AivhkMP3tuppK6n8e6PAyqpuGU4JkgRhVn5p7bwrn8+qKy0H9rkuLVvSFo6tXwmsFoJZse3atWvDwMo9HOs9tdDbgkN+wtySwNpiQ50znqxi2vYqt5fVTs57lj9LiGSFkxBZXWFlNZbtU1Zty8/n69XAysF3DsCXW8VV0oRN2yau/izh+cILL8yh1VZe2WbmrKutBO+44455hbi6wkro5ZA+h/jp17/dU+potQUEVu3x+0fvNwqs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" alt="300x200" data-src="holder.js/300x200" style="width: 300px; height: 200px;">
-                        <div class="caption">
-                            <h4>Thumbnail label</h4>
-                            <p>Euro 100,00</p>
-                            <a class="btn btn-primary" href="#">View</a>
-                            <a class="btn btn-success" href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                </li>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="col-xs-12 col-md-12">
+            <hr>
+            <h2 class="muted"><b>More Info</b></h2>
+            <hr>
+            <h2>Professional Cornhole Bags - Four (4) Blue Bags</h2>
+            <li>Dual Sided (Duck Canvas & Microsuede)</li>
+            <li>Resin Filled (Indoor & Outdoor)</li>
+            <li>Durable Cornhole Bags, made to last!</li>
+            <li>Reinforced stitching</li>
+            <li>Free CornholeAce Tote Bag included!!!</li>
+
+            <hr>
+            <h3>BucketBall Video</h3>
+            <hr>
+
+            <div class="videoWrapper text-center hidden-xs hidden-sm hidden-md">
+                <iframe width="800px" height="460px" src="https://www.youtube.com/embed/5p5TnwBWzu8?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0"></iframe>
+            </div>
+            <div class="videoWrapper text-center hidden-xs hidden-sm hidden-lg">
+                <iframe width="600px" height="345px" src="https://www.youtube.com/embed/5p5TnwBWzu8?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0"></iframe>
+            </div>
+            <div class="videoWrapper text-center hidden-md hidden-lg">
+                <iframe width="400px" height="230px" src="https://www.youtube.com/embed/5p5TnwBWzu8?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0"></iframe>
+            </div>
+
+            <hr>
+            <h3>Overview</h3>
+            <hr>
+            <p>Professional Cornhole Bags - Four (4) Red Bags:</p>
+            <ul><li>Professional quality and size (6" x 6" @ 16oz)</li>
+                <li>Dual Sided (Duck Canvas & Microsuede)</li>
+                <li>Resin Filled (Indoor & Outdoor)</li>
+                <li>Durable Cornhole Bags, made to last!</li>
+                <li>Reinforced stitching</li>
+                <li>Free CornholeAce Tote Bag included!!!</li>
+
             </ul>
 
-            <div class="pagination col-xs-12">
-                <ul>
-                    <li class"disabled"=""><span>Prev</span></li>
-                    <li class"disabled"=""><span>1</span></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">Next</a></li>
-                </ul>
-            </div>
+            <hr>
+            <h3>How to Play - Quick Start&nbsp;Instructions</h3>
+            <hr>
+            <p>Professional Cornhole Bags are dual-sided: one side is duck canvas and the other is microsuede. Having dual-sided bags enhances strategic play in the game of cornhole.  The duck canvas side allows for fast plays across the board. The microsuede side slows the bag and is useful when you want to hit the board and stop in place!</p>
+
+            <hr>
+            <h3>How to Play - Official Rules</h3>
+            <hr>
+            <p><a href="http://www.bucketball.com/site/how-to-play.php">http://www.bucketball.com/site/how-to-play.php</a></p>
+
+            <hr>
+            <h3>Other Information</h3>
+            <hr>
+            <p>PLAYING IN LOCATIONS WITHOUT WATER: BucketBall is designed to be lightweight so it is convenient to carry wherever you like to take it. However, it requires additional weight, such as water, to prevent the buckets from tipping over during game play. If you plan on taking the game to a location where water isn't easily available, we would recommend one of the following:</p>
+            <ul><li>Purchase a 5-6 Gallon Water Carrier ($8-$17 price range with Free Shipping on Amazon). Fill the water carrier with water and take the water wherever you want to play BucketBall.</li>
+                <li>Place a cornhole bag inside each bucket.</li>
+                <li>Place a 2.5 lb. Gold's Gym weight inside each bucket.</li>
+            </ul><p>If you are playing in a location that has a hard flat surface (i.e. concrete, asphalt, hardwood floor, etc.) and do not have water or a weighted object to place in each bucket, you can play the game by requiring each player to bounce the game ball onto the floor one time and try to make it into the bucket. This will help prevent the balls from knocking the buckets over.</p>
+        </div>
+
+
+    <hr>
+
+    <div class="row text-center">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div data-celery="56ce3a7be4ad561100af4c92" data-celery-type="embed" data-celery-version="v2">Checkout</div>
+            <script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1">
+            <div data-celery="56ce0181a5060a11002be466" data-celery-type="embed" data-celery-version="v2">Checkout</div>
 
         </div>
+        <div class="col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1">
+            <div data-celery="56ce078782f6fa110024d26e" data-celery-type="embed" data-celery-version="v2">Checkout</div>
+
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-xs-10-offset-1">
+            <button class="btn btn-success" href="https://tgs.celeryshop.com/checkout?product_id=559c711099d87e030025424e">
+                Buy
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div id="#getProductJS"></div>
+        </div>
+    </div>
+
+<!--    <div class="row">-->
+<!--        <div class="col-xs-12 text-center">Testing Postman Script Product #1-->
+<!---->
+<!--            <h5 class="text-center">--><?php //echo $GLOBALS['description'];?><!--description1</h5>-->
+<!--            <h5 class="text-center">--><?php //echo $GLOBALS['name'];?><!--name</h5>-->
+<!--            <h5 class="text-center">user_id: --><?php //echo $GLOBALS['user_id'];?><!--</h5>-->
+<!--            <img src="--><?php //echo $GLOBALS['productPicture'];?><!--"/>-->
+<!--            <a href="--><?php //echo $GLOBALS['productPicture'];?><!--">Product Picture Link</a>-->
+<!---->
+<!--        </div>-->
+<!--    </div>-->
+
+    <!-- /.row -->
+
+    <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright © Tailgating Sports, LLC 2016</p>
+                </div>
+            </div>
+        </footer>
+
     </div>
 </div>
 <?php include('php/footernew.php');?>

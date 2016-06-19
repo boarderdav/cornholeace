@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require 'dbconfig.php';
+require '../dbconfig.php';
 
 // TWITTER SQL DATABASE CONNECTION
 mysqli_select_db($conn, $dbname) or die ("could not open database connection");
