@@ -177,13 +177,15 @@
         </div>
 
 
-<hr>
+        <hr>
         <br>
         <hr>
 
         <!-- Title -->
         <div class="row">
             <div class="col-lg-12">
+                <br>
+                <hr>
                 <h3>Similar Products</h3>
             </div>
         </div>
@@ -360,15 +362,15 @@
 
     <hr>
 
-    <!-- Footer -->
-    <footer>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright © Tailgating Sports, LLC 2016</p>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright © Tailgating Sports, LLC 2016</p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-</div>
     </div>
+</div>
 <?php include('php/footernew.php');?>
