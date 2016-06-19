@@ -186,7 +186,8 @@
             <div class="col-lg-12">
                 <br>
                 <hr>
-                <h3>Similar Products</h3>
+                <h1>Similar Products</h1>
+                <hr>
             </div>
         </div>
         <!-- /.row -->
