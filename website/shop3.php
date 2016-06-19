@@ -178,6 +178,8 @@
 
 
 <hr>
+        <br>
+        <hr>
 
         <!-- Title -->
         <div class="row">
