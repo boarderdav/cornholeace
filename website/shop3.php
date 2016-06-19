@@ -177,12 +177,12 @@
         </div>
 
 
-
+<hr>
 
         <!-- Title -->
         <div class="row">
             <div class="col-lg-12">
-                <h3>Latest Features</h3>
+                <h3>Similar Products</h3>
             </div>
         </div>
         <!-- /.row -->
