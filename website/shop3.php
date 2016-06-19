@@ -137,17 +137,20 @@
 
 
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <h2><b>Official CornholeAce Bags</b></h2>
+            <h2><b>Professional Cornhole Bags - Four (4) Blue Bags</b></h2>
             <h3>$36.99</h3>
             <p><b>Condition: </b>New Product</p>
 
-            <h4>OFFICIAL BUCKETBALL SET - Includes the following:</h4>
-            <li>12 BucketBall Buckets (6 Blue Buckets and 6 Orange Buckets)</li>
-            <li>2 BucketBall Game Balls</li>
-            <li>1 BucketBall Tote Bag</li>
-            <li>BucketBall Instructions</li>
+            <h3>Professional Cornhole Bags - Four (4) Blue Bags</h3>
+            <li>Dual Sided (Duck Canvas & Microsuede)</li>
+            <li>Resin Filled (Indoor & Outdoor)</li>
+            <li>Durable Cornhole Bags, made to last!</li>
+            <li>Reinforced stitching</li>
+            <li>Free CornholeAce Tote Bag included!!!</li>
 
-            <p>BucketBall is the hottest new beach, poolside and backyard game that’s perfect for people of all ages!!!</p>
+            <p>These professional cornhole bags are great indoor/outdoor play. The dual-sided bags are great for
+                stick and slide plays too. You'll enjoy their durability for of the bags for years and years of
+                playing!</p>
 
 
             <div>
@@ -179,7 +182,7 @@
             <hr>
             <h2 class="muted"><b>More Info</b></h2>
             <hr>
-            <h2>Professional Cornhole Bags - Four (4) Red Bags</h2>
+            <h2>Professional Cornhole Bags - Four (4) Blue Bags</h2>
             <li>Dual Sided (Duck Canvas & Microsuede)</li>
             <li>Resin Filled (Indoor & Outdoor)</li>
             <li>Durable Cornhole Bags, made to last!</li>
