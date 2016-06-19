@@ -178,6 +178,77 @@
 
 
 
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Latest Features</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="blue cornhole bags">
+                    <div class="caption">
+                        <h3>Professional Blue Cornhole Bags</h3>
+                        <p>Four (4) professional blue cornhole bags.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="/img/CornholeBags-RedFinal.jpg" alt="">
+                    <div class="caption">
+                        <h3>Professional Red Cornhole Bags</h3>
+                        <p>Four (4) professional red cornhole bags.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="/img/CornholeAce-Package-top.jpg" alt="">
+                    <div class="caption">
+                        <h3>Eight (8) Professional Bags - Red & Blue</h3>
+                        <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
         <div class="col-xs-12 col-md-12">
             <hr>
             <h2 class="muted"><b>More Info</b></h2>
@@ -271,82 +342,18 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-xs-12 text-center">Testing Postman Script Product #1
+<!--    <div class="row">-->
+<!--        <div class="col-xs-12 text-center">Testing Postman Script Product #1-->
+<!---->
+<!--            <h5 class="text-center">--><?php //echo $GLOBALS['description'];?><!--description1</h5>-->
+<!--            <h5 class="text-center">--><?php //echo $GLOBALS['name'];?><!--name</h5>-->
+<!--            <h5 class="text-center">user_id: --><?php //echo $GLOBALS['user_id'];?><!--</h5>-->
+<!--            <img src="--><?php //echo $GLOBALS['productPicture'];?><!--"/>-->
+<!--            <a href="--><?php //echo $GLOBALS['productPicture'];?><!--">Product Picture Link</a>-->
+<!---->
+<!--        </div>-->
+<!--    </div>-->
 
-            <h5 class="text-center"><?php echo $GLOBALS['description'];?>description1</h5>
-            <h5 class="text-center"><?php echo $GLOBALS['name'];?>name</h5>
-            <h5 class="text-center">user_id: <?php echo $GLOBALS['user_id'];?></h5>
-            <img src="<?php echo $GLOBALS['productPicture'];?>"/>
-            <a href="<?php echo $GLOBALS['productPicture'];?>">Product Picture Link</a>
-
-        </div>
-    </div>
-
-    <!-- Title -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h3>Latest Features</h3>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <!-- Page Features -->
-    <div class="row text-center">
-
-        <div class="col-md-3 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img src="http://placehold.it/800x500" alt="">
-                <div class="caption">
-                    <h3>Feature Label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img src="http://placehold.it/800x500" alt="">
-                <div class="caption">
-                    <h3>Feature Label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img src="http://placehold.it/800x500" alt="">
-                <div class="caption">
-                    <h3>Feature Label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img src="http://placehold.it/800x500" alt="">
-                <div class="caption">
-                    <h3>Feature Label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
     <!-- /.row -->
 
     <hr>
