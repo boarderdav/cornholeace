@@ -237,19 +237,19 @@
     </div><!-- /.container -->
 
 <?php
-use Intercom\IntercomClient;
-$client = new IntercomClient(m3eq92kh, 6d83180bc278f7115426a8605b83e925c6e84627);
-
-// create/update a user
-
-$client->users->create([
-    'email' => 'dgjenkin@vt.edu',
-    "companies" => [
-        [
-            "id" => "3"
-        ]
-    ]
-]);
+//use Intercom\IntercomClient;
+//$client = new IntercomClient(m3eq92kh, 6d83180bc278f7115426a8605b83e925c6e84627);
+//
+//// create/update a user
+//
+//$client->users->create([
+//    'email' => 'dgjenkin@vt.edu',
+//    "companies" => [
+//        [
+//            "id" => "3"
+//        ]
+//    ]
+//]);
 
 ?>
 
