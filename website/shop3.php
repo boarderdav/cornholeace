@@ -49,7 +49,7 @@
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal2">
-                    <img class="img-responsive" src="/img/IMG_0804.JPG"/>
+                    <img class="img-responsive" src="/img/IMG_0804_a.jpg"/>
                 </div>
             </div>
 
@@ -64,7 +64,7 @@
                                 <h4 class="modal-title" id="myModalLabel">Reinforced Bucket Structure</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img class="img-responsive" src="/img/IMG_0804.JPG"/>
+                                <img class="img-responsive" src="/img/IMG_0804_a.jpg"/>
                                 <p>Reliable, Lightweight, Portable design!</p>
                             </div>
                             <div class="modal-footer">
@@ -76,7 +76,7 @@
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal3">
-                    <img class="img-responsive" src="/img/IMG_0805.JPG"/>
+                    <img class="img-responsive" src="/img/IMG_0805_a.jpg"/>
                 </div>
             </div>
 
@@ -91,7 +91,7 @@
                                 <h4 class="modal-title" id="myModalLabel">BucketBall Offical Game Set</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img class="img-responsive" src="/img/IMG_0805.JPG"/>
+                                <img class="img-responsive" src="/img/IMG_0805_a.jpg"/>
                                 <p>Bucketball is the best game out there!</p>
                             </div>
                             <div class="modal-footer">
