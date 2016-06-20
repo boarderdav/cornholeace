@@ -165,7 +165,7 @@
 
             <div class="row">
                 <div class="col-xs-12">
-                    <div></div><button class="col-xs-4 btn btn-primary btn-lg"<a href="https://www.facebook
+                    <div><button class="col-xs-4 btn btn-primary btn-lg"<a href="https://www.facebook
                     .com/playbucketball"
                                                    class="button">Facebook</a></button></div>
                    <div><button class="col-xs-4 btn btn-primary btn-lg" <a href="https://twitter.com/bucketballgame"
