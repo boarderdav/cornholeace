@@ -193,7 +193,7 @@
 
             <div class="col-md-6 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="/img/CornholeBags-RedBlueAllFinal.jpg.jpg" alt="blue and red cornhole bags">
+                    <img src="/img/CornholeBags-RedBlueAllFinal.jpg" alt="blue and red cornhole bags">
                     <div class="caption">
                         <h3>Complete Set - Eight (8) Professional Bags - Red & Blue</h3>
                         <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
