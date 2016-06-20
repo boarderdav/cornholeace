@@ -14,14 +14,14 @@
                 Order Now - $36.99
             </button>
             <div class="col-xs-12">
-                <img src="/img/CornholeBags-RedFinal.jpg" alt="" class="img-responsive">
+                <img src="/img/CornholeBags-BlueFinal.jpg" alt="" class="img-responsive">
             </div>
 
         <div class="row">
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal1">
-                    <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+                    <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg"/>
                 </div>
             </div>
 
@@ -36,12 +36,12 @@
                                 <h4 class="modal-title" id="myModalLabel">BucketBall Offical Game Set</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+                                <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg"/>
                                 <p>Includes 12 Buckets (6 Orange & 6 Blue), 2 Game Balls, 1 Tote Bag, & Instructions!</p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
+                            </div>IMG_1204_a.jpg
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal2">
-                    <img class="img-responsive" src="/img/IMG_0804_a.jpg"/>
+                    <img class="img-responsive" src="/img/IMG_1204_a.jpg"/>
                 </div>
             </div>
 
@@ -64,7 +64,7 @@
                                 <h4 class="modal-title" id="myModalLabel">Reinforced Bucket Structure</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img class="img-responsive" src="/img/IMG_0804_a.jpg"/>
+                                <img class="img-responsive" src="/img/IMG_1204_a.jpg"/>
                                 <p>Reliable, Lightweight, Portable design!</p>
                             </div>
                             <div class="modal-footer">
@@ -76,7 +76,7 @@
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal3">
-                    <img class="img-responsive" src="/img/IMG_0805_a.jpg"/>
+                    <img class="img-responsive" src="/img/IMG_1207_a.jpg"/>
                 </div>
             </div>
 
@@ -91,7 +91,7 @@
                                 <h4 class="modal-title" id="myModalLabel">BucketBall Offical Game Set</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img class="img-responsive" src="/img/IMG_0805_a.jpg"/>
+                                <img class="img-responsive" src="/img/IMG_1207_a.jpg"/>
                                 <p>Bucketball is the best game out there!</p>
                             </div>
                             <div class="modal-footer">
@@ -104,7 +104,7 @@
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal4">
-                    <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+                    <img class="img-responsive" src="/img/IMG_1212_a.jpgMG"/>
                 </div>
             </div>
 
@@ -119,7 +119,7 @@
                                 <h4 class="modal-title" id="myModalLabel">BucketBall Official Game Set</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+                                <img class="img-responsive" src="/img/IMG_1212_a.jpg"/>
                                 <p>Great for Beach, Outdoor, and Poolside games!</p>
                             </div>
                             <div class="modal-footer">
@@ -137,11 +137,11 @@
 
 
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <h2><b>Professional Cornhole Bags - Four (4) Red Bags</b></h2>
+            <h2><b>Professional Cornhole Bags - Four (4) Blue Bags</b></h2>
             <h3>$36.99</h3>
             <p><b>Condition: </b>New Product</p>
 
-            <h3>Professional Cornhole Bags - Four (4) Red Bags</h3>
+            <h3>Professional Cornhole Bags - Four (4) Blue Bags</h3>
             <li>Dual Sided (Duck Canvas & Microsuede)</li>
             <li>Resin Filled (Indoor & Outdoor)</li>
             <li>Durable Cornhole Bags, made to last!</li>
