@@ -177,10 +177,6 @@
         </div>
 
 
-        <hr>
-        <br>
-        <hr>
-
         <!-- Title -->
         <div class="row">
             <div class="col-lg-12">
@@ -195,12 +191,12 @@
         <!-- Page Features -->
         <div class="row text-center">
 
-            <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="col-md-6 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="blue cornhole bags">
+                    <img src="/img/CornholeBags-RedBlueAllFinal.jpg.jpg" alt="blue and red cornhole bags">
                     <div class="caption">
-                        <h3>Professional Blue Cornhole Bags</h3>
-                        <p>Four (4) professional blue cornhole bags.</p>
+                        <h3>Complete Set - Eight (8) Professional Bags - Red & Blue</h3>
+                        <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
                         <p>
                             <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
                         </p>
@@ -223,10 +219,10 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="/img/CornholeAce-Package-top.jpg" alt="">
+                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="">
                     <div class="caption">
-                        <h3>Eight (8) Professional Bags - Red & Blue</h3>
-                        <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
+                        <h3>Professional Blue Cornhole Bags</h3>
+                        <p>Four (4) professional Blue cornhole bags.</p>
                         <p>
                             <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
                         </p>
@@ -234,18 +230,18 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="col-md-3 col-sm-6 hero-feature">-->
+<!--                <div class="thumbnail">-->
+<!--                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="">-->
+<!--                    <div class="caption">-->
+<!--                        <h3>Feature Label</h3>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                        <p>-->
+<!--                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
         </div>
 
