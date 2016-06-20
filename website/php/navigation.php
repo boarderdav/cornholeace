@@ -45,7 +45,7 @@
                                     Login via
                                     <div class="social-buttons">
                                         <!--                                        <a href="http://new.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
-                                        <a href="./php/fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i>
+                                        <a href="/php/fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i>
                                             Facebook</a>
                                         <a href="./../lib/twitter/twconfig.php" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                                     </div>
@@ -67,13 +67,14 @@
                                     Login via
                                     <div class="social-buttons">
 <!--                                        <a href="http://new.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
-                                        <a href="./php/fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i>
+                                        <a href="/php/fbconfig.php" class="btn btn-fb"><i class="fa
+                                        fa-facebook"></i>
                                             Facebook</a>
                                         <a href="./../lib/twitter/twconfig.php" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
 <!--                                        <a href="--><?php //echo $_SESSION['LOGINURL'];?><!--" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>-->
                                     </div>
                                     or
-                                    <form class="form" href="#" action="./../dbconfig.php" method="post" role="form" accept-charset="UTF-8" id="login-nav"> <!--action="login"-->
+                                    <form class="form" href="#" action="/dbconfig.php" method="post" role="form" accept-charset="UTF-8" id="login-nav"> <!--action="login"-->
                                         <div class="form-group">
                                             <label class="sr-only" for="exampleInputEmail2">Email address</label>
                                             <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
