@@ -14,14 +14,14 @@
                 Order Now - $36.99
             </button>
             <div class="col-xs-12">
-                <img src="/img/CornholeBags-BlueFinal.jpg" alt="" class="img-responsive">
+                <img src="/img/CornholeBags-RedFinal.jpg" alt="" class="img-responsive">
             </div>
 
         <div class="row">
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal1">
-                    <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg"/>
+                    <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
                 </div>
             </div>
 
@@ -36,7 +36,7 @@
                                 <h4 class="modal-title" id="myModalLabel">BucketBall Offical Game Set</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg"/>
+                                <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
                                 <p>Includes 12 Buckets (6 Orange & 6 Blue), 2 Game Balls, 1 Tote Bag, & Instructions!</p>
                             </div>
                             <div class="modal-footer">
