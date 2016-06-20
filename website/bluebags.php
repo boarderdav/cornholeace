@@ -104,7 +104,7 @@
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal4">
-                    <img class="img-responsive" src="/img/IMG_1212_a.jpgMG"/>
+                    <img class="img-responsive" src="/img/IMG_1212_a.jpg"/>
                 </div>
             </div>
 
