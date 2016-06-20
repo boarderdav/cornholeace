@@ -49,7 +49,7 @@
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal2">
-                    <img class="img-responsive" src="/img/CornholeAce-Package---Top.jpg"/>
+                    <img class="img-responsive" src="/img/IMG_0804.JPG"/>
                 </div>
             </div>
 
@@ -64,7 +64,7 @@
                                 <h4 class="modal-title" id="myModalLabel">Reinforced Bucket Structure</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img class="img-responsive" src="/img/CornholeAce-Package---Top.jpg"/>
+                                <img class="img-responsive" src="/img/IMG_0804.JPG"/>
                                 <p>Reliable, Lightweight, Portable design!</p>
                             </div>
                             <div class="modal-footer">
@@ -76,7 +76,7 @@
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal3">
-                    <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+                    <img class="img-responsive" src="/img/IMG_0805.JPG"/>
                 </div>
             </div>
 
@@ -91,7 +91,7 @@
                                 <h4 class="modal-title" id="myModalLabel">BucketBall Offical Game Set</h4>
                             </div>
                             <div class="modal-body text-center">
-                                <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+                                <img class="img-responsive" src="/img/IMG_0805.JPG"/>
                                 <p>Bucketball is the best game out there!</p>
                             </div>
                             <div class="modal-footer">
