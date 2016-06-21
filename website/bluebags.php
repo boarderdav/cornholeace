@@ -191,7 +191,7 @@
         <!-- Page Features -->
         <div class="row text-center">
 
-            <div class="col-md-6 col-sm-6 hero-feature">
+            <div class="col-md-6 col-sm-12 hero-feature">
                 <div class="thumbnail">
                     <a href="#"><img src="/img/CornholeBags-RedBlueAllFinal.jpg" alt="blue and red cornhole bags"></a>
                     <div class="caption">
