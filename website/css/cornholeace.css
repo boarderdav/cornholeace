@@ -1,0 +1,86 @@
+.navbar { margin-bottom:0px;}
+
+#footer {background-color: #2b2b2b;}
+footer h4 {color:#dddddd;}
+
+figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    /*-webkit-margin-start: 40px;*/
+    /*-webkit-margin-end: 40px;*/
+}
+
+figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+h3.noMargin {
+    margin-top:0;
+    margin-bottom:10px;
+    color:#FFFFFF;
+    width:100%;
+}
+
+.img-caption {
+    box-sizing: content-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-caption figcaption {
+    /*background: rgba(0, 0, 0, 0.4);*/
+    position: absolute;
+    box-sizing: border-box;
+    /*padding: 0;*/
+    margin: 0;
+    padding: 12px 25px 14px 25px;
+    bottom: 0;
+    display: inline-table;
+    width: 95%;  /*might change this to javascript function*/
+}
+
+.img-caption figcaption span{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    display: block;
+    position: relative;
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+}
+
+.img-caption:hover figcaption span{
+    display: inherit;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    display: block;
+    position: relative;
+    opacity: 1;
+    max-height: 0;
+    padding: 0;
+    -webkit-transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -ms-transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+
+
+
+

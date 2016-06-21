@@ -1,0 +1,223 @@
+.purpleColor {
+  color: #373277;
+}
+.blueColor {
+  color: #205081;
+}
+figure > figcaption {
+  width: 100%;
+}
+figcaption.moveUp {
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition-property: padding-bottom, bottom, background-color;
+  -webkit-transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -moz-transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.img-caption:hover figcaption.moveUp {
+  position: absolute;
+  background-color: rgba(32, 80, 129, 0.85);
+  bottom: 0px;
+  padding-bottom: 30px;
+  -webkit-transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -moz-transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.navbar-default {
+  background-color: #205081;
+  border-color: #1a4066;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #398fe6;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #398fe6;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #205081;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #398fe6;
+  background-color: #1a4066;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu .divider {
+  background-color: #1a4066;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #398fe6;
+  background-color: #1a4066;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #398fe6;
+  background-color: #1a4066;
+}
+.navbar-default .navbar-toggle {
+  border-color: #1a4066;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #1a4066;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #398fe6;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #398fe6;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #398fe6;
+    background-color: #1a4066;
+  }
+}
+#login-dp {
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#login-dp .help-block {
+  font-size: 12px;
+}
+#login-dp .bottom {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid #ddd;
+  clear: both;
+  padding: 14px;
+}
+#login-dp .social-buttons {
+  margin: 12px 0;
+}
+#login-dp .social-buttons a {
+  width: 49%;
+}
+#login-dp .form-group {
+  margin-bottom: 10px;
+}
+.btn-fb {
+  color: #fff;
+  background-color: #3b5998;
+}
+.btn-fb:hover {
+  color: #fff;
+  background-color: #496ebc;
+}
+.btn-tw {
+  color: #fff;
+  background-color: #55acee;
+}
+.btn-tw:hover {
+  color: #fff;
+  background-color: #59b5fa;
+}
+@media (max-width: 768px) {
+  #login-dp {
+    background-color: inherit;
+    color: #fff;
+  }
+  #login-dp .bottom {
+    background-color: inherit;
+    border-top: 0 none;
+  }
+}
+h1.code,
+h2.code,
+h3.code,
+h4.code,
+h5.code,
+h6.code,
+p.code,
+li.code {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+h1.lato,
+h2.lato,
+h3.lato,
+h4.lato,
+h5.lato,
+h6.lato,
+p.lato,
+li.lato {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1.lato-light,
+h2.lato-light,
+h3.lato-light,
+h4.lato-light,
+h5.lato-light,
+h6.lato-light,
+p.lato-light,
+li.lato-light {
+  font-family: Lato-light, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.prefooter-links-column-sublinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  line-height: 22px;
+  text-align: left;
+}
+.prefooter-links-column-sublinks > a {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+.prefooter-links-columns-sublinks a {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+a {
+  background: transparent;
+}
+a:-webkit-any-link {
+  cursor: auto;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}

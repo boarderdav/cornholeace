@@ -1,0 +1,30 @@
+{
+  "name": "cornholeace1",
+  "version": "1.0.0",
+  "description": "Preprocessor for \"coffee\" and \"less\" files",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boarderdav/cornholeace.git"
+  },
+  "keywords": [
+    "cornholeace",
+    "less",
+    "coffee",
+    "grunt"
+  ],
+  "author": "D. Jenkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boarderdav/cornholeace/issues"
+  },
+  "homepage": "https://github.com/boarderdav/cornholeace",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-contrib-less": "^1.1.0"
+  }
+}

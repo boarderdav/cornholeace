@@ -1,0 +1,16 @@
+{
+    "name": "davidjenkins/cornholeace1",
+    "require-dev": {
+        "twitter/bootstrap": "^3.3"
+    },
+    "authors": [
+        {
+            "name": "David Jenkins",
+            "email": "djenk008@odu.edu"
+        }
+    ],
+    "require": {
+        "facebook/php-sdk-v4" : "~5.0",
+        "abraham/twitteroauth": "^0.6.2"
+    }
+}

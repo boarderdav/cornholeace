@@ -1,0 +1,212 @@
+@hCustomColor: #373277;
+@pCustomColor: #205081;
+
+.purpleColor {color: @hCustomColor}
+.blueColor {color: @pCustomColor}
+
+figure > figcaption {width:100%;}
+figcaption.moveUp {
+  position:absolute;
+  bottom:0px;
+  padding-bottom:0px;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-transition-property: padding-bottom, bottom, background-color;
+  -webkit-transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -moz-transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.img-caption:hover figcaption.moveUp {
+  position:absolute;
+  background-color: rgba(32, 80, 129, 0.85); //#205081
+  bottom:0px;
+  padding-bottom:30px;
+  -webkit-transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -moz-transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+//navigation bar custom coloring
+
+//blue color configuration
+@bgDefault      : #205081;
+@bgHighlight    : #1a4066;
+@colDefault     : #ecf0f1;
+@colHighlight   : #398fe6;
+
+//red color configuration
+//@bgDefault      : #df5353;
+//@bgHighlight    : #c53838;
+//@colDefault     : #ecf0f1;
+//@colHighlight   : #ffa3a3;
+
+@dropDown       : true;
+.ddm() when (@dropDown) {
+  > .dropdown-menu {
+    background-color: @bgDefault;
+    > li > a {
+      color: @colDefault;
+      &:hover,  &:focus {
+        color: @colHighlight;
+        background-color: @bgHighlight; }}
+    .divider {
+      background-color: @bgHighlight;}}}
+.navbar-default {
+  background-color: @bgDefault;
+  border-color: @bgHighlight;
+  .navbar-brand {
+    color: @colDefault;
+    &:hover, &:focus {
+      color: @colHighlight; }}
+  .navbar-text {
+    color: @colDefault; }
+  .navbar-nav {
+    > li {
+      > a {
+        color: @colDefault;
+        &:hover,  &:focus {
+          color: @colHighlight; }}
+      .ddm }
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: @colHighlight;
+        background-color: @bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: @colHighlight;
+        background-color: @bgHighlight; }}}
+  .navbar-toggle {
+    border-color: @bgHighlight;
+    &:hover, &:focus {
+      background-color: @bgHighlight; }
+    .icon-bar {
+      background-color: @colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: @colDefault; }
+  .navbar-link {
+    color: @colDefault;
+    &:hover {
+      color: @colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: @colDefault;
+      &:hover, &:focus {
+        color: @colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: @colHighlight;
+        background-color: @bgHighlight; }}}
+}
+
+
+//Navigation and Login page CSS included with Facebook Login
+#login-dp{
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow:hidden;
+  background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+  font-size:12px
+}
+#login-dp .bottom{
+  background-color:rgba(255,255,255,.8);
+  border-top:1px solid #ddd;
+  clear:both;
+  padding:14px;
+}
+#login-dp .social-buttons{
+  margin:12px 0
+}
+#login-dp .social-buttons a{
+  width: 49%;
+}
+#login-dp .form-group {
+  margin-bottom: 10px;
+}
+.btn-fb{
+  color: #fff;
+  background-color:#3b5998;
+}
+.btn-fb:hover{
+  color: #fff;
+  background-color:#496ebc
+}
+.btn-tw{
+  color: #fff;
+  background-color:#55acee;
+}
+.btn-tw:hover{
+  color: #fff;
+  background-color:#59b5fa;
+}
+@media(max-width:768px){
+  #login-dp{
+    background-color: inherit;
+    color: #fff;
+  }
+  #login-dp .bottom{
+    background-color: inherit;
+    border-top:0 none;
+  }
+}
+
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+@font-family-lato:       Lato, "Helvetica Neue", Helvetica, Arial,sans-serif;
+@font-family-lato-light:       Lato-light, "Helvetica Neue", Helvetica, Arial,sans-serif;
+
+h1.code, h2.code, h3.code, h4.code, h5.code, h6.code, p.code, li.code {font-family: @font-family-monospace}
+h1.lato, h2.lato, h3.lato, h4.lato, h5.lato, h6.lato, p.lato, li.lato {font-family: @font-family-lato}
+h1.lato-light, h2.lato-light, h3.lato-light, h4.lato-light, h5.lato-light, h6.lato-light, p.lato-light, li.lato-light {font-family: @font-family-lato-light}
+
+//.prefooter .prefooter-links .prefooter-links-column-sublinks-item ul.prefooter-links-column-sublinks a ul {
+//  list-style: none;
+//  margin: 0;
+//  padding: 0;
+//  font-size: 11px;
+//  line-height: 22px;
+//  text-align: left;
+//}
+
+.prefooter-links-column-sublinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.prefooter-links-column-sublinks > a {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+.prefooter-links-columns-sublinks a {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+a {
+  background: transparent;
+}
+
+a:-webkit-any-link {
+  cursor: auto;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}

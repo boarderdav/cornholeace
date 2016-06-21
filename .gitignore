@@ -1,0 +1,33 @@
+node_modules/
+.idea/
+*.iml
+*.psd
+*.iml
+*.psd
+workspace.xml
+tasks.xml
+*.ini
+composer.phar
+/vendor/
+/vendor/**/.git
+
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+dbconfig*.php
+###./website/dbconfig.php
+
+./vendor/twitter/bootstrap/docs/components.html
+
+.DS_Store*
+
