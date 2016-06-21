@@ -199,7 +199,7 @@
                         <h3>Complete Set - Eight (8) Professional Bags - Red & Blue</h3>
                         <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="https://tgs.celeryshop.com/checkout?product_id=56ce3a7be4ad561100af4c92" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -229,7 +229,7 @@
                         <h3>Professional Blue Cornhole Bags</h3>
                         <p>Four (4) professional Blue cornhole bags.</p>
                         <p>
-                            <a href="http://new.cornholeace.com/bluebags.php" class="btn btn-primary">Buy Now!</a> <a href="http://new.cornholeace.com/bluebags.php" class="btn btn-default">More Info</a>
+                            <a href="https://tgs.celeryshop.com/checkout?product_id=56ce078782f6fa110024d26e" class="btn btn-primary">Buy Now!</a> <a href="http://new.cornholeace.com/bluebags.php" class="btn btn-default">More Info</a>
                         </p>
                     </div>
                 </div>
