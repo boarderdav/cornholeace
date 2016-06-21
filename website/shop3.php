@@ -213,24 +213,13 @@
         </div>
 
 
-<<<<<<< HEAD
-=======
-        <hr>
-        <br>
-        <hr>
-
->>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
         <!-- Title -->
         <div class="row">
             <div class="col-lg-12">
                 <br>
                 <hr>
-<<<<<<< HEAD
-                <h1>Similar Products</h1>
-                <hr>
-=======
                 <h3>Similar Products</h3>
->>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
+                <hr>
             </div>
         </div>
         <!-- /.row -->
@@ -238,21 +227,14 @@
         <!-- Page Features -->
         <div class="row text-center">
 
-<<<<<<< HEAD
-            <div class="col-md-6 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/CornholeBags-RedBlueAllFinal.jpg" alt="blue and red cornhole bags">
-                    <div class="caption">
-                        <h3>Complete Set - Eight (8) Professional Bags - Red & Blue</h3>
-                        <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
-=======
+
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
                     <img src="/img/CornholeBags-BlueFinal.jpg" alt="blue cornhole bags">
                     <div class="caption">
                         <h3>Professional Blue Cornhole Bags</h3>
                         <p>Four (4) professional blue cornhole bags.</p>
->>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
+
                         <p>
                             <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
                         </p>
@@ -275,17 +257,10 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-<<<<<<< HEAD
-                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="">
-                    <div class="caption">
-                        <h3>Professional Blue Cornhole Bags</h3>
-                        <p>Four (4) professional Blue cornhole bags.</p>
-=======
                     <img src="/img/CornholeAce-Package-top.jpg" alt="">
                     <div class="caption">
                         <h3>Eight (8) Professional Bags - Red & Blue</h3>
                         <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
->>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
                         <p>
                             <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
                         </p>
@@ -293,20 +268,6 @@
                 </div>
             </div>
 
-<<<<<<< HEAD
-<!--            <div class="col-md-3 col-sm-6 hero-feature">-->
-<!--                <div class="thumbnail">-->
-<!--                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="">-->
-<!--                    <div class="caption">-->
-<!--                        <h3>Feature Label</h3>-->
-<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                        <p>-->
-<!--                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-=======
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
                     <img src="/img/CornholeBags-BlueFinal.jpg" alt="">
@@ -319,7 +280,6 @@
                     </div>
                 </div>
             </div>
->>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
 
         </div>
 
