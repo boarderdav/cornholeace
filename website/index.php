@@ -236,7 +236,6 @@
 
     </div><!-- /.container -->
 
-<<<<<<< HEAD
 <?php
 //use Intercom\IntercomClient;
 //$client = new IntercomClient(m3eq92kh, 6d83180bc278f7115426a8605b83e925c6e84627);
@@ -255,6 +254,4 @@
 ?>
 
 
-=======
->>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
 <?php include('php/footernew.php');?>
