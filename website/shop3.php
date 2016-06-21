@@ -14,14 +14,22 @@
                 Order Now - $36.99
             </button>
             <div class="col-xs-12">
+<<<<<<< HEAD
                 <img src="/img/CornholeBags-RedFinal.jpg" alt="" class="img-responsive">
+=======
+                <img src="/img/CornholeBags-BlueFinal.jpg" alt="" class="img-responsive">
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
             </div>
 
         <div class="row">
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal1">
+<<<<<<< HEAD
                     <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+=======
+                    <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg"/>
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
                 </div>
             </div>
 
@@ -36,7 +44,11 @@
                                 <h4 class="modal-title" id="myModalLabel">BucketBall Offical Game Set</h4>
                             </div>
                             <div class="modal-body text-center">
+<<<<<<< HEAD
                                 <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+=======
+                                <img class="img-responsive" src="/img/CornholeBags-BlueFinal.jpg"/>
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
                                 <p>Includes 12 Buckets (6 Orange & 6 Blue), 2 Game Balls, 1 Tote Bag, & Instructions!</p>
                             </div>
                             <div class="modal-footer">
@@ -49,7 +61,11 @@
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal2">
+<<<<<<< HEAD
                     <img class="img-responsive" src="/img/IMG_0804_a.jpg"/>
+=======
+                    <img class="img-responsive" src="/img/CornholeAce-Package---Top.jpg"/>
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
                 </div>
             </div>
 
@@ -64,7 +80,11 @@
                                 <h4 class="modal-title" id="myModalLabel">Reinforced Bucket Structure</h4>
                             </div>
                             <div class="modal-body text-center">
+<<<<<<< HEAD
                                 <img class="img-responsive" src="/img/IMG_0804_a.jpg"/>
+=======
+                                <img class="img-responsive" src="/img/CornholeAce-Package---Top.jpg"/>
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
                                 <p>Reliable, Lightweight, Portable design!</p>
                             </div>
                             <div class="modal-footer">
@@ -76,7 +96,11 @@
 
             <div class="col-lg-3 col-md-3 col-xs-3">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModal3">
+<<<<<<< HEAD
                     <img class="img-responsive" src="/img/IMG_0805_a.jpg"/>
+=======
+                    <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
                 </div>
             </div>
 
@@ -91,7 +115,11 @@
                                 <h4 class="modal-title" id="myModalLabel">BucketBall Offical Game Set</h4>
                             </div>
                             <div class="modal-body text-center">
+<<<<<<< HEAD
                                 <img class="img-responsive" src="/img/IMG_0805_a.jpg"/>
+=======
+                                <img class="img-responsive" src="/img/CornholeBags-RedFinal.jpg"/>
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
                                 <p>Bucketball is the best game out there!</p>
                             </div>
                             <div class="modal-footer">
@@ -137,11 +165,19 @@
 
 
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+<<<<<<< HEAD
             <h2><b>Professional Cornhole Bags - Four (4) Red Bags</b></h2>
             <h3>$36.99</h3>
             <p><b>Condition: </b>New Product</p>
 
             <h3>Professional Cornhole Bags - Four (4) Red Bags</h3>
+=======
+            <h2><b>Professional Cornhole Bags - Four (4) Blue Bags</b></h2>
+            <h3>$36.99</h3>
+            <p><b>Condition: </b>New Product</p>
+
+            <h3>Professional Cornhole Bags - Four (4) Blue Bags</h3>
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
             <li>Dual Sided (Duck Canvas & Microsuede)</li>
             <li>Resin Filled (Indoor & Outdoor)</li>
             <li>Durable Cornhole Bags, made to last!</li>
@@ -177,13 +213,24 @@
         </div>
 
 
+<<<<<<< HEAD
+=======
+        <hr>
+        <br>
+        <hr>
+
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
         <!-- Title -->
         <div class="row">
             <div class="col-lg-12">
                 <br>
                 <hr>
+<<<<<<< HEAD
                 <h1>Similar Products</h1>
                 <hr>
+=======
+                <h3>Similar Products</h3>
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
             </div>
         </div>
         <!-- /.row -->
@@ -191,12 +238,21 @@
         <!-- Page Features -->
         <div class="row text-center">
 
+<<<<<<< HEAD
             <div class="col-md-6 col-sm-6 hero-feature">
                 <div class="thumbnail">
                     <img src="/img/CornholeBags-RedBlueAllFinal.jpg" alt="blue and red cornhole bags">
                     <div class="caption">
                         <h3>Complete Set - Eight (8) Professional Bags - Red & Blue</h3>
                         <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
+=======
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="blue cornhole bags">
+                    <div class="caption">
+                        <h3>Professional Blue Cornhole Bags</h3>
+                        <p>Four (4) professional blue cornhole bags.</p>
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
                         <p>
                             <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
                         </p>
@@ -219,10 +275,17 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
+<<<<<<< HEAD
                     <img src="/img/CornholeBags-BlueFinal.jpg" alt="">
                     <div class="caption">
                         <h3>Professional Blue Cornhole Bags</h3>
                         <p>Four (4) professional Blue cornhole bags.</p>
+=======
+                    <img src="/img/CornholeAce-Package-top.jpg" alt="">
+                    <div class="caption">
+                        <h3>Eight (8) Professional Bags - Red & Blue</h3>
+                        <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
                         <p>
                             <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
                         </p>
@@ -230,6 +293,7 @@
                 </div>
             </div>
 
+<<<<<<< HEAD
 <!--            <div class="col-md-3 col-sm-6 hero-feature">-->
 <!--                <div class="thumbnail">-->
 <!--                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="">-->
@@ -242,6 +306,20 @@
 <!--                    </div>-->
 <!--                </div>-->
 <!--            </div>-->
+=======
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
 
         </div>
 

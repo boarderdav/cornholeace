@@ -8,9 +8,19 @@ workspace.xml
 tasks.xml
 *.ini
 composer.phar
+<<<<<<< HEAD
 /vendor/
 /vendor/**/.git
 
+=======
+vendor/
+node_modules/
+/vendor/
+/vendor/**/.git
+dbconfig.php
+dbconfig1.php
+.DS_Store
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
 
 ## File-based project format:
 *.ipr
@@ -27,7 +37,12 @@ composer.phar
 dbconfig*.php
 ###./website/dbconfig.php
 
+<<<<<<< HEAD
 ./vendor/twitter/bootstrap/docs/components.html
 
 .DS_Store
+=======
+
+.DS_Store*
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
 

@@ -360,12 +360,18 @@ class TwitterOAuth extends Config
             CURLOPT_TIMEOUT => $this->timeout,
             CURLOPT_URL => $url,
             CURLOPT_USERAGENT => $this->userAgent,
+<<<<<<< HEAD
         ];
 
         if($this->gzipEncoding) {
             $options[CURLOPT_ENCODING] = 'gzip';
         }
 
+=======
+            CURLOPT_ENCODING => 'gzip',
+        ];
+
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
         if (!empty($this->proxy)) {
             $options[CURLOPT_PROXY] = $this->proxy['CURLOPT_PROXY'];
             $options[CURLOPT_PROXYUSERPWD] = $this->proxy['CURLOPT_PROXYUSERPWD'];
