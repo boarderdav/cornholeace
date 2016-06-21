@@ -29,5 +29,5 @@ dbconfig*.php
 
 ./vendor/twitter/bootstrap/docs/components.html
 
-.DS_Store*
+.DS_Store
 
