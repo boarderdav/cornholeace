@@ -22,9 +22,9 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/shop1.php">Blue Bags Shop1</a></li>
-                        <li><a href="/shop2.php">Red Bags Shop2</a></li>
-                        <li><a href="/shop3.php">Complete Set Shop3</a></li>
+                        <li><a href="/shop3.php">Red Bags</a></li>
+                        <li><a href="/bluebags.php">Blue Bags</a></li>
+                        <li><a href="/professionalset.php">Complete Set - All</a></li>
                         <li role="separator" class="divider"></li>
                         <li class="dropdown-header">More Options</li>
                         <li><a href="#">Shop by category</a></li>
