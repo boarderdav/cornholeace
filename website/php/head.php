@@ -18,7 +18,6 @@
 <link href="../css/cornholeace.css" rel="stylesheet">
 <link href="../css/site.css" rel="stylesheet">
 
-
 <!--FontAwesome CSS link    -->
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
