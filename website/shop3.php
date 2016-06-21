@@ -194,12 +194,12 @@
 
             <div class="col-md-6 col-sm-12 hero-feature">
                 <div class="thumbnail">
-                    <img src="/img/CornholeBags-RedBlueAllFinal.jpg" alt="blue and red cornhole bags">
+                    <a href="http://new.cornholeace.com/professionalset.php"><img src="/img/CornholeBags-RedBlueAllFinal.jpg" alt="blue and red cornhole bags"></a>
                     <div class="caption">
                         <h3>Complete Set - Eight (8) Professional Bags - Red & Blue</h3>
                         <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
                         <p>
-                            <a href="https://tgs.celeryshop.com/checkout?product_id=56ce3a7be4ad561100af4c92" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="https://tgs.celeryshop.com/checkout?product_id=56ce3a7be4ad561100af4c92" class="btn btn-primary">Buy Now!</a> <a href="http://new.cornholeace.com/professionalset.php" class="btn btn-default">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -234,19 +234,6 @@
                     </div>
                 </div>
             </div>
-
-<!--            <div class="col-md-3 col-sm-6 hero-feature">-->
-<!--                <div class="thumbnail">-->
-<!--                    <img src="/img/CornholeBags-BlueFinal.jpg" alt="">-->
-<!--                    <div class="caption">-->
-<!--                        <h3>Feature Label</h3>-->
-<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                        <p>-->
-<!--                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
 
         </div>
 
