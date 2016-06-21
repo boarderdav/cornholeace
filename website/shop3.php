@@ -205,6 +205,7 @@
                 </div>
             </div>
 
+
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
                     <a href="http://new.cornholeace.com/bluebag.com"><img src="/img/CornholeBags-RedFinal.jpg" alt=""></a>
