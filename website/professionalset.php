@@ -19,7 +19,7 @@
 
             <div class="row">
 
-                <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="col-lg-6 col-md-3 col-xs-3">
                     <div class="thumbnail" data-toggle="modal" data-target="#myModal1">
                         <img class="img-responsive" src="/img/CornholeBags-RedBlueAllFinal.jpg"/>
                     </div>
@@ -194,9 +194,9 @@
 
             <div class="col-md-6 col-sm-12 hero-feature">
                 <div class="thumbnail">
-                    <a href="http://new.cornholeace.com/professionalset.php"><img
-                        src="/img/CornholeBags-RedBlueAllFinal
-                    .jpg" alt="blue and red cornhole bags"></a>
+                    <a href="http://new.cornholeace.com/professionalset.php">
+                        <img src="/img/CornholeBags-RedBlueAllFinal.jpg" alt="blue and red cornhole bags">
+                    </a>
                     <div class="caption">
                         <h3>Complete Set - Eight (8) Professional Bags - Red & Blue</h3>
                         <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
