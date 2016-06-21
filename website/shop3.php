@@ -208,7 +208,7 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <a href="http://new.cornholeace.com/bluebag.php"><img src="/img/CornholeBags-RedFinal.jpg"
+                    <a href="http://new.cornholeace.com/bluebags.php"><img src="/img/CornholeBags-RedFinal.jpg"
                                                                          alt=""></a>
                     <div class="caption">
                         <h3>Professional Red Cornhole Bags</h3>
@@ -222,14 +222,14 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <a href="http://new.cornholeace.com/bluebag.com">
+                    <a href="http://new.cornholeace.com/bluebags.php">
                         <img src="/img/CornholeBags-BlueFinal.jpg" alt="">
                     </a>
                     <div class="caption">
                         <h3>Professional Blue Cornhole Bags</h3>
                         <p>Four (4) professional Blue cornhole bags.</p>
                         <p>
-                            <a href="http://new.cornholeace.com/bluebag.php" class="btn btn-primary">Buy Now!</a> <a href="http://new.cornholeace.com/bluebag.php" class="btn btn-default">More Info</a>
+                            <a href="http://new.cornholeace.com/bluebags.php" class="btn btn-primary">Buy Now!</a> <a href="http://new.cornholeace.com/bluebags.php" class="btn btn-default">More Info</a>
                         </p>
                     </div>
                 </div>
