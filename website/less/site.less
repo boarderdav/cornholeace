@@ -165,3 +165,48 @@ figcaption.moveUp {
 h1.code, h2.code, h3.code, h4.code, h5.code, h6.code, p.code, li.code {font-family: @font-family-monospace}
 h1.lato, h2.lato, h3.lato, h4.lato, h5.lato, h6.lato, p.lato, li.lato {font-family: @font-family-lato}
 h1.lato-light, h2.lato-light, h3.lato-light, h4.lato-light, h5.lato-light, h6.lato-light, p.lato-light, li.lato-light {font-family: @font-family-lato-light}
+
+//.prefooter .prefooter-links .prefooter-links-column-sublinks-item ul.prefooter-links-column-sublinks a ul {
+//  list-style: none;
+//  margin: 0;
+//  padding: 0;
+//  font-size: 11px;
+//  line-height: 22px;
+//  text-align: left;
+//}
+
+.prefooter-links-column-sublinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.prefooter-links-column-sublinks > a {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+.prefooter-links-columns-sublinks a {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+a {
+  background: transparent;
+}
+
+a:-webkit-any-link {
+  cursor: auto;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}

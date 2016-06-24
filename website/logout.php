@@ -13,6 +13,10 @@ session_unset();
     $_SESSION['request_token'] = NULL;
     $_SESSION['request_token_secret'] = NULL;
 header("Location: http://new.cornholeace.com/index.php");        // link to page you want to load ( "Location: " ."http://new.cornholeace.com");
+<<<<<<< HEAD
+=======
+
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
 ?>
 
 

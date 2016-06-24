@@ -2,20 +2,10 @@
 <?php include('php/navigation.php');?>
 
     <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
-    <?php include_once('functions.php'); ?>
+    <?php include_once('php/functions.php'); ?>
 
-<!--    <div class="container">-->
-<!--        <div class="hero-unit">-->
-<!--            <h1>Hello --><?php //echo $_SESSION['FNAME']; ?><!--</h1>-->
-<!--            <p>Welcome to CornholeAce site using facebook login</p>-->
 
     <?php else: ?>     <!-- Before login -->
-
-<!--    <div class="container">-->
-<!--        <h1>Login with Facebook</h1>-->
-<!--        <div><a href="fbconfig.php"><button class="btn btn-success">Login with Facebook</button></a></div>-->
-<!--    </div>-->
-
 
 
     <?php endif ?>
@@ -244,5 +234,23 @@
         </footer>
 
     </div><!-- /.container -->
+
+<?php
+//use Intercom\IntercomClient;
+//$client = new IntercomClient(m3eq92kh, 6d83180bc278f7115426a8605b83e925c6e84627);
+//
+//// create/update a user
+//
+//$client->users->create([
+//    'email' => 'dgjenkin@vt.edu',
+//    "companies" => [
+//        [
+//            "id" => "3"
+//        ]
+//    ]
+//]);
+
+?>
+
 
 <?php include('php/footernew.php');?>

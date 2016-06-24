@@ -27,11 +27,19 @@ class Config
     protected $proxy = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /** @var bool Whether to encode the curl requests with gzip or not */
     protected $gzipEncoding = true;
 
 >>>>>>> dev
+=======
+    /** @var bool Whether to encode the curl requests with gzip or not */
+    protected $gzipEncoding = true;
+
+=======
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
+>>>>>>> master
     /**
      * Set the connection and response timeouts.
      *
@@ -68,7 +76,10 @@ class Config
         $this->proxy = $proxy;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 
     /**
      * Whether to encode the curl requests with gzip or not.
@@ -79,5 +90,10 @@ class Config
     {
         $this->gzipEncoding = (bool)$gzipEncoding;
     }
+<<<<<<< HEAD
 >>>>>>> dev
+=======
+=======
+>>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
+>>>>>>> master
 }
