@@ -15,7 +15,7 @@ require('./../../php/functionstw.php');
 
 define('CONSUMER_KEY','8eoZljmUz5yaQjOLdH463iOCP');
 define('CONSUMER_SECRET','2iljSQZ3X1EV1HsAacdrFxnmXJBEicDssDdvZ48n6jSe24tw2Q');
-define('OAUTH_CALLBACK','http://new.cornholeace.com/lib/twitter/twconfig.php');
+define('OAUTH_CALLBACK','http://shop.cornholeace.com/lib/twitter/twconfig.php');
 
 // part 2 process
 // 1. check for logout
@@ -83,14 +83,14 @@ if(isset($_GET['oauth_token'])) {
             $_SESSION['FRIENDCOUNT'] = $friendCount;
 //            $_SESSION['LOGINURL'] = $login_url;
             $redirect = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
-           header("Location: http://new.cornholeace.com/index.php");
-//            header("Location: http://new.cornholeace.com/index_.php");
+           header("Location: http://shop.cornholeace.com/index.php");
+//            header("Location: http://shop.cornholeace.com/index_.php");
 //            header('Location: ' . filter_var($redirect, FILTER_SANITIZE_URL));
         }
     }
 } else {
     $loginUrl = $_SESSION['LOGINURL'];
     header("Location: ".$_SESSION['LOGINURL']);
-//    header("Location: http://new.cornholeace.com/index_.php");
+//    header("Location: http://shop.cornholeace.com/index_.php");
 }
 

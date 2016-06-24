@@ -17,7 +17,7 @@ use Facebook\HttpClients\FacebookHttpable;
 // init app with app id and secret
 FacebookSession::setDefaultApplication( '686534241383052','49f3d3991c74d0e1101321c7d069a683' );
 // login helper with redirect_uri
-    $helper = new FacebookRedirectLoginHelper('http://new.cornholeace.com/php/fbconfig.php' );
+    $helper = new FacebookRedirectLoginHelper('http://shop.cornholeace.com/php/fbconfig.php' );
 try {
   $session = $helper->getSessionFromRedirect();
 } catch( FacebookRequestException $ex ) {
@@ -56,8 +56,8 @@ if ( isset( $session ) ) {
 //    checkuser($fbid,$fbfullname,$femail);  //This was causing an error. not allowing page to load
 
     /* ---- header location after session ----*/
-//  header("Location: http://new.cornholeace.com/1353/functions.php");
-  header("Location: http://new.cornholeace.com/index.php");
+//  header("Location: http://shop.cornholeace.com/1353/functions.php");
+  header("Location: http://shop.cornholeace.com/index.php");
 
 } else {
   $loginUrl = $helper->getLoginUrl();

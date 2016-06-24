@@ -44,7 +44,7 @@
                                 <div class="col-md-12">
                                     Login via
                                     <div class="social-buttons">
-                                        <!--                                        <a href="http://new.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
+                                        <!--                                        <a href="http://shop.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
 <<<<<<< HEAD
                                         <a href="/php/fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i>
 =======
@@ -70,7 +70,7 @@
                                 <div class="col-md-12">
                                     Login via
                                     <div class="social-buttons">
-<!--                                        <a href="http://new.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
+<!--                                        <a href="http://shop.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
 <<<<<<< HEAD
                                         <a href="/php/fbconfig.php" class="btn btn-fb"><i class="fa
                                         fa-facebook"></i>
