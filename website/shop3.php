@@ -180,11 +180,11 @@
 
             <div class="row">
                 <div class="col-xs-12">
-                    <button class="col-xs-4 btn btn-primary btn-lg"<a href="https://www.facebook.com/playbucketball"
+                    <button class="col-xs-4 btn btn-primary btn-lg"> <a href="https://www.facebook.com/playbucketball"
                                                    class="button">Facebook</a></button>
-                   <button class="col-xs-4 btn btn-primary btn-lg" <a href="https://twitter.com/bucketballgame"
+                   <button class="col-xs-4 btn btn-primary btn-lg"> <a href="https://twitter.com/bucketballgame"
                                                       class="button">Twitter</a></button>
-                    <button class="col-xs-4 btn btn-primary btn-lg"<a href="https://www.kickstarter
+                    <button class="col-xs-4 btn btn-primary btn-lg"> <a href="https://www.kickstarter
                     .com/projects/bucketball/bucketball-play-throw-splash?token=97297518"
                                                       class="button">KickStarter</a></button>
                 </div>
