@@ -22,7 +22,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/shop3.php">Red Bags</a></li>
+                        <li><a href="/redbags.php">Red Bags</a></li>
                         <li><a href="/bluebags.php">Blue Bags</a></li>
                         <li><a href="/professionalset.php">Complete Set - All</a></li>
                         <li role="separator" class="divider"></li>
@@ -45,11 +45,8 @@
                                     Login via
                                     <div class="social-buttons">
                                         <!--                                        <a href="http://shop.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
-<<<<<<< HEAD
+
                                         <a href="/php/fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i>
-=======
-                                        <a href="./php/fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i>
->>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
                                             Facebook</a>
                                         <a href="./../lib/twitter/twconfig.php" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                                     </div>
@@ -71,22 +68,16 @@
                                     Login via
                                     <div class="social-buttons">
 <!--                                        <a href="http://shop.cornholeace.com/" onclick="FB.login();" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>-->
-<<<<<<< HEAD
-                                        <a href="/php/fbconfig.php" class="btn btn-fb"><i class="fa
-                                        fa-facebook"></i>
-=======
-                                        <a href="./php/fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i>
->>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
+
+                                        <a href="/php/fbconfig.php" class="btn btn-fb"><i class="fa fa-facebook"></i>
                                             Facebook</a>
                                         <a href="./../lib/twitter/twconfig.php" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
 <!--                                        <a href="--><?php //echo $_SESSION['LOGINURL'];?><!--" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>-->
                                     </div>
                                     or
-<<<<<<< HEAD
-                                    <form class="form" href="#" action="/dbconfig.php" method="post" role="form" accept-charset="UTF-8" id="login-nav"> <!--action="login"-->
-=======
-                                    <form class="form" href="#" action="./../dbconfig.php" method="post" role="form" accept-charset="UTF-8" id="login-nav"> <!--action="login"-->
->>>>>>> ac1108f992595882f82378fa3c52da27b633f34c
+
+                                    <form class="form" href="#" action="../dbconfig.php" method="post" role="form" accept-charset="UTF-8" id="login-nav"> <!--action="login"-->
+
                                         <div class="form-group">
                                             <label class="sr-only" for="exampleInputEmail2">Email address</label>
                                             <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>

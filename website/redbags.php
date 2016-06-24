@@ -273,7 +273,6 @@
 
 
 
-
     </div>
 </div>
-<?php include('php/footernew.php');?>
+<?php include('php/footershop.php');?>
