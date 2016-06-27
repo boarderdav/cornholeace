@@ -57,7 +57,6 @@
                 </li>
             <?php endif ?>
 <!--                <li><p class="navbar-text">Already have an account?</p></li>-->
-
             <?php if ($_SESSION['TID'] || $_SESSION['FBID']): ?>
             <?php else: ?>
                 <li class="dropdown">
