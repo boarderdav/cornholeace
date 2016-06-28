@@ -194,14 +194,14 @@
 
             <div class="col-md-6 col-sm-12 hero-feature">
                 <div class="thumbnail">
-                    <a href="http://new.cornholeace.com/professionalset.php">
+                    <a href="http://shop.cornholeace.com/professionalset.php">
                         <img src="/img/CornholeBags-RedBlueAllFinal.jpg" alt="blue and red cornhole bags">
                     </a>
                     <div class="caption">
                         <h3>Complete Set - Eight (8) Professional Bags - Red & Blue</h3>
                         <p>Includes four (4) Blue and four (4) Red professional cornhole bags</p>
                         <p>
-                            <a href="https://tgs.celeryshop.com/checkout?product_id=56ce3a7be4ad561100af4c92" class="btn btn-primary">Buy Now!</a> <a href="http://new.cornholeace.com/professionalset.php" class="btn btn-default">More Info</a>
+                            <a href="https://tgs.celeryshop.com/checkout?product_id=56ce3a7be4ad561100af4c92" class="btn btn-primary">Buy Now!</a> <a href="http://shop.cornholeace.com/professionalset.php" class="btn btn-default">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -210,13 +210,13 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <a href="http://new.cornholeace.com/bluebags.php"><img src="/img/CornholeBags-RedFinal.jpg"
+                    <a href="http://shop.cornholeace.com/bluebags.php"><img src="/img/CornholeBags-RedFinal.jpg"
                                                                            alt=""></a>
                     <div class="caption">
                         <h3>Professional Red Cornhole Bags</h3>
                         <p>Four (4) professional red cornhole bags.</p>
                         <p>
-                            <a href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466" class="btn btn-primary">Buy Now!</a> <a href="http://new.cornholeace.com/shop3.php" class="btn btn-default">More Info</a>
+                            <a href="https://tgs.celeryshop.com/checkout?product_id=56ce0181a5060a11002be466" class="btn btn-primary">Buy Now!</a> <a href="http://shop.cornholeace.com/shop3.php" class="btn btn-default">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -224,14 +224,14 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <a href="http://new.cornholeace.com/bluebags.php">
+                    <a href="http://shop.cornholeace.com/bluebags.php">
                         <img src="/img/CornholeBags-BlueFinal.jpg" alt="">
                     </a>
                     <div class="caption">
                         <h3>Professional Blue Cornhole Bags</h3>
                         <p>Four (4) professional Blue cornhole bags.</p>
                         <p>
-                            <a href="https://tgs.celeryshop.com/checkout?product_id=56ce078782f6fa110024d26e" class="btn btn-primary">Buy Now!</a> <a href="http://new.cornholeace.com/bluebags.php" class="btn btn-default">More Info</a>
+                            <a href="https://tgs.celeryshop.com/checkout?product_id=56ce078782f6fa110024d26e" class="btn btn-primary">Buy Now!</a> <a href="http://shop.cornholeace.com/bluebags.php" class="btn btn-default">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -241,112 +241,8 @@
         </div>
 
 
-
-        <div class="col-xs-12 col-md-12">
-            <hr>
-            <h2 class="muted"><b>More Info</b></h2>
-            <hr>
-            <h2>Professional Cornhole Bags - Four (4) Blue Bags</h2>
-            <li>Dual Sided (Duck Canvas & Microsuede)</li>
-            <li>Resin Filled (Indoor & Outdoor)</li>
-            <li>Durable Cornhole Bags, made to last!</li>
-            <li>Reinforced stitching</li>
-            <li>Free CornholeAce Tote Bag included!!!</li>
-
-            <hr>
-            <h3>BucketBall Video</h3>
-            <hr>
-
-            <div class="videoWrapper text-center hidden-xs hidden-sm hidden-md">
-                <iframe width="800px" height="460px" src="https://www.youtube.com/embed/5p5TnwBWzu8?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0"></iframe>
-            </div>
-            <div class="videoWrapper text-center hidden-xs hidden-sm hidden-lg">
-                <iframe width="600px" height="345px" src="https://www.youtube.com/embed/5p5TnwBWzu8?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0"></iframe>
-            </div>
-            <div class="videoWrapper text-center hidden-md hidden-lg">
-                <iframe width="400px" height="230px" src="https://www.youtube.com/embed/5p5TnwBWzu8?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0"></iframe>
-            </div>
-
-            <hr>
-            <h3>Overview</h3>
-            <hr>
-            <p>Professional Cornhole Bags - Four (4) Red Bags:</p>
-            <ul><li>Professional quality and size (6" x 6" @ 16oz)</li>
-                <li>Dual Sided (Duck Canvas & Microsuede)</li>
-                <li>Resin Filled (Indoor & Outdoor)</li>
-                <li>Durable Cornhole Bags, made to last!</li>
-                <li>Reinforced stitching</li>
-                <li>Free CornholeAce Tote Bag included!!!</li>
-
-            </ul>
-
-            <hr>
-            <h3>How to Play - Quick Start&nbsp;Instructions</h3>
-            <hr>
-            <p>Professional Cornhole Bags are dual-sided: one side is duck canvas and the other is microsuede. Having dual-sided bags enhances strategic play in the game of cornhole.  The duck canvas side allows for fast plays across the board. The microsuede side slows the bag and is useful when you want to hit the board and stop in place!</p>
-
-            <hr>
-            <h3>How to Play - Official Rules</h3>
-            <hr>
-            <p><a href="http://www.bucketball.com/site/how-to-play.php">http://www.bucketball.com/site/how-to-play.php</a></p>
-
-            <hr>
-            <h3>Other Information</h3>
-            <hr>
-            <p>PLAYING IN LOCATIONS WITHOUT WATER: BucketBall is designed to be lightweight so it is convenient to carry wherever you like to take it. However, it requires additional weight, such as water, to prevent the buckets from tipping over during game play. If you plan on taking the game to a location where water isn't easily available, we would recommend one of the following:</p>
-            <ul><li>Purchase a 5-6 Gallon Water Carrier ($8-$17 price range with Free Shipping on Amazon). Fill the water carrier with water and take the water wherever you want to play BucketBall.</li>
-                <li>Place a cornhole bag inside each bucket.</li>
-                <li>Place a 2.5 lb. Gold's Gym weight inside each bucket.</li>
-            </ul><p>If you are playing in a location that has a hard flat surface (i.e. concrete, asphalt, hardwood floor, etc.) and do not have water or a weighted object to place in each bucket, you can play the game by requiring each player to bounce the game ball onto the floor one time and try to make it into the bucket. This will help prevent the balls from knocking the buckets over.</p>
-        </div>
-
-
         <hr>
 
-        <div class="row text-center">
-            <div class="col-xs-10 col-xs-offset-1">
-                <div data-celery="56ce3a7be4ad561100af4c92" data-celery-type="embed" data-celery-version="v2">Checkout</div>
-                <script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1">
-                <div data-celery="56ce0181a5060a11002be466" data-celery-type="embed" data-celery-version="v2">Checkout</div>
-
-            </div>
-            <div class="col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1">
-                <div data-celery="56ce078782f6fa110024d26e" data-celery-type="embed" data-celery-version="v2">Checkout</div>
-
-            </div>
-        </div>
-
-        <div class="row text-center">
-            <div class="col-xs-10-offset-1">
-                <button class="btn btn-success" href="https://tgs.celeryshop.com/checkout?product_id=559c711099d87e030025424e">
-                    Buy
-                </button>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <div id="#getProductJS"></div>
-            </div>
-        </div>
-
-
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright © Tailgating Sports, LLC 2016</p>
-                </div>
-            </div>
-        </footer>
 
     </div>
 </div>
