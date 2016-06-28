@@ -1,7 +1,16 @@
 <?php
-session_start();
 
-require '../dbconfig.php';
+//require '../dbconfig.php';
+//require "dbconfig.php";
+
+$servername = "box912.bluehost.com";
+$username = "cornhol2_david";
+$password = "dbteam2014";
+$dbname = "cornhol2_newcornholeace";
+//$port = "3306";
+
+//Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 //Connect to Facebook User Table
 //mysqli_select_db("cornholeAWStest", $conn) or die ("could not open database");
